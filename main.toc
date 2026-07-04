@@ -1,9 +1,0 @@
-\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\babel@toc {english}{}\relax
-\contentsline {chapter}{\nonumberline Contents}{iv}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}ASDF}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}test}{1}{section.1.1}%
-\contentsline {mtocsection}{\numberline {1.1}test}{1}{section.1.1}%
-\contentsline {part}{\nonumberline Title of the Part}{2}{part*.6}%
-\contentsline {part}{\nonumberline Appendix}{3}{part*.8}%
-\contentsline {chapter}{\numberline {A}Some more blindtext}{4}{appendix.A}%
