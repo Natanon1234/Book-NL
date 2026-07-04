@@ -4,9 +4,11 @@
 %	USEFUL PACKAGES AND COMMANDS
 %----------------------------------------------------------------------------------------
 
-\RequirePackage{etoolbox} % Easy programming to modify TeX stuff
+\RequirePackage{etoolbox}
+\RequirePackage{silence}
+\WarningFilter{caption}{Unknown document class} % Easy programming to modify TeX stuff
 \RequirePackage{calc} % Make calculations
-\RequirePackage[usenames,dvipsnames,table]{xcolor} % Colours
+\RequirePackage[dvipsnames,table]{xcolor} % Colours
 \RequirePackage{iftex} % Check wether XeTeX is being used
 \RequirePackage{xifthen} % Easy conditionals
 \RequirePackage{options} % Manage class options
@@ -1017,15 +1019,15 @@
 	\RequirePackage[force]{filehook} % Fixes an error
 	\RequirePackage{unicode-math} % Math fonts in xetexorluatex
     \setromanfont[
-		Scale=1.04
-	]{Libertinus Serif}
+		Scale=1
+	]{Noto Sans Condensed}
 	\setsansfont[
 		Scale=1
-	]{Libertinus Sans}
+	]{Noto Sans Condensed}
 	\setmonofont[
 		Scale=.89
-	]{Liberation Mono}
-	\setmathfont{Libertinus Math}
+	]{Latin Modern Mono}
+	\setmathfont{Latin Modern Math}
     \ifluatex
     \else
         \RequirePackage{morewrites} % Fix some errors related to floats
@@ -1053,6 +1055,8 @@
 
 \RequirePackage{hyperref} % Required for hyperlinks
 \RequirePackage{bookmark} % Required for pdf bookmarks
+\providecommand*{\toclevel@mtocsection}{0}
+\providecommand*{\toclevel@mtocsubsection}{1}
 
 \PassOptionsToPackage{hyphens}{url} % Break long URLs and use hyphens to separate the pieces
 
