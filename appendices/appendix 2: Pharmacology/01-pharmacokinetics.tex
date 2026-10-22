@@ -1,0 +1,28 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname overviewpharmacologyparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{B}{1}
+    \chapter{Overview of Pharmacology}
+    \margintoc
+  \fi
+}{}
+\section{Pharmacokinetics}
+\labsec{pharmacology_pharmacokinetics}
+
+\subsection{Absorption}
+
+\subsection{Distribution}
+
+\subsection{Metabolism}
+
+\subsection{Elimination}
+\end{document}

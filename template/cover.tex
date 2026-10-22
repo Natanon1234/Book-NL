@@ -1,0 +1,48 @@
+% Professional cover page for the Thai NL1 textbook.
+\newcommand{\makecoverpage}{%
+\begin{titlepage}
+    \thispagestyle{empty}%
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=center, inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{minimal-blue-medical-competency-cover.png}};
+        \fill[white, opacity=0.90] ([xshift=18mm,yshift=-38mm]current page.north west) rectangle ([xshift=118mm,yshift=-111mm]current page.north west);
+        \draw[line width=1.1pt, color=RoyalBlue!70!black] ([xshift=24mm,yshift=-44mm]current page.north west) -- ([xshift=24mm,yshift=-105mm]current page.north west);
+        \node[anchor=north west, text width=75mm, align=left] at ([xshift=31mm,yshift=-47mm]current page.north west) {%
+            {\fontsize{28}{32}\selectfont\sffamily\bfseries\color{black} Comprehensive\\Content Guide}\\[3mm]
+            {\fontsize{20}{24}\selectfont\sffamily\bfseries\color{RoyalBlue!75!black} for the New Thai NL1}\\[10mm]
+            {\fontsize{12}{15}\selectfont\sffamily\bfseries Natanon Kittimongkolsuk}\\[2mm]
+            {\fontsize{10}{13}\selectfont\sffamily\color{black!62} July 2026}%
+        };
+    \end{tikzpicture}%
+    \null\clearpage
+\end{titlepage}%
+}
+\makeatletter
+\newcommand{\makecopyrightpage}{%
+    \clearpage
+    \thispagestyle{plain.scrheadings}%
+    \begingroup
+    \setparsizes{\z@}{\z@}{\z@\@plus 1fil}\par@updaterelative
+    \begin{minipage}[t]{\textwidth}%
+        \@uppertitleback
+    \end{minipage}\par
+    \vfill
+    \begin{minipage}[b]{\textwidth}%
+        \@lowertitleback
+    \end{minipage}\par
+    \endgroup
+    \clearpage
+}
+
+\newcommand{\makededicationpage}{%
+    \clearpage
+    \thispagestyle{plain.scrheadings}%
+    \null\vskip 0pt plus.3fill
+    \begingroup
+    \usekomafont{dedication}%
+    \centering
+    \@dedication\par
+    \endgroup
+    \vskip 0pt plus.6fill
+    \clearpage
+}
+\makeatother

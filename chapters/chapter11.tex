@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{11}}{}
+\chapter{Endocrine System (B11)}
+\margintoc
+\section[Normal (B11.1)]{Normal processes (B11.1)}
+\labsec{endocrine_normal_B11.1}
+
+\section[Abnormal (B11.2)]{Abnormal processes (B11.2)}
+\labsec{endocrine_abnormal_B11.2}
+
+\section[Therapeutics (B11.3)]{Principles of therapeutics (B11.3)}
+\labsec{endocrine_therapeutics_B11.3}
+
+\section[Health and social factors (B11.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B11.4)}
+\labsec{endocrine_considerations_B11.4}
+\end{document}

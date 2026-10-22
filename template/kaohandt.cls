@@ -25,7 +25,7 @@
 %----------------------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{kaohandt}[2021/06/02 v0.9.7 kaohandt]
+\ProvidesClass{template/kaohandt}[2021/06/02 v0.9.7 kaohandt]
 \newcommand{\@classname}{kaohandt} % Class name
 \newcommand{\@baseclass}{scrartcl} % Base class name
 

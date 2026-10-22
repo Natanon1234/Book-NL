@@ -1,0 +1,112 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{0}}{}
+\chapter{Debug and Notes}
+\margintoc
+\section{Text Outline}
+\labsec{outline}
+
+General chapter outline:
+\begin{itemize}
+  \item Learning objectives and high-yield chapter goals.
+\end{itemize}
+
+\section{Content Planning}
+\labsec{contentplan}
+Content \index{outline}, NL alignment and roles: % Example syntax to include a key term in the index
+
+small The detailed content rows below transcribe Part 1A, “Basic Medical Sciences,” from Medical Council Notification 12/2555. The topic hierarchy and must-know/should-know entries retain the source wording; only line wrapping is normalized. PDF page numbers are shown in the final column. Planning weights, item counts, and author assignments are editorial planning fields and are not stated in the notification. The colors denote the source's learning-priority categories, not the likelihood of appearing on any one examination. Source: \texttt{prism-uploads/595\_ประกาศแพทยสภา-ที่-12-2555.pdf}.
+
+\definecolor{alignmentblue}{HTML}{DCEAF7}
+\definecolor{alignmentyellow}{HTML}{FFF2CC}
+\definecolor{alignmentred}{HTML}{F4CCCC}
+
+\begin{landscape}
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.08}
+\setlength{\parskip}{0pt}
+\begin{longtable}{@{}>{\RaggedRight\arraybackslash}p{0.60\textwidth}>{\Centering\arraybackslash}p{0.07\textwidth}>{\Centering\arraybackslash}p{0.08\textwidth}>{\RaggedRight\arraybackslash}p{0.14\textwidth}>{\Centering\arraybackslash}p{0.07\textwidth}@{}}
+\toprule
+\textbf{Content Area and Verbatim Listed Items} & \textbf{Weight (\%)} & \textbf{No. of Items} & \textbf{Person Responsible} & \textbf{PDF Page} \\
+\textit{Official Part 1A hierarchy and scope} & & & \textit{Major author} & \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Content Area and Verbatim Listed Items} & \textbf{Weight (\%)} & \textbf{No. of Items} & \textbf{Person Responsible} & \textbf{PDF Page} \\
+\textit{Official Part 1A hierarchy and scope} & & & \textit{Major author} & \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize Continued on next page} \\
+\endfoot
+\bottomrule
+\endlastfoot
+\input{\booknlroot template/part1a-table-rows.tex}
+\end{longtable}
+\endgroup
+\end{landscape}
+
+
+
+%Examples
+
+% Example section divider
+\pagelayout{wide} % No margins
+\addpart{Example Code}
+\pagelayout{margin} % Restore margins
+
+\section{Example Figures/templates}
+% Example Clinical Correlation (sidebar)
+\marginclinicalcorrelation[.5cm]{Connect a mechanism to bedside recognition, diagnosis, or management. For example, altered gene expression can explain why the same mutation may produce different clinical severity across patients.}
+
+% Example Figure (in text)
+\begin{center}
+  \includegraphics[width=0.65\textwidth]{\booknlroot images/example_response}
+
+  {\small Example figure: each gene is transcribed into many RNA molecules, which are translated into proteins.}
+\end{center}
+
+% Example Figure (main/in text)
+\begin{center}
+  \includegraphics{\booknlroot images/example_dist_expr}
+  \captionof{figure}{Example in-text figure caption: distribution of expression values across samples, highlighting how visual summaries can clarify variation in biological data.}
+  \labfig{example_dist_expr}
+\end{center}
+
+% Example Clinical Correlation (in text)
+\begin{clinicalcorrelation}
+  Connect a mechanism to bedside recognition, diagnosis, or management.
+  For example, altered gene expression can explain why the same mutation may produce
+  different clinical severity across patients.
+\end{clinicalcorrelation}
+
+% Example Test Correlation (in text)
+\noindent\textbf{Example test correlation.} High-yield exam links belong here: key clues, tested associations, or a diagnostic clue.
+
+% Example table
+\begin{center}
+\captionof{table}{Example table: this is an example table format to be used in the textbook.}
+\labtab{example_planning_table}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
+\toprule
+\textbf{Content Outline} & \textbf{NL Alignment} & \textbf{Role in Chapter} \\
+\textit{Major heading} & \textit{Mapped competency} & \textit{Narrative function} \\
+\midrule
+\textbf{Core concept} & Relevant national licensing objective or topic area & Establishes the essential mechanism, definition, or framework. \\
+\textbf{Clinical link} & Symptom, sign, diagnosis, investigation, or management item & Connects basic science to bedside reasoning and recognition. \\
+\textbf{Test emphasis} & Common exam clue, association, or decision point & Highlights high-yield material for review and self-checking. \\
+\textbf{Figures and examples} & Visual or applied representation of the competency & Reinforces key relationships through diagrams, cases, or comparisons. \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{document}

@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{5}}{}
+\chapter{Musculoskeletal System (B5)}
+\margintoc
+\section[Normal (B5.1)]{Normal processes (B5.1)}
+\labsec{musculoskeletal_normal_B5.1}
+
+\section[Abnormal (B5.2)]{Abnormal processes (B5.2)}
+\labsec{musculoskeletal_abnormal_B5.2}
+
+\section[Therapeutics (B5.3)]{Principles of therapeutics (B5.3)}
+\labsec{musculoskeletal_therapeutics_B5.3}
+
+\section[Health and social factors (B5.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B5.4)}
+\labsec{musculoskeletal_considerations_B5.4}
+\end{document}

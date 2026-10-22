@@ -1,0 +1,46 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{A}{2}
+  \fi
+}{}
+\chapter{Membrane Transport and Cellular Excitability}
+\margintoc
+
+\section{Transport across cell membranes}
+
+Cell membranes regulate exchange between the intracellular and extracellular
+compartments. Small nonpolar molecules can diffuse through the lipid bilayer,
+while ions and many polar solutes require channels or carrier proteins. Active
+transport uses energy directly or indirectly to move substances against their
+electrochemical gradients.
+
+\section{Osmosis and cell volume}
+
+Water moves across permeable membranes in response to differences in effective
+solute concentration. Changes in extracellular tonicity can therefore alter
+cell volume, while membrane transporters help maintain the composition of the
+intracellular environment.
+
+\section{Resting membrane potential}
+
+The resting membrane potential reflects ion concentration gradients and the
+membrane's selective permeability. Potassium conductance is a major determinant
+in many cells, while transporters maintain the underlying ion gradients.
+
+\section{Action potentials}
+
+In excitable cells, depolarization to threshold activates voltage-gated ion
+channels and produces a rapid, regenerative change in membrane potential.
+Repolarization and refractory periods shape the timing and propagation of
+electrical signals.
+\end{document}

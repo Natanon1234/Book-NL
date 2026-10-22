@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{7}}{}
+\chapter{Cardiovascular System (B7)}
+\margintoc
+\section[Normal (B7.1)]{Normal processes (B7.1)}
+\labsec{cardiovascular_normal_B7.1}
+
+\section[Abnormal (B7.2)]{Abnormal processes (B7.2)}
+\labsec{cardiovascular_abnormal_B7.2}
+
+\section[Therapeutics (B7.3)]{Principles of therapeutics (B7.3)}
+\labsec{cardiovascular_therapeutics_B7.3}
+
+\section[Health and social factors (B7.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B7.4)}
+\labsec{cardiovascular_considerations_B7.4}
+\end{document}

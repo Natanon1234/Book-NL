@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{4}}{}
+\chapter{Skin and Related Connective Tissue (B4)}
+\margintoc
+\section[Normal (B4.1)]{Normal processes (B4.1)}
+\labsec{skin_normal_B4.1}
+
+\section[Abnormal (B4.2)]{Abnormal processes (B4.2)}
+\labsec{skin_abnormal_B4.2}
+
+\section[Therapeutics (B4.3)]{Principles of therapeutics (B4.3)}
+\labsec{skin_therapeutics_B4.3}
+
+\section[Health and social factors (B4.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B4.4)}
+\labsec{skin_considerations_B4.4}
+\end{document}

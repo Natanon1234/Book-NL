@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{10}}{}
+\chapter{Reproductive System (B10)}
+\margintoc
+\section[Normal (B10.1)]{Normal processes (B10.1)}
+\labsec{reproductive_normal_B10.1}
+
+\section[Abnormal (B10.2)]{Abnormal processes (B10.2)}
+\labsec{reproductive_abnormal_B10.2}
+
+\section[Therapeutics (B10.3)]{Principles of therapeutics (B10.3)}
+\labsec{reproductive_therapeutics_B10.3}
+
+\section[Health and social factors (B10.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B10.4)}
+\labsec{reproductive_considerations_B10.4}
+\end{document}

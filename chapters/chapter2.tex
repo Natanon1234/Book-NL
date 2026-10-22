@@ -1,0 +1,25 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{2}}{}
+\chapter{Hematopoietic and Lymphoreticular Systems (B2)}
+\margintoc
+\section[Normal (B2.1)]{Normal processes (B2.1)}
+\labsec{hemato_normal_B2.1}
+
+\section[Abnormal (B2.2)]{Abnormal processes (B2.2)}
+\labsec{hemato_abnormal_B2.2}
+
+\section[Therapeutics (B2.3)]{Principles of therapeutics (B2.3)}
+\labsec{hemato_theraputics_B2.3}
+
+\section[Health and social factors (B2.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B2.4)}
+\labsec{hemato_considerations_B2.4}
+
+\end{document}

@@ -1,0 +1,20 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\mainmatter\setchapterstyle{kao}}{}
+\appendix
+\def\appendixcollectionparent{true}
+\ifSubfilesClassLoaded{
+  \subfile{\booknlroot appendices/appendix 1: Physiology/physiology-volume.tex}
+  \subfile{\booknlroot appendices/appendix 2: Pharmacology/pharmacology-volume.tex}
+}{
+  \subfile{appendix 1: Physiology/physiology-volume.tex}
+  \subfile{appendix 2: Pharmacology/pharmacology-volume.tex}
+}
+\end{document}
