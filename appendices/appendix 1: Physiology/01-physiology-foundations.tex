@@ -1,0 +1,26 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{A}{1}
+  \fi
+}{}
+\chapter{Introduction to the Cellular and Molecular Basics of Physiology}
+\margintoc
+
+The physiology section of this book is mainly based on physiology from Ganong's Review of Medical Physiology (24th ed.) and also draws from Guyton and Hall Physiology (15th ed.) and Berne and Levy Physiology (8th ed.)
+
+หมายเหตุ: วิชาสรีรวิทยามีเนื้อหากว้างมาก บทนี้จึงเป็นเพียงสรุปความรู้จากมุมมองของนักศึกษาคนหนึ่ง เนื้อหาอาจไม่ครบถ้วนหรือมีข้อผิดพลาดบ้าง (แต่ก็หวังว่าจะเป็นประโยชน์นะ!)
+
+\section{Basic Biochemistry}
+Balance is at the core of physiology, from pressure between the fluid compartments to blood concentration to pH.
+
+\end{document}

@@ -1,8 +1,18 @@
 % !TEX program = xelatex
+\makeatletter
+\IfFileExists{Book\space NL/main.tex}
+  {\def\booknlroot{Book\space NL/}}
+  {\IfFileExists{../../main.tex}
+    {\def\booknlroot{../../}}
+    {\IfFileExists{../main.tex}
+      {\def\booknlroot{../}}
+      {\def\booknlroot{}}}}
+\edef\input@path{{\booknlroot}{\booknlroot template/}}
+\makeatother
 \PassOptionsToPackage{compatibility=false}{caption}
 \documentclass[
     secnumdepth=1,
-]{kaobook}
+]{template/kaobook}
 
 % Choose the languages
 \usepackage[main=english]{babel} 
@@ -14,43 +24,58 @@
 \usepackage{unicode-math}
 
 % Use visually matched Latin and Thai sans fonts; Sarabun is not installed here.
-\setmainfont{Noto Sans Condensed}
+\setmainfont{Noto Sans Condensed}[SlantedFont={Noto Sans Condensed Italic}]
 \setsansfont{Noto Sans Condensed}
 \setmonofont{Latin Modern Mono}
 \setmathfont{Latin Modern Math}
-\newfontfamily\thaifont{Noto Sans Thai}[Script=Thai, Scale=MatchLowercase]
-\usepackage[Thai]{ucharclasses}
-\setTransitionsFor{Thai}{\begingroup\thaifont}{\endgroup}
+\newfontfamily\thaifont{Noto Sans Thai UI}[Script=Thai, Scale=MatchLowercase]
+\usepackage[BasicLatin,Thai]{ucharclasses}
+\setTransitionsFor{Thai}{\thaifont}{\normalfont}
+\XeTeXlinebreaklocale "th"
+\XeTeXlinebreakskip=0pt plus 1pt
 
 % Load packages for testing
 \usepackage{blindtext}
 
 % Load the bibliography package
-\usepackage{kaobiblio}
-\addbibresource{main.bib} % Bibliography file
+\usepackage{template/kaobiblio}
+\edef\booknlbibresource{\booknlroot main.bib}
+\addbibresource{\booknlbibresource} % Bibliography file
 
 % Load mathematical packages for theorems and related environments
-\usepackage{kaotheorems}
+\usepackage{template/kaotheorems}
 
 % Load the package for hyperreferences
-\usepackage{kaorefs}
+\usepackage{template/kaorefs}
+\usepackage{subfiles}
+\AtBeginDocument{\ifSubfilesClassLoaded{\nocite{Venter2001c}}{}}
+\usepackage{pdflscape}
 
-\graphicspath{{images/}{./}} % Paths where images are looked for
+\graphicspath{{\booknlroot assets/}{\booknlroot images/}{\booknlroot ./}} % Paths where images are looked for
+\newcommand{\standalonechaptersetup}[1]{\mainmatter\setchapterstyle{kao}\setcounter{chapter}{#1}}
+\newcommand{\standaloneappendixsetup}[1]{\mainmatter\setchapterstyle{kao}\appendix\setcounter{chapter}{#1}}
+\newcommand{\appendixchaptergroup}[1]{\setcounter{chapter}{0}\renewcommand{\thechapter}{#1.\arabic{chapter}}\renewcommand{\theHchapter}{appendix#1.\arabic{chapter}}}
+\newcommand{\standaloneappendixchaptersetup}[2]{\mainmatter\setchapterstyle{kao}\appendix\appendixchaptergroup{#1}\setcounter{chapter}{\numexpr#2-1\relax}}
 
-\makeindex[columns=3, title=Alphabetical Index, intoc] % Make LaTeX produce the files required to compile the index
+\makeindex[columns=3, title=Index, intoc] % Make LaTeX produce the files required to compile the index
 
 
 \begin{document}
+\raggedbottom
+\renewcaptionname{english}{\contentsname}{Table of Contents}
+
 
 %----------------------------------------------------------------------------------------
 %   BOOK INFORMATION
 %----------------------------------------------------------------------------------------
 
-\titlehead{New NL1 Comprehensive Reference}
-\title[Template for the {\normalfont\texttt{kaobook}} Class]{Template for the {\normalfont\texttt{kaobook}} Class}
+%\titlehead{New NL1 Comprehensive Reference}
+\title[NL1 Guide]{Comprehensive Content Guide for the Thai NL1}
 \author[JBG]{Natanon Kittimongkolsuk}
 \date{\today}
-\publishers{An Awesome Publisher}
+\publishers{None}
+
+\input{cover.tex}
 
 %----------------------------------------------------------------------------------------
 
@@ -64,15 +89,17 @@
 \uppertitleback{\@titlehead} % Header
 
 \lowertitleback{
-    \textbf{Disclaimer} \\
-    You can edit this page to suit your needs. For instance, here we have a no copyright statement, a colophon and some other information. This page is based on the corresponding page of Ken Arroyo Ohori's thesis, with minimal changes.
+    \textbf{Notice} \\
+    This publication draws in part on the structure of the corresponding page in Ken Arroyo Ohori's thesis, with appropriate modifications. The authors gratefully acknowledge the creators of KMOA-Script and kaobook, whose work provided an essential foundation for this document, as well as the contributions of other referenced works incorporated herein. This text is prepared solely for academic and educational purposes, and no copyright infringement is intended. While reasonable efforts have been made to promote accuracy and completeness, the material is provided without any express or implied warranty. This document is not an official publication of the แพทยสภา; its contents should not be interpreted as authoritative, complete, or error-free. The authors disclaim all liability for erros or omissions, as well as any consequeences from the information contained herein. Application in clinical practice remains the responsibility of the practitioner.
+
+    อัตตานัง อุปมัง กเร
     
     \medskip
     
     \textbf{Creative Commons} \\
     \ccbysa \space{}This book is released under the CC BY-SA license.
     
-    To view a copy of the CC code, visit: \\\url{https://creativecommons.org/licenses/by-sa/4.0/}
+    To obtain a copy of the CC BY-SA licence, visit: \\\url{https://creativecommons.org/licenses/by-sa/4.0/}
     
     \medskip
     
@@ -91,15 +118,17 @@
 %----------------------------------------------------------------------------------------
 
 \dedication{
-    The harmony of the world is made manifest in Form and Number, and the heart and soul and all the poetry of Natural Philosophy are embodied in the concept of mathematical beauty.\\
-    \flushright -- D'Arcy Wentworth Thompson
+    ความสำเร็จที่แท้จริง ไม่ใช่แค่การเรียนรู้ แต่อยู่ที่การนำไปประยุกต์ใช้ให้เกิดประโยชน์ต่อมวลมนุษยชาติ\\
+    \flushright -- สมเด็จพระมหิตลาธิเบศร อดุลยเดชวิกรม พระบรมราชชนก
 }
 
 %----------------------------------------------------------------------------------------
 %   OUTPUT TITLE PAGE AND PREVIOUS
 %----------------------------------------------------------------------------------------
 
-\maketitle
+\makecoverpage
+\makecopyrightpage
+\makededicationpage
 
 %----------------------------------------------------------------------------------------
 %   PREFACE
@@ -130,26 +159,24 @@
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
 \setchapterstyle{kao} % Choose the default chapter heading style
 
-\input{chapters/chapter1.tex}
-
-%For blanking page
-\pagelayout{wide} % No margins
-\addpart{Title of the Part}
-\pagelayout{margin} % Restore margins
+\subfile{\booknlroot chapters/chapter0.tex} % Draft/debug chapter for notes and planning
+\subfile{\booknlroot chapters/chapter1.tex}
+\subfile{\booknlroot chapters/chapter2.tex}
+\subfile{\booknlroot chapters/chapter3.tex}
+\subfile{\booknlroot chapters/chapter4.tex}
+\subfile{\booknlroot chapters/chapter5.tex}
+\subfile{\booknlroot chapters/chapter6.tex}
+\subfile{\booknlroot chapters/chapter7.tex}
+\subfile{\booknlroot chapters/chapter8.tex}
+\subfile{\booknlroot chapters/chapter9.tex}
+\subfile{\booknlroot chapters/chapter10.tex}
+\subfile{\booknlroot chapters/chapter11.tex}
 
 %----------------------------------------------------------------------------------------
-%   APPENDIX
+%   APPENDICES
 %----------------------------------------------------------------------------------------
 
-\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
-
-\pagelayout{wide} % No margins
-\addpart{Appendix}
-\pagelayout{margin} % Restore margins
-
-\chapter{Some more blindtext}
-
-\blindtext
+\subfile{\booknlroot appendices/appendix-volume.tex}
 
 %----------------------------------------------------------------------------------------
 
@@ -160,7 +187,7 @@
 %   BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\defbibnote{bibnote}{Here are the references in citation order.\par\bigskip} % Prepend this text to the bibliography
+\defbibnote{bibnote}{Key references utilized in this work\par\bigskip} % Prepend this text to the bibliography
 \nocite{Venter2001c}
 \begingroup
 \selectlanguage{english}

@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{9}}{}
+\chapter{Renal/Urinary System (B9)}
+\margintoc
+\section[Normal (B9.1)]{Normal processes (B9.1)}
+\labsec{renal_urinary_normal_B9.1}
+
+\section[Abnormal (B9.2)]{Abnormal processes (B9.2)}
+\labsec{renal_urinary_abnormal_B9.2}
+
+\section[Therapeutics (B9.3)]{Principles of therapeutics (B9.3)}
+\labsec{renal_urinary_therapeutics_B9.3}
+
+\section[Health and social factors (B9.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B9.4)}
+\labsec{renal_urinary_considerations_B9.4}
+\end{document}

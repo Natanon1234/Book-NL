@@ -25,7 +25,7 @@
 %----------------------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{kaobook}[2021/06/02 v0.9.7 kaobook]
+\ProvidesClass{\@currpath\@currname}[2021/06/02 v0.9.7 kaobook]
 \newcommand{\@baseclass}{scrbook} % Base class name
 
 %\RequirePackage{kvoptions} % Manage class key-value options
@@ -56,7 +56,7 @@
 \DefineFamilyKey[kaobook]{kao}{secnumdepth}[1]{\setcounter{secnumdepth}{#1}\FamilyKeyStateProcessed}
 \FamilyProcessOptions[kaobook]{kao}
 
-\RequirePackage{kao} % Load the code common to all classes
+\RequirePackage{template/kao} % Load the code common to all classes
 
 %----------------------------------------------------------------------------------------
 %	FRONT-, MAIN-, BACK- MATTERS BEHAVIOUR

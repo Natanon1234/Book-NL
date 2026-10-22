@@ -1,8 +1,11 @@
-\ProvidesPackage{kao}
+\ProvidesPackage{\@currpath\@currname}
 
 %----------------------------------------------------------------------------------------
 %	USEFUL PACKAGES AND COMMANDS
 %----------------------------------------------------------------------------------------
+
+% Use a clearer heading for the main table of contents.
+\AtBeginDocument{\renewcaptionname{english}{\contentsname}{Table of Contents}}
 
 \RequirePackage{etoolbox}
 \RequirePackage{silence}
@@ -16,7 +19,7 @@
 \RequirePackage{xpatch} % Patch LaTeX code in external packages
 \RequirePackage{xstring} % Parse strings
 \RequirePackage{afterpage} % Run commands after specific pages
-\RequirePackage{imakeidx} % For the index; must be loaded before the 'caption' and 'hyperref' packages
+\RequirePackage[noautomatic,quiet]{imakeidx} % For the index; latexmk processes the generated index file
 \RequirePackage{varioref} % For the cross-references; must be loaded before the 'hyperref' and 'cleveref' packages
 
 % Define \Ifthispageodd (with a capital 'i') to make kaobook compatible with older KOMAScript versions
@@ -206,33 +209,35 @@
 % Style with chapter number, chapter title, and page in the header (used throughout the document)
 \renewpagestyle{scrheadings}{%
     {\smash{\hspace{-\headmarginparwidth}\hspace{-\headmarginparsep}\makebox[\headtotal][l]{%
-        \makebox[7\hscale][r]{\thepage}%
+        \makebox[7\hscale]{}%
 		\makebox[3\hscale]{}\rule[-1mm]{0.5pt}{19\vscale-1mm}\makebox[3\hscale]{}%
 		\makebox[\headtextwidth][l]{\leftmark}}}}%
 	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{%
 		\makebox[\headtextwidth][r]{\hfill\rightmark}%
 		\makebox[3\hscale]{}\rule[-1mm]{0.5pt}{19\vscale-1mm}\makebox[3\hscale]{}%
-		\makebox[7\hscale][l]{\thepage}}}}}%
+		\makebox[7\hscale]{}}}}}%
 	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{%
 		\makebox[\headtextwidth][r]{\hfill\rightmark}%
 		\makebox[3\hscale]{}\rule[-1mm]{0.5pt}{19\vscale-1mm}\makebox[3\hscale]{}%
-		\makebox[7\hscale][l]{\thepage}}}}}%
+		\makebox[7\hscale]{}}}}}%
 }{%
-    {}%
-	{}%
-	{}%
+    {\smash{\hspace{-\headmarginparwidth}\hspace{-\headmarginparsep}\makebox[\headtotal][l]{\thepage}}}%
+	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{\thepage}}}}%
+	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{\thepage}}}}%
 }
 
-% Style with neither header nor footer (used for special pages)
+% Style for chapter-opening pages, with the folio at the outside bottom corner
 \renewpagestyle{plain.scrheadings}{%
 	{}%
 	{}%
 	{}%
 }{%
-	{}%
-	{}%
-	{}%
+	{\smash{\hspace{-\headmarginparwidth}\hspace{-\headmarginparsep}\makebox[\headtotal][l]{\thepage}}}%
+	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{\thepage}}}}%
+	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{\thepage}}}}%
 }
+
+\KOMAoptions{cleardoublepage=plain.scrheadings}
 
 % Style with an empty header and the page number in the footer
 \newpagestyle{pagenum.scrheadings}{%
@@ -259,7 +264,7 @@
 % Command to print a blank page
 \newcommand\blankpage{%
 	\null%
-	\thispagestyle{empty}%
+	\thispagestyle{plain.scrheadings}%
 	\newpage%
 }
 
@@ -474,7 +479,7 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage{graphicx} % Include figures
-\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
+\setkeys{Gin}{width=\linewidth,height=.78\textheight,keepaspectratio} % Scale figures as large as possible within the current text area
 \RequirePackage{tikz} % Allows to draw custom shapes
 \RequirePackage{tikzpagenodes} % Allows to anchor tikz nodes to page elements
 \RequirePackage{booktabs} % Nicer tables
@@ -899,8 +904,8 @@
         }{% no TOC arg
             \oldsection[#2]{#3}%
         }%
-        \IfNoValueTF{#4}{% optional label given, if not we do nothing
-            \mtocsection{#3}%
+        \IfNoValueTF{#4}{% reuse the regular TOC title unless a margin title is supplied
+            \IfNoValueTF{#2}{\mtocsection{#3}}{\mtocsection{#2}}%
         }{%
             \mtocsection{#4}%
         }%
@@ -919,8 +924,8 @@
         }{% no TOC arg
             \oldsubsection[#2]{#3}%
         }%
-        \IfNoValueTF{#4}{% optional label given, if not we do nothing
-            \mtocsubsection{#3}%
+        \IfNoValueTF{#4}{% reuse the regular TOC title unless a margin title is supplied
+            \IfNoValueTF{#2}{\mtocsubsection{#3}}{\mtocsubsection{#2}}%
         }{%
             \mtocsubsection{#4}%
         }%
@@ -933,6 +938,7 @@
 % Command to print a table of contents in the margin
 \NewDocumentCommand{\margintoc}{O{\mtocshift}}{ % The first parameter is the vertical offset; by default it is \mtocshift
     \begingroup%
+        \hbadness=10000\relax
         % Move regular section and subsection to level 6 so that they won't be included and instead set let the mtoc versions take their place.
         % Adapted from https://tex.stackexchange.com/a/133559/226693
         \etocsetlevel{section}{6}
@@ -1193,6 +1199,28 @@
 	backgroundcolor=RoyalBlue!25!White,
 	frametitlebackgroundcolor=RoyalBlue!25!White,
 ]{kaobox}
+
+\newmdenv[
+	style=kaoboxstyle,
+	backgroundcolor=ForestGreen!12!White,
+	frametitlebackgroundcolor=ForestGreen!25!White,
+	frametitle={Clinical correlation},
+]{clinicalcorrelation}
+
+\newmdenv[
+	style=kaoboxstyle,
+	backgroundcolor=RedOrange!12!White,
+	frametitlebackgroundcolor=RedOrange!25!White,
+	frametitle={Test correlation},
+]{testcorrelation}
+
+\NewDocumentCommand{\marginclinicalcorrelation}{O{} +m}{%
+	\marginnote[#1]{\begin{clinicalcorrelation}#2\end{clinicalcorrelation}}%
+}
+
+\NewDocumentCommand{\margintestcorrelation}{O{} +m}{%
+	\marginnote[#1]{\begin{testcorrelation}#2\end{testcorrelation}}%
+}
 
 %----------------------------------------------------------------------------------------
 %	ENVIRONMENT WITH A COUNTER

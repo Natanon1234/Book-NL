@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{3}}{}
+\chapter{Central and Peripheral Nervous Systems (B3)}
+\margintoc
+\section[Normal (B3.1)]{Normal processes (B3.1)}
+\labsec{neuro_normal_B3.1}
+
+\section[Abnormal (B3.2)]{Abnormal processes (B3.2)}
+\labsec{neuro_abnormal_B3.2}
+
+\section[Therapeutics (B3.3)]{Principles of therapeutics (B3.3)}
+\labsec{neuro_therapeutics_B3.3}
+
+\section[Health and social factors (B3.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B3.4)}
+\labsec{neuro_considerations_B3.4}
+\end{document}

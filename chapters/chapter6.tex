@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{6}}{}
+\chapter{Respiratory System (B6)}
+\margintoc
+\section[Normal (B6.1)]{Normal processes (B6.1)}
+\labsec{respiratory_normal_B6.1}
+
+\section[Abnormal (B6.2)]{Abnormal processes (B6.2)}
+\labsec{respiratory_abnormal_B6.2}
+
+\section[Therapeutics (B6.3)]{Principles of therapeutics (B6.3)}
+\labsec{respiratory_therapeutics_B6.3}
+
+\section[Health and social factors (B6.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B6.4)}
+\labsec{respiratory_considerations_B6.4}
+\end{document}

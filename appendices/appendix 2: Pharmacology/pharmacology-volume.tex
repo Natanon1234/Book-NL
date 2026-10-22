@@ -1,0 +1,31 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixcollectionparent\endcsname
+  \else
+    \mainmatter
+    \setchapterstyle{kao}
+    \appendix
+  \fi
+}{}
+\appendixchaptergroup{B}
+\pagelayout{wide}
+\addpart{Appendix B: Pharmacology}
+\pagelayout{margin}
+
+\def\appendixchapterparent{true}
+\ifcsname appendixcollectionparent\endcsname
+  \subfile{overview-of-pharmacology.tex}
+  \subfile{02-safe-prescribing.tex}
+\else
+  \subfile{\booknlroot appendices/appendix 2: Pharmacology/overview-of-pharmacology.tex}
+  \subfile{\booknlroot appendices/appendix 2: Pharmacology/02-safe-prescribing.tex}
+\fi
+\end{document}

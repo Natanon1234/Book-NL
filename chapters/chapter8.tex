@@ -1,0 +1,24 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{8}}{}
+\chapter{Gastrointestinal System (B8)}
+\margintoc
+\section[Normal (B8.1)]{Normal processes (B8.1)}
+\labsec{gastrointestinal_normal_B8.1}
+
+\section[Abnormal (B8.2)]{Abnormal processes (B8.2)}
+\labsec{gastrointestinal_abnormal_B8.2}
+
+\section[Therapeutics (B8.3)]{Principles of therapeutics (B8.3)}
+\labsec{gastrointestinal_therapeutics_B8.3}
+
+\section[Health and social factors (B8.4)]{Gender, ethnic, and behavioral considerations affecting disease treatment and prevention, including psychosocial, cultural, occupational, and environmental (B8.4)}
+\labsec{gastrointestinal_considerations_B8.4}
+\end{document}

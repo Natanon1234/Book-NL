@@ -1,0 +1,37 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{B}{2}
+  \fi
+}{}
+\chapter{Safe and Rational Prescribing}
+\margintoc
+
+\section{Selecting a treatment}
+
+Rational treatment begins with a clear therapeutic goal and a review of the
+patient's relevant conditions, current medicines, allergies, and preferences.
+The expected benefit should be weighed against potential harm and practical
+constraints.
+
+\section{Medication safety}
+
+Safe medication use depends on accurate prescribing, dispensing, administration,
+and follow-up. Clear instructions, medication reconciliation, and attention to
+interactions and duplicate therapies can reduce preventable errors.
+
+\section{Monitoring response}
+
+Follow-up should assess whether the intended effect is achieved and whether
+adverse effects have occurred. The choice and timing of monitoring depend on
+the medicine, the patient's risk factors, and the treatment goal.
+\end{document}
