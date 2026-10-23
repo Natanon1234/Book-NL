@@ -20,33 +20,34 @@ General chapter outline:
 
 \section{Content Planning}
 \labsec{contentplan}
-Content \index{outline}, NL alignment and roles: % Example syntax to include a key term in the index
-
-small The detailed content rows below transcribe Part 1A, “Basic Medical Sciences,” from Medical Council Notification 12/2555. The topic hierarchy and must-know/should-know entries retain the source wording; only line wrapping is normalized. PDF page numbers are shown in the final column. Planning weights, item counts, and author assignments are editorial planning fields and are not stated in the notification. The colors denote the source's learning-priority categories, not the likelihood of appearing on any one examination. Source: \texttt{prism-uploads/595\_ประกาศแพทยสภา-ที่-12-2555.pdf}.
+This table organizes the Part 1A (Basic Medical Sciences) competencies in Medical Council Notification 12/2555. Weights, item counts, and author assignments are editorial planning fields.
 
 \definecolor{alignmentblue}{HTML}{DCEAF7}
 \definecolor{alignmentyellow}{HTML}{FFF2CC}
 \definecolor{alignmentred}{HTML}{F4CCCC}
 
+\pagelayout{wide}
 \begin{landscape}
 \begingroup
-\scriptsize
-\setlength{\tabcolsep}{2pt}
-\renewcommand{\arraystretch}{1.08}
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
 \setlength{\parskip}{0pt}
-\begin{longtable}{@{}>{\RaggedRight\arraybackslash}p{0.60\textwidth}>{\Centering\arraybackslash}p{0.07\textwidth}>{\Centering\arraybackslash}p{0.08\textwidth}>{\RaggedRight\arraybackslash}p{0.14\textwidth}>{\Centering\arraybackslash}p{0.07\textwidth}@{}}
+\begin{longtable}{@{}>{\RaggedRight\arraybackslash}p{0.68\linewidth}>{\Centering\arraybackslash}p{0.08\linewidth}>{\Centering\arraybackslash}p{0.09\linewidth}>{\RaggedRight\arraybackslash}p{0.12\linewidth}@{}}
 \toprule
-\textbf{Content Area and Verbatim Listed Items} & \textbf{Weight (\%)} & \textbf{No. of Items} & \textbf{Person Responsible} & \textbf{PDF Page} \\
-\textit{Official Part 1A hierarchy and scope} & & & \textit{Major author} & \\
+\textbf{Competency / Topic} & \textbf{Weight (\%)} & \textbf{Items} & \textbf{Author} \\
+\textit{Part 1A: Basic Medical Sciences} & & & \textit{Lead author} \\
 \midrule
 \endfirsthead
 \toprule
-\textbf{Content Area and Verbatim Listed Items} & \textbf{Weight (\%)} & \textbf{No. of Items} & \textbf{Person Responsible} & \textbf{PDF Page} \\
-\textit{Official Part 1A hierarchy and scope} & & & \textit{Major author} & \\
+\textbf{Competency / Topic} & \textbf{Weight (\%)} & \textbf{Items} & \textbf{Author} \\
+\textit{Part 1A: Basic Medical Sciences} & & & \textit{Lead author} \\
 \midrule
 \endhead
 \midrule
-\multicolumn{5}{r}{\footnotesize Continued on next page} \\
+\multicolumn{4}{r}{\footnotesize Continued on next page} \\
 \endfoot
 \bottomrule
 \endlastfoot
@@ -54,6 +55,7 @@ small The detailed content rows below transcribe Part 1A, “Basic Medical Scien
 \end{longtable}
 \endgroup
 \end{landscape}
+\pagelayout{margin}
 
 
 
@@ -66,7 +68,7 @@ small The detailed content rows below transcribe Part 1A, “Basic Medical Scien
 
 \section{Example Figures/templates}
 % Example Clinical Correlation (sidebar)
-\marginclinicalcorrelation[.5cm]{Connect a mechanism to bedside recognition, diagnosis, or management. For example, altered gene expression can explain why the same mutation may produce different clinical severity across patients.}
+\marginclinicalcorrelation[.5cm][frametitle={Clinical takeaway},backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]{Connect a mechanism to bedside recognition, diagnosis, or management. For example, altered gene expression can explain why the same mutation may produce different clinical severity across patients.}
 
 % Example Figure (in text)
 \begin{center}
@@ -84,9 +86,19 @@ small The detailed content rows below transcribe Part 1A, “Basic Medical Scien
 
 % Example Clinical Correlation (in text)
 \begin{clinicalcorrelation}
-  Connect a mechanism to bedside recognition, diagnosis, or management.
-  For example, altered gene expression can explain why the same mutation may produce
-  different clinical severity across patients.
+  Default title and green color; no options are needed.
+\end{clinicalcorrelation}
+
+\begin{clinicalcorrelation}[frametitle={Clinical takeaway}]
+  A custom title can use the default green colors.
+\end{clinicalcorrelation}
+
+\begin{clinicalcorrelation}[backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]
+  The default title can be paired with a different color.
+\end{clinicalcorrelation}
+
+\begin{clinicalcorrelation}[frametitle={From mechanism to patient},backgroundcolor=BurntOrange!12!White,frametitlebackgroundcolor=BurntOrange!25!White]
+  A custom title and color can be combined. For example, altered gene expression can explain differences in clinical severity.
 \end{clinicalcorrelation}
 
 % Example Test Correlation (in text)

@@ -54,7 +54,7 @@
 \graphicspath{{\booknlroot assets/}{\booknlroot images/}{\booknlroot ./}} % Paths where images are looked for
 \newcommand{\standalonechaptersetup}[1]{\mainmatter\setchapterstyle{kao}\setcounter{chapter}{#1}}
 \newcommand{\standaloneappendixsetup}[1]{\mainmatter\setchapterstyle{kao}\appendix\setcounter{chapter}{#1}}
-\newcommand{\appendixchaptergroup}[1]{\setcounter{chapter}{0}\renewcommand{\thechapter}{#1.\arabic{chapter}}\renewcommand{\theHchapter}{appendix#1.\arabic{chapter}}}
+\newcommand{\appendixchaptergroup}[1]{\setcounter{chapter}{0}\renewcommand{\thechapter}{#1\arabic{chapter}}\renewcommand{\theHchapter}{appendix#1\arabic{chapter}}\setcounter{secnumdepth}{3}}
 \newcommand{\standaloneappendixchaptersetup}[2]{\mainmatter\setchapterstyle{kao}\appendix\appendixchaptergroup{#1}\setcounter{chapter}{\numexpr#2-1\relax}}
 
 \makeindex[columns=3, title=Index, intoc] % Make LaTeX produce the files required to compile the index
