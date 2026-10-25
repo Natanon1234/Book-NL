@@ -1,0 +1,20 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{\standalonechaptersetup{12}}{}
+\chapter{Chapter title}
+\labch{chapter-key}
+\margintoc
+
+% Add sections and chapter content below.
+% Example:
+% \section{Section title}
+% \labsec{section-key}
+
+\end{document}

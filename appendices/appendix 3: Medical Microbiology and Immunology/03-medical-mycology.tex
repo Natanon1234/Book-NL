@@ -1,0 +1,20 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{C}{3}
+  \fi
+}{}
+\chapter{Medical Mycology: Fungi and Fungal Diseases}
+\labch{appendix-c3-medical-mycology}
+\margintoc
+
+\end{document}

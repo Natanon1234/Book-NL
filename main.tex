@@ -26,8 +26,8 @@
 % Use visually matched Latin and Thai sans fonts; Sarabun is not installed here.
 \setmainfont{Noto Sans Condensed}[SlantedFont={Noto Sans Condensed Italic}]
 \setsansfont{Noto Sans Condensed}
-\setmonofont{Latin Modern Mono}
-\setmathfont{Latin Modern Math}
+\setmonofont{lmmono10-regular.otf}
+\setmathfont{latinmodern-math.otf}
 \newfontfamily\thaifont{Noto Sans Thai UI}[Script=Thai, Scale=MatchLowercase]
 \usepackage[BasicLatin,Thai]{ucharclasses}
 \setTransitionsFor{Thai}{\thaifont}{\normalfont}
@@ -47,11 +47,16 @@
 
 % Load the package for hyperreferences
 \usepackage{template/kaorefs}
+\hypersetup{hypertexnames=false}
 \usepackage{subfiles}
 \AtBeginDocument{\ifSubfilesClassLoaded{\nocite{Venter2001c}}{}}
 \usepackage{pdflscape}
 
-\graphicspath{{\booknlroot assets/}{\booknlroot images/}{\booknlroot ./}} % Paths where images are looked for
+\graphicspath{{\booknlroot assets/}{\booknlroot chapters/images/}{\booknlroot appendices/appendix 1: Physiology/images/}{\booknlroot appendices/appendix 2: Pharmacology/images/}{\booknlroot ./}} % Paths where images are looked for
+\newcommand{\bookrunningtitle}{NL1 Guide - Natanon Kittimongkulsuk}
+\renewcommand{\chaptermark}[1]{\markboth{\bookrunningtitle}{\thechapter\enspace #1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace #1}}
+\renewcommand{\subsectionmark}[1]{}
 \newcommand{\standalonechaptersetup}[1]{\mainmatter\setchapterstyle{kao}\setcounter{chapter}{#1}}
 \newcommand{\standaloneappendixsetup}[1]{\mainmatter\setchapterstyle{kao}\appendix\setcounter{chapter}{#1}}
 \newcommand{\appendixchaptergroup}[1]{\setcounter{chapter}{0}\renewcommand{\thechapter}{#1\arabic{chapter}}\renewcommand{\theHchapter}{appendix#1\arabic{chapter}}\setcounter{secnumdepth}{3}}
@@ -79,8 +84,6 @@
 
 %----------------------------------------------------------------------------------------
 
-\frontmatter % Denotes the start of the pre-document content, uses roman numerals
-
 %----------------------------------------------------------------------------------------
 %   COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
@@ -90,7 +93,7 @@
 
 \lowertitleback{
     \textbf{Notice} \\
-    This publication draws in part on the structure of the corresponding page in Ken Arroyo Ohori's thesis, with appropriate modifications. The authors gratefully acknowledge the creators of KMOA-Script and kaobook, whose work provided an essential foundation for this document, as well as the contributions of other referenced works incorporated herein. This text is prepared solely for academic and educational purposes, and no copyright infringement is intended. While reasonable efforts have been made to promote accuracy and completeness, the material is provided without any express or implied warranty. This document is not an official publication of the แพทยสภา; its contents should not be interpreted as authoritative, complete, or error-free. The authors disclaim all liability for erros or omissions, as well as any consequeences from the information contained herein. Application in clinical practice remains the responsibility of the practitioner.
+    This publication draws in part on the structure of the corresponding page in Ken Arroyo Ohori's thesis, with appropriate modifications. The authors gratefully acknowledge the creators of KMOA-Script and kaobook, whose work provided an essential foundation for this document, as well as the contributions of other referenced works incorporated herein. This text is prepared solely for academic and educational purposes, and no copyright infringement is intended. While reasonable efforts have been made to promote accuracy and completeness, the material is provided without any express or implied warranty. This document is not an official publication of the แพทยสภา; its contents should not be interpreted as authoritative, complete, or error-free. The authors disclaim all liability for errors or omissions, as well as any consequences from the information contained herein. Application in clinical practice remains the responsibility of the practitioner. For any feedback on mistakes, omissions or other contents of the textbook, feel free to contact Natanon Kittimongkolsuk (\href{mailto:natanonkitti@gmail.com}{natanonkitti@gmail.com}).
 
     อัตตานัง อุปมัง กเร
     
@@ -101,6 +104,11 @@
     
     To obtain a copy of the CC BY-SA licence, visit: \\\url{https://creativecommons.org/licenses/by-sa/4.0/}
     
+    \medskip
+
+    \textbf{Build date} \\
+    \@date
+
     \medskip
     
     \textbf{Colophon} \\
@@ -127,6 +135,10 @@
 %----------------------------------------------------------------------------------------
 
 \makecoverpage
+\makeatletter
+\@mainmatterfalse
+\makeatother
+\pagenumbering{roman} % Start lowercase Roman page numbering after the unnumbered cover
 \makecopyrightpage
 \makededicationpage
 
@@ -135,7 +147,12 @@
 %----------------------------------------------------------------------------------------
 
 \chapter*{Preface}
-\blindtext
+Alas, dear reader, medicine is as much a science as it is an art. No one person can claim to know the entire body of knowledge involved in medical practice. However, some fundamentals remain hard truths in the medical field, and they are tested in practically all medical examinations. Therefore, we, as the authors, have aimed to write extensively and, hopefully, in an approachable manner, about the topics that will appear time and time again. We have designed this text around the content outlines provided by the แพทยสภา and have organized it using a systems-based approach to medicine that can serve practitioners at all levels. While no text can claim to be a complete representation of medicine, we aim to represent the current state of the art as accurately as possible. Although we have made every effort to check and verify the knowledge presented in this text, errors may remain. If so, please feel free to contact us. We hope that this text will serve useful for both the medical student looking to prepare for examinations, as well as the practicing medical practitioner. Finally, we hope that you will enjoy reading the text as much as we have enjoyed writing it!
+
+\begin{flushright}
+Natanon Kititmongkolsuk\\
+Chief Editor
+\end{flushright}
 
 %----------------------------------------------------------------------------------------
 %   TABLE OF CONTENTS & LIST OF FIGURES/TABLES

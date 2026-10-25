@@ -1,0 +1,112 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{C}{2}
+  \fi
+}{}
+\chapter{Virology: Viruses and Viral Diseases}
+\labch{appendix-c2-virology}
+\margintoc
+
+While the preceding sections of our text discuss medical microbiology from a systems-based perspective, this section introduces the foundations of medical virology and provides an overview of this ever-expanding field. This section is designed to present a ``microbe parade'' of sorts (following Murray's approach\footnote{Hopefully it is abundantly clear that we intend to focus on knowledge with greatest relevance in practice for the Southeast Asian practitioner.}) and act as a summary of the knowledge presented in the preceding sections.
+
+Personally, I find that medical microbiology is one of the most difficult topics in all of clinical medicine, if not the most difficult, thanks in part to the massive body of knowledge that must be remembered and understood by medical students. As such, I hope that this section serves as a starting point for students looking to develop their understanding and more effectively tackle examinations involving virology and the pathophysiology of infection. Additionally, I note with thanks that the medical virology section of this text is based on the core concepts presented in Section 5 (``Virology,'' chapters 35--56) of \textit{Medical Microbiology}, 10th ed., by \textcite{Murray2026MedicalMicrobiology}.
+
+\begin{center}
+\captionof{table}{Alignment of the virology chapter with NL content objectives. Source: Medical Council Notification 12/2555, Part 1A; coverage reflects the current content of this chapter.}
+\labtab{virology_nl_content_alignment}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{0.14\textwidth}>{\RaggedRight\arraybackslash}p{0.44\textwidth}>{\RaggedRight\arraybackslash}p{0.39\textwidth}@{}}
+\toprule
+\textbf{NL code} & \textbf{Content objective} & \textbf{Coverage in this chapter} \\
+\midrule
+B1.5.7.1 & Microbial classification & Partial: viral genome grouping is introduced; broader microbial classification and formal virus taxonomy need further coverage. \\
+B1.5.7.3 & Viruses and viral diseases & Partial: foundational virology and classification are introduced; detailed replication and clinical disease content remain to be covered. \\
+B1.5.7.3.1 & Physical and chemical properties & Partial: capsid and envelope structure and environmental stability are introduced, but properties are not reviewed systematically. \\
+B1.5.7.3.2 & Replication & Partial: host-cell dependence and Baltimore routes to mRNA are introduced; complete replication cycles remain to be covered. \\
+B1.5.7.3.3 & Genetics & Partial: DNA/RNA genome types are introduced; viral genetics and genetic variation are not covered. \\
+B1.5.7.3.4 & Principles of cultivation, assay, and laboratory diagnosis & Not yet covered. \\
+B1.5.7.3.5 & Molecular basis of pathogenesis & Partial: immune evasion is mentioned, but mechanisms of pathogenesis are not explained. \\
+B1.5.7.3.6 & Pathophysiology of infection & Not yet covered. \\
+B1.5.7.3.7 & Latent and persistent infections & Not yet covered. \\
+B1.5.7.3.8 & Epidemiology & Partial: general transmission routes are listed; virus-specific epidemiology is not covered. \\
+B1.5.7.3.9 & Oncogenic viruses & Not yet covered. \\
+B1.5.7.3.10 & Viral diseases not classified in the system: dengue hemorrhagic fever and chikungunya fever; varicella; zoster; herpes simplex infection; viral exanthems (measles, rubella, erythema infectiosum, exanthema subitum, and hand, foot, and mouth disease); mumps; infectious mononucleosis; and cytomegaloviral infection & Not yet covered: these diseases are not discussed clinically. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\section{Introduction to Medical Virology}
+
+\marginnote{\begin{kaobox}[frametitle={Origins of selected virus names},backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]
+\begin{itemize}
+  \item \textit{Picornaviridae}\index{Picornaviridae} are small RNA viruses; the name combines ``pico'' (small) and RNA.
+  \item \textit{Togaviridae}\index{Togaviridae} have a membrane envelope; the name derives from Latin \textit{toga}, meaning ``cloak.''
+  \item Reoviruses\index{reovirus} are named from ``respiratory, enteric, orphan''; they have segmented double-stranded RNA genomes and do not use reverse transcription.
+  \item Poxviruses\index{poxvirus} are named for pock-like lesions; the family includes variola virus\index{variola virus}, which causes smallpox.
+  \item Adenoviruses\index{adenovirus} were first isolated from adenoid tissue; the family is named \textit{Adenoviridae}\index{Adenoviridae}.
+\end{itemize}
+\end{kaobox}}
+
+\textbf{Viruses}\index{virus} may be defined as microscopic, acellular, \textbf{obligate intracellular infectious agents}\index{obligate intracellular agents} that replicate only within host cells. \textbf{Viral replication}\index{viral replication} depends on host-cell resources and viral components to produce progeny virions\index{virion}.\footnote{They do not reproduce independently or by binary fission; whether viruses are considered living depends on the definition of life.} Not all viral infections cause disease, and viruses vary in their interactions with and evasion of host defenses. Medically important viruses often share characteristics, including (1) the ability to infect susceptible cells and produce viral particles; (2) interactions with host immune defenses, including mechanisms of \textbf{immune evasion}\index{immune evasion}; and (3) \textbf{transmission between hosts}\index{viral transmission} by defined means, often through protective barriers (e.g., contact, respiratory droplets or aerosols, fecal--oral transmission, vectors, or other routes).
+
+Generally, viruses consist of genetic material\index{viral genome} (either \textbf{DNA}\index{DNA}, deoxyribonucleic acid, or \textbf{RNA}\index{RNA}, ribonucleic acid) enclosed in a \textbf{protein capsid}\index{capsid}; some also have a \textbf{lipid envelope}\index{viral envelope}. Genome type and replication strategy (as in the \textbf{Baltimore classification}\index{Baltimore classification}), capsid symmetry\index{capsid symmetry}, and the presence or absence of an envelope help describe viruses, though distinct formal classification systems are also used in practice. Virus names may reflect characteristics such as size, morphology, target infection site, patient symptoms, or genetic composition, though naming and classification are distinct.
+
+\section{The Classification of Viruses}
+
+Four commonly used descriptors for virus classification are (1) genetic composition; (2) capsid symmetry\index{capsid symmetry}\footnote{Surprisingly not much different from a `Dynamite' candy with its soft chocolate core; you can tell I am hungry.}; (3) the presence or absence of a lipid envelope; and (4) the dimensions of the virion\index{virion} or capsid. These features help describe and compare viruses, but formal taxonomy also considers genetic and evolutionary relationships.
+
+Capsid morphology provides a useful structural description. Common forms include helical and icosahedral capsids, while some virions have more complex structures. Envelope status is a separate feature: enveloped virions also have a capsid beneath their lipid membrane.
+
+
+\begin{center}
+  \includegraphics[width=\textwidth]{\booknlroot appendices/appendix 3: Medical Microbiology and Immunology/images/c2-capsid-shapes.png}
+  \captionof{figure}{Three common viral capsid morphologies: helical, icosahedral, and complex. The bacteriophage shown has an icosahedral head and a protein tail with tail fibers. Reproduced from CK-12 Foundation, \textit{The Living Environment}, section 14.2 \cite{CK12CapsidShapes}.}
+  \labfig{c2-capsid-shapes}
+\end{center}
+
+We first focus on classification based on the outer shell of a virus. The outer layer protects the viral genome and assists in delivery to target cells through \textbf{viral attachment proteins (VAPs)}\index{viral attachment protein}.\footnote{Antibodies that block VAPs can prevent viral entry and neutralize some viruses.} The viral genome is enclosed in a protein coat (capsid); enveloped viruses also have a lipid envelope surrounding the capsid.
+
+\section{Non-enveloped Viruses}
+
+Non-enveloped viruses are generally more resistant than enveloped viruses to detergents, drying, acids, and bile due to their rigid protein capsids. This allows many of them to be transmitted by the fecal--oral route\index{fecal-oral transmission}.
+
+\section{Enveloped Viruses}
+
+
+On the other hand, \textbf{enveloped viruses}\index{enveloped virus}, because of their lipid envelopes, are more susceptible to drying, detergents, and solvents. Therefore, they are typically transmitted through fluids (including bodily secretions, blood, and tissue), and many do not survive in the gastrointestinal tract, although this varies among viruses.
+
+\section{The Baltimore Classification}
+
+The Baltimore classification for viruses classifies viruses based on their genetic material.
+
+\begin{center}
+  \includegraphics[width=\textwidth]{\booknlroot appendices/appendix 3: Medical Microbiology and Immunology/images/c2-baltimore-classification.png}
+  \captionof{figure}{The seven groups of the Baltimore classification, organized by viral genome type and the pathway used to produce mRNA and viral proteins. Reproduced from ViralZone \cite{ViralZoneBaltimore}.}
+  \labfig{c2-baltimore-classification}
+\end{center}
+
+\section{Viral Infection}
+% types of viral infections
+% acute and other staging
+
+\subsection{Methods of Viral Entry}
+
+\subsection{Pathogenesis of Viral Infections}
+
+\subsection{Epidemiology \& Mechanisms of Viral Transmission}
+
+
+\end{document}

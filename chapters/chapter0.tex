@@ -8,7 +8,8 @@
 }
 \begin{document}
 \ifSubfilesClassLoaded{\standalonechaptersetup{0}}{}
-\chapter{Debug and Notes}
+\chapter{LaTeX Cookbook and Content Planning}
+\labch{cookbook}
 \margintoc
 \section{Text Outline}
 \labsec{outline}
@@ -59,66 +60,174 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 
 
 
-%Examples
-
 % Example section divider
-\pagelayout{wide} % No margins
+\pagelayout{wide}
 \addpart{Example Code}
-\pagelayout{margin} % Restore margins
+\pagelayout{margin}
 
-\section{Example Figures/templates}
-% Example Clinical Correlation (sidebar)
+\section{Figures and TikZ diagrams}
+\labsec{cookbook-figures}
 \marginclinicalcorrelation[.5cm][frametitle={Clinical takeaway},backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]{Connect a mechanism to bedside recognition, diagnosis, or management. For example, altered gene expression can explain why the same mutation may produce different clinical severity across patients.}
 
-% Example Figure (in text)
+% This self-contained TikZ drawing does not depend on external image assets.
 \begin{center}
-  \includegraphics[width=0.65\textwidth]{\booknlroot images/example_response}
-
-  {\small Example figure: each gene is transcribed into many RNA molecules, which are translated into proteins.}
+  \begin{tikzpicture}[node distance=1.6cm,>=stealth]
+    \node[draw,rounded corners,fill=RoyalBlue!15,minimum width=2.5cm,minimum height=0.8cm] (gene) {Gene};
+    \node[draw,rounded corners,fill=Goldenrod!25,minimum width=2.5cm,minimum height=0.8cm,right of=gene] (rna) {RNA};
+    \node[draw,rounded corners,fill=ForestGreen!18,minimum width=2.5cm,minimum height=0.8cm,right of=rna] (protein) {Protein};
+    \draw[->,thick] (gene) -- node[above]{transcription} (rna);
+    \draw[->,thick] (rna) -- node[above]{translation} (protein);
+  \end{tikzpicture}
+  \captionof{figure}{A TikZ figure with nodes, fills, and arrows.}
+  \labfig{tikz-flow}
 \end{center}
+See \reffig{tikz-flow} for a numbered figure reference. Store external images in the \texttt{images/} folder for the relevant collection: \texttt{chapters/images/} for main-book chapters or the \texttt{images/} folder within the appropriate appendix. Start each filename with its chapter identifier, then describe the image in lowercase hyphenated words (for example, \texttt{a1-membrane-transport-electrochemical-gradient.png}). Include the path from the project root, such as \texttt{\string\includegraphics[width=\string\linewidth]\{\string\booknlroot chapters/images/chapter-0-example-diagram.png\}}.
 
-% Example Figure (main/in text)
-\begin{center}
-  \includegraphics{\booknlroot images/example_dist_expr}
-  \captionof{figure}{Example in-text figure caption: distribution of expression values across samples, highlighting how visual summaries can clarify variation in biological data.}
-  \labfig{example_dist_expr}
-\end{center}
+\begin{marginfigure}
+  \centering
+  \begin{tikzpicture}
+    \draw[fill=RoyalBlue!15] (0,0) circle (0.45cm);
+    \draw[fill=Goldenrod!35] (1,0) circle (0.45cm);
+    \draw[<->,thick] (0.48,0) -- (0.52,0);
+  \end{tikzpicture}
+  \caption{A small margin illustration.}
+  \labfig{margin-example}
+\end{marginfigure}
 
-% Example Clinical Correlation (in text)
+\section{Text, lists, and margin notes}
+\labsec{cookbook-text}
+Use \texttt{\string\section[short title]\{full title\}} when a long heading needs a shorter table-of-contents entry. Place project labels immediately after the item being labeled, such as \texttt{\string\labsec\{unique-key\}} after a section heading.
+
+\subsection{Lists}
+\begin{itemize}
+  \item Use an unordered list for related concepts.
+  \item Nest items when the hierarchy is meaningful.
+  \begin{itemize}
+    \item Nested bullets use the project’s smaller bullet style.
+  \end{itemize}
+\end{itemize}
+\begin{enumerate}
+  \item Use numbered steps when order matters.
+  \item Continue with the next action or consequence.
+\end{enumerate}
+\begin{description}
+  \item[Term] Explain a defined term or a short item-label pair.
+  \item[Second term] Keep descriptions concise and parallel.
+\end{description}
+
+An ordinary margin note can be placed with \texttt{\string\marginnote[.4cm]\{Brief note.\}}. A numbered sidenote uses \texttt{\string\sidenote\{Brief note.\}}; for example, \sidenote{A short note in the outer margin.} Use margin notes sparingly; longer explanations belong in the main text or a box.
+
+\subsection{Project typography helpers}
+The preamble defines small typography helpers: \invitro experiments, \invivo observations, \cis and \trans configurations, \etal citations, \denovo mutations, \adhoc choices, \eg examples, \ie clarifications, and \etcetera. Commands such as \Command{section}, \Package{booktabs}, and \Path{assets/} print technical names consistently.
+
+\section{Boxes and reusable callouts}
+\labsec{cookbook-boxes}
 \begin{clinicalcorrelation}
-  Default title and green color; no options are needed.
+  Default clinical-correlation title and colors.
 \end{clinicalcorrelation}
-
 \begin{clinicalcorrelation}[frametitle={Clinical takeaway}]
-  A custom title can use the default green colors.
+  A custom title with the default colors.
 \end{clinicalcorrelation}
-
 \begin{clinicalcorrelation}[backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]
-  The default title can be paired with a different color.
+  A custom color with the default title.
 \end{clinicalcorrelation}
-
 \begin{clinicalcorrelation}[frametitle={From mechanism to patient},backgroundcolor=BurntOrange!12!White,frametitlebackgroundcolor=BurntOrange!25!White]
-  A custom title and color can be combined. For example, altered gene expression can explain differences in clinical severity.
+  A custom title and coordinated colors.
 \end{clinicalcorrelation}
+\begin{testcorrelation}
+  Use this box for high-yield exam clues and common diagnostic patterns.
+\end{testcorrelation}
+\begin{kaobox}[frametitle={General note}]
+  Use \texttt{kaobox} for a general callout that is neither clinical nor exam-focused.
+\end{kaobox}
+\begin{kaocounter}
+  This comment box receives an automatic chapter-based number like the other callouts.
+\end{kaocounter}
+\margintestcorrelation[.4cm]{A margin-sized test clue can be shown with the project helper.}
 
-% Example Test Correlation (in text)
-\noindent\textbf{Example test correlation.} High-yield exam links belong here: key clues, tested associations, or a diagnostic clue.
-
-% Example table
+\section{Tables and layout variants}
+\labsec{cookbook-tables}
 \begin{center}
-\captionof{table}{Example table: this is an example table format to be used in the textbook.}
+\captionof{table}{Example table with a caption and project label.}
 \labtab{example_planning_table}
-\renewcommand{\arraystretch}{1.25}
+\renewcommand{\arraystretch}{1.2}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
 \toprule
-\textbf{Content Outline} & \textbf{NL Alignment} & \textbf{Role in Chapter} \\
-\textit{Major heading} & \textit{Mapped competency} & \textit{Narrative function} \\
+\textbf{Content} & \textbf{Alignment} & \textbf{Purpose} \\
 \midrule
-\textbf{Core concept} & Relevant national licensing objective or topic area & Establishes the essential mechanism, definition, or framework. \\
-\textbf{Clinical link} & Symptom, sign, diagnosis, investigation, or management item & Connects basic science to bedside reasoning and recognition. \\
-\textbf{Test emphasis} & Common exam clue, association, or decision point & Highlights high-yield material for review and self-checking. \\
-\textbf{Figures and examples} & Visual or applied representation of the competency & Reinforces key relationships through diagrams, cases, or comparisons. \\
+Core concept & Learning objective & Explain the mechanism. \\
+Clinical link & Applied objective & Connect mechanism and patient. \\
 \bottomrule
 \end{tabular}
 \end{center}
+For a compact table in the margin, use \texttt{margintable} and keep it narrow:
+\begin{margintable}
+  \caption{A margin-sized table.}
+  \labtab{margin-example}
+  \small
+  \begin{tabular}{@{}lr@{}}
+    \toprule Item & Value \\
+    \midrule A & 1 \\
+    B & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{margintable}
+
+Use \texttt{\string\pagelayout\{wide\}} for a wide-layout section and restore \texttt{\string\pagelayout\{margin\}} afterward. The \texttt{landscape} environment rotates a page; \texttt{widepar} extends a paragraph into the outer margin; \texttt{fullwidthpar} uses the full page width; and \texttt{wideequation} gives a long equation extra room.
+\pagelayout{wide}
+\begin{widepar}
+This paragraph demonstrates \texttt{widepar}: it uses the text block plus the outer margin. Avoid nesting it inside another width-changing environment.
+\end{widepar}
+\begin{fullwidthpar}
+This short paragraph demonstrates \texttt{fullwidthpar}, which spans the full printable page width.
+\end{fullwidthpar}
+\pagelayout{fullwidth}
+\noindent This line demonstrates the fullwidth page layout.
+\pagelayout{margin}
+
+\section{Equations, definitions, and theorems}
+\labsec{cookbook-math}
+For a numbered equation, add a project label inside the equation environment:
+\begin{equation}
+  C = \frac{n}{V}
+  \labeq{concentration-example}
+\end{equation}
+The relationship is shown in \refeq{concentration-example}. A wide equation can use the \texttt{wideequation} wrapper:
+\begin{wideequation}
+  \Delta G = \Delta G^{\circ} + RT\ln Q
+\end{wideequation}
+\begin{definition}
+  Concentration is the amount of a substance per unit volume.
+  \labdef{concentration-example}
+\end{definition}
+\begin{theorem}
+  In this example, doubling amount while holding volume fixed doubles concentration.
+  \labthm{concentration-example}
+\end{theorem}
+\begin{remark}
+  Available theorem-like environments include theorem, proposition, lemma, corollary, definition, remark, example, and exercise.
+\end{remark}
+
+\section{Code, citations, and references}
+\labsec{cookbook-references}
+Use \texttt{lstlisting} for short code samples:
+\begin{lstlisting}[language=Python,caption={A short code listing.},label={lst:example}]
+concentration = amount / volume
+print(concentration)
+\end{lstlisting}
+The bibliography is stored in \texttt{main.bib} and processed with Biber. Standard examples are \texttt{\string\textcite\{Costanzo2014BRS\}} and \texttt{\string\parencite\{Costanzo2014BRS\}}; in prose, \textcite{Costanzo2014BRS} discusses physiology, while a parenthetical citation can be written \parencite[chap.~1]{Costanzo2014BRS}. The custom \texttt{\string\sidecite} also places a formatted citation in the margin: \sidecite{Costanzo2014BRS}.
+
+Project reference helpers use matching label and reference prefixes: \texttt{\string\labsec\{key\}} with \texttt{\string\refsec\{key\}}, \texttt{\string\labfig\{key\}} with \texttt{\string\reffig\{key\}}, and \texttt{\string\labtab\{key\}} with \texttt{\string\reftab\{key\}}. For example, see \refsec{cookbook-boxes}, \reftab{example_planning_table}, and \reffig{tikz-flow}. Chapter, subsection, equation, definition, theorem, proposition, lemma, remark, example, and exercise labels have corresponding helpers; see \texttt{template/kaorefs.sty} for the complete command list.
+
+\section{TikZ shapes and colors}
+\labsec{cookbook-tikz}
+TikZ is loaded by the project template. Define nodes with shape, fill, and line options, then connect them with paths:
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+  \node[draw,circle,fill=ForestGreen!20,minimum size=1.2cm] (one) at (0,0) {1};
+  \node[draw,rounded corners,fill=RoyalBlue!15,minimum width=2.2cm,minimum height=1cm] (two) at (3,0) {Process};
+  \draw[->,very thick,Goldenrod] (one) -- (two);
+\end{tikzpicture}
+\end{center}
+Available colors include names from \texttt{xcolor} with the \texttt{dvipsnames} option; mix a color with white, such as \texttt{RoyalBlue!15!White}, for a pale fill. Reusable TikZ styles can be declared locally in picture options or globally in the preamble.
 \end{document}

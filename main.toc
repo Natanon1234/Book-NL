@@ -6,186 +6,200 @@
 \contentsline {chapter}{\numberline {1}Debug and Notes}{1}{chapter.1}%
 \etoc@startlocaltoc {2}
 \etoc@startlocaltoc {3}
-\contentsline {mtocsection}{\numberline {1.1}Text Outline}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.1}Text Outline}{1}{section.1.1}%
-\contentsline {mtocsection}{\numberline {1.2}Content Planning}{1}{section.1.2}%
+\contentsline {mtocsection}{\numberline {1.1}Text Outline}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Content Planning}{1}{section.1.2}%
-\contentsline {part}{\nonumberline Example Code}{41}{part*.6}%
-\contentsline {mtocsection}{\numberline {1.3}Example Figures/templates}{43}{section.1.3}%
-\contentsline {section}{\numberline {1.3}Example Figures/templates}{43}{section.1.3}%
-\contentsline {chapter}{\numberline {2}General Principles of Medicine (B1)}{45}{chapter.2}%
+\contentsline {mtocsection}{\numberline {1.2}Content Planning}{1}{section.1.2}%
+\contentsline {part}{\nonumberline Example Code}{39}{part*.6}%
+\contentsline {section}{\numberline {1.3}Example Figures/templates}{41}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Example Figures/templates}{41}{section.1.3}%
+\contentsline {chapter}{\numberline {2}General Principles of Medicine (B1)}{43}{chapter.2}%
 \etoc@startlocaltoc {4}
 \etoc@startlocaltoc {5}
-\contentsline {mtocsection}{\numberline {2.1}Biochemistry (B1.1)}{45}{section.2.1}%
-\contentsline {section}{\numberline {2.1}Biochemistry (B1.1)}{45}{section.2.1}%
-\contentsline {mtocsection}{\numberline {2.2}Cell biology (B1.2)}{45}{section.2.2}%
-\contentsline {section}{\numberline {2.2}Cell biology (B1.2)}{45}{section.2.2}%
-\contentsline {mtocsection}{\numberline {2.3}Development and genetics (B1.3)}{45}{section.2.3}%
-\contentsline {section}{\numberline {2.3}Development and genetics (B1.3)}{45}{section.2.3}%
-\contentsline {mtocsection}{\numberline {2.4}Immunology (B1.4)}{45}{section.2.4}%
-\contentsline {section}{\numberline {2.4}Immunology (B1.4)}{45}{section.2.4}%
-\contentsline {mtocsection}{\numberline {2.5}Pathology and lab investigation (B1.5)}{45}{section.2.5}%
-\contentsline {section}{\numberline {2.5}Pathology and lab investigation (B1.5)}{45}{section.2.5}%
-\contentsline {mtocsection}{\numberline {2.6}Health, behavior, and ethics (B1.6)}{45}{section.2.6}%
-\contentsline {section}{\numberline {2.6}Health, behavior, and ethics (B1.6)}{45}{section.2.6}%
-\contentsline {mtocsection}{\numberline {2.7}Multisystem processes (B1.7)}{45}{section.2.7}%
-\contentsline {section}{\numberline {2.7}Multisystem processes (B1.7)}{45}{section.2.7}%
-\contentsline {mtocsection}{\numberline {2.8}General pharmacology (B1.8)}{45}{section.2.8}%
-\contentsline {section}{\numberline {2.8}General pharmacology (B1.8)}{45}{section.2.8}%
-\contentsline {mtocsection}{\numberline {2.9}Quantitative methods (B1.9)}{45}{section.2.9}%
-\contentsline {chapter}{\numberline {3}Hematopoietic and Lymphoreticular Systems (B2)}{47}{chapter.3}%
+\contentsline {section}{\numberline {2.1}Biochemistry (B1.1)}{43}{section.2.1}%
+\contentsline {mtocsection}{\numberline {2.1}Biochemistry (B1.1)}{43}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Cell biology (B1.2)}{43}{section.2.2}%
+\contentsline {mtocsection}{\numberline {2.2}Cell biology (B1.2)}{43}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Development and genetics (B1.3)}{43}{section.2.3}%
+\contentsline {mtocsection}{\numberline {2.3}Development and genetics (B1.3)}{43}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Immunology (B1.4)}{43}{section.2.4}%
+\contentsline {mtocsection}{\numberline {2.4}Immunology (B1.4)}{43}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Pathology and lab investigation (B1.5)}{43}{section.2.5}%
+\contentsline {mtocsection}{\numberline {2.5}Pathology and lab investigation (B1.5)}{43}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Health, behavior, and ethics (B1.6)}{43}{section.2.6}%
+\contentsline {mtocsection}{\numberline {2.6}Health, behavior, and ethics (B1.6)}{43}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Multisystem processes (B1.7)}{43}{section.2.7}%
+\contentsline {mtocsection}{\numberline {2.7}Multisystem processes (B1.7)}{43}{section.2.7}%
+\contentsline {section}{\numberline {2.8}General pharmacology (B1.8)}{43}{section.2.8}%
+\contentsline {mtocsection}{\numberline {2.8}General pharmacology (B1.8)}{43}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Quantitative methods (B1.9)}{43}{section.2.9}%
+\contentsline {mtocsection}{\numberline {2.9}Quantitative methods (B1.9)}{43}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Hematopoietic and Lymphoreticular Systems (B2)}{45}{chapter.3}%
 \etoc@startlocaltoc {6}
 \etoc@startlocaltoc {7}
-\contentsline {mtocsection}{\numberline {3.1}Normal (B2.1)}{47}{section.3.1}%
-\contentsline {section}{\numberline {3.1}Normal (B2.1)}{47}{section.3.1}%
-\contentsline {mtocsection}{\numberline {3.2}Abnormal (B2.2)}{47}{section.3.2}%
-\contentsline {section}{\numberline {3.2}Abnormal (B2.2)}{47}{section.3.2}%
-\contentsline {mtocsection}{\numberline {3.3}Therapeutics (B2.3)}{47}{section.3.3}%
-\contentsline {section}{\numberline {3.3}Therapeutics (B2.3)}{47}{section.3.3}%
-\contentsline {mtocsection}{\numberline {3.4}Health and social factors (B2.4)}{47}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Central and Peripheral Nervous Systems (B3)}{49}{chapter.4}%
+\contentsline {section}{\numberline {3.1}Normal (B2.1)}{45}{section.3.1}%
+\contentsline {mtocsection}{\numberline {3.1}Normal (B2.1)}{45}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Abnormal (B2.2)}{45}{section.3.2}%
+\contentsline {mtocsection}{\numberline {3.2}Abnormal (B2.2)}{45}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Therapeutics (B2.3)}{45}{section.3.3}%
+\contentsline {mtocsection}{\numberline {3.3}Therapeutics (B2.3)}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Health and social factors (B2.4)}{45}{section.3.4}%
+\contentsline {mtocsection}{\numberline {3.4}Health and social factors (B2.4)}{45}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Central and Peripheral Nervous Systems (B3)}{47}{chapter.4}%
 \etoc@startlocaltoc {8}
 \etoc@startlocaltoc {9}
-\contentsline {mtocsection}{\numberline {4.1}Normal (B3.1)}{49}{section.4.1}%
-\contentsline {section}{\numberline {4.1}Normal (B3.1)}{49}{section.4.1}%
-\contentsline {mtocsection}{\numberline {4.2}Abnormal (B3.2)}{49}{section.4.2}%
-\contentsline {section}{\numberline {4.2}Abnormal (B3.2)}{49}{section.4.2}%
-\contentsline {mtocsection}{\numberline {4.3}Therapeutics (B3.3)}{49}{section.4.3}%
-\contentsline {section}{\numberline {4.3}Therapeutics (B3.3)}{49}{section.4.3}%
-\contentsline {mtocsection}{\numberline {4.4}Health and social factors (B3.4)}{49}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Skin and Related Connective Tissue (B4)}{51}{chapter.5}%
+\contentsline {section}{\numberline {4.1}Normal (B3.1)}{47}{section.4.1}%
+\contentsline {mtocsection}{\numberline {4.1}Normal (B3.1)}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Abnormal (B3.2)}{47}{section.4.2}%
+\contentsline {mtocsection}{\numberline {4.2}Abnormal (B3.2)}{47}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Therapeutics (B3.3)}{47}{section.4.3}%
+\contentsline {mtocsection}{\numberline {4.3}Therapeutics (B3.3)}{47}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Health and social factors (B3.4)}{47}{section.4.4}%
+\contentsline {mtocsection}{\numberline {4.4}Health and social factors (B3.4)}{47}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Skin and Related Connective Tissue (B4)}{49}{chapter.5}%
 \etoc@startlocaltoc {10}
 \etoc@startlocaltoc {11}
-\contentsline {mtocsection}{\numberline {5.1}Normal (B4.1)}{51}{section.5.1}%
-\contentsline {section}{\numberline {5.1}Normal (B4.1)}{51}{section.5.1}%
-\contentsline {mtocsection}{\numberline {5.2}Abnormal (B4.2)}{51}{section.5.2}%
-\contentsline {section}{\numberline {5.2}Abnormal (B4.2)}{51}{section.5.2}%
-\contentsline {mtocsection}{\numberline {5.3}Therapeutics (B4.3)}{51}{section.5.3}%
-\contentsline {section}{\numberline {5.3}Therapeutics (B4.3)}{51}{section.5.3}%
-\contentsline {mtocsection}{\numberline {5.4}Health and social factors (B4.4)}{51}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Musculoskeletal System (B5)}{53}{chapter.6}%
+\contentsline {section}{\numberline {5.1}Normal (B4.1)}{49}{section.5.1}%
+\contentsline {mtocsection}{\numberline {5.1}Normal (B4.1)}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Abnormal (B4.2)}{49}{section.5.2}%
+\contentsline {mtocsection}{\numberline {5.2}Abnormal (B4.2)}{49}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Therapeutics (B4.3)}{49}{section.5.3}%
+\contentsline {mtocsection}{\numberline {5.3}Therapeutics (B4.3)}{49}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Health and social factors (B4.4)}{49}{section.5.4}%
+\contentsline {mtocsection}{\numberline {5.4}Health and social factors (B4.4)}{49}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Musculoskeletal System (B5)}{51}{chapter.6}%
 \etoc@startlocaltoc {12}
 \etoc@startlocaltoc {13}
-\contentsline {mtocsection}{\numberline {6.1}Normal (B5.1)}{53}{section.6.1}%
-\contentsline {section}{\numberline {6.1}Normal (B5.1)}{53}{section.6.1}%
-\contentsline {mtocsection}{\numberline {6.2}Abnormal (B5.2)}{53}{section.6.2}%
-\contentsline {section}{\numberline {6.2}Abnormal (B5.2)}{53}{section.6.2}%
-\contentsline {mtocsection}{\numberline {6.3}Therapeutics (B5.3)}{53}{section.6.3}%
-\contentsline {section}{\numberline {6.3}Therapeutics (B5.3)}{53}{section.6.3}%
-\contentsline {mtocsection}{\numberline {6.4}Health and social factors (B5.4)}{53}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Respiratory System (B6)}{55}{chapter.7}%
+\contentsline {section}{\numberline {6.1}Normal (B5.1)}{51}{section.6.1}%
+\contentsline {mtocsection}{\numberline {6.1}Normal (B5.1)}{51}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Abnormal (B5.2)}{51}{section.6.2}%
+\contentsline {mtocsection}{\numberline {6.2}Abnormal (B5.2)}{51}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Therapeutics (B5.3)}{51}{section.6.3}%
+\contentsline {mtocsection}{\numberline {6.3}Therapeutics (B5.3)}{51}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Health and social factors (B5.4)}{51}{section.6.4}%
+\contentsline {mtocsection}{\numberline {6.4}Health and social factors (B5.4)}{51}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Respiratory System (B6)}{53}{chapter.7}%
 \etoc@startlocaltoc {14}
 \etoc@startlocaltoc {15}
-\contentsline {mtocsection}{\numberline {7.1}Normal (B6.1)}{55}{section.7.1}%
-\contentsline {section}{\numberline {7.1}Normal (B6.1)}{55}{section.7.1}%
-\contentsline {mtocsection}{\numberline {7.2}Abnormal (B6.2)}{55}{section.7.2}%
-\contentsline {section}{\numberline {7.2}Abnormal (B6.2)}{55}{section.7.2}%
-\contentsline {mtocsection}{\numberline {7.3}Therapeutics (B6.3)}{55}{section.7.3}%
-\contentsline {section}{\numberline {7.3}Therapeutics (B6.3)}{55}{section.7.3}%
-\contentsline {mtocsection}{\numberline {7.4}Health and social factors (B6.4)}{55}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Cardiovascular System (B7)}{57}{chapter.8}%
+\contentsline {section}{\numberline {7.1}Normal (B6.1)}{53}{section.7.1}%
+\contentsline {mtocsection}{\numberline {7.1}Normal (B6.1)}{53}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Abnormal (B6.2)}{53}{section.7.2}%
+\contentsline {mtocsection}{\numberline {7.2}Abnormal (B6.2)}{53}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Therapeutics (B6.3)}{53}{section.7.3}%
+\contentsline {mtocsection}{\numberline {7.3}Therapeutics (B6.3)}{53}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Health and social factors (B6.4)}{53}{section.7.4}%
+\contentsline {mtocsection}{\numberline {7.4}Health and social factors (B6.4)}{53}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Cardiovascular System (B7)}{55}{chapter.8}%
 \etoc@startlocaltoc {16}
 \etoc@startlocaltoc {17}
-\contentsline {mtocsection}{\numberline {8.1}Normal (B7.1)}{57}{section.8.1}%
-\contentsline {section}{\numberline {8.1}Normal (B7.1)}{57}{section.8.1}%
-\contentsline {mtocsection}{\numberline {8.2}Abnormal (B7.2)}{57}{section.8.2}%
-\contentsline {section}{\numberline {8.2}Abnormal (B7.2)}{57}{section.8.2}%
-\contentsline {mtocsection}{\numberline {8.3}Therapeutics (B7.3)}{57}{section.8.3}%
-\contentsline {section}{\numberline {8.3}Therapeutics (B7.3)}{57}{section.8.3}%
-\contentsline {mtocsection}{\numberline {8.4}Health and social factors (B7.4)}{57}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Gastrointestinal System (B8)}{59}{chapter.9}%
+\contentsline {section}{\numberline {8.1}Normal (B7.1)}{55}{section.8.1}%
+\contentsline {mtocsection}{\numberline {8.1}Normal (B7.1)}{55}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Abnormal (B7.2)}{55}{section.8.2}%
+\contentsline {mtocsection}{\numberline {8.2}Abnormal (B7.2)}{55}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Therapeutics (B7.3)}{55}{section.8.3}%
+\contentsline {mtocsection}{\numberline {8.3}Therapeutics (B7.3)}{55}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Health and social factors (B7.4)}{55}{section.8.4}%
+\contentsline {mtocsection}{\numberline {8.4}Health and social factors (B7.4)}{55}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Gastrointestinal System (B8)}{57}{chapter.9}%
 \etoc@startlocaltoc {18}
 \etoc@startlocaltoc {19}
-\contentsline {mtocsection}{\numberline {9.1}Normal (B8.1)}{59}{section.9.1}%
-\contentsline {section}{\numberline {9.1}Normal (B8.1)}{59}{section.9.1}%
-\contentsline {mtocsection}{\numberline {9.2}Abnormal (B8.2)}{59}{section.9.2}%
-\contentsline {section}{\numberline {9.2}Abnormal (B8.2)}{59}{section.9.2}%
-\contentsline {mtocsection}{\numberline {9.3}Therapeutics (B8.3)}{59}{section.9.3}%
-\contentsline {section}{\numberline {9.3}Therapeutics (B8.3)}{59}{section.9.3}%
-\contentsline {mtocsection}{\numberline {9.4}Health and social factors (B8.4)}{59}{section.9.4}%
-\contentsline {chapter}{\numberline {10}Renal/Urinary System (B9)}{61}{chapter.10}%
+\contentsline {section}{\numberline {9.1}Normal (B8.1)}{57}{section.9.1}%
+\contentsline {mtocsection}{\numberline {9.1}Normal (B8.1)}{57}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Abnormal (B8.2)}{57}{section.9.2}%
+\contentsline {mtocsection}{\numberline {9.2}Abnormal (B8.2)}{57}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Therapeutics (B8.3)}{57}{section.9.3}%
+\contentsline {mtocsection}{\numberline {9.3}Therapeutics (B8.3)}{57}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Health and social factors (B8.4)}{57}{section.9.4}%
+\contentsline {mtocsection}{\numberline {9.4}Health and social factors (B8.4)}{57}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Renal/Urinary System (B9)}{59}{chapter.10}%
 \etoc@startlocaltoc {20}
 \etoc@startlocaltoc {21}
-\contentsline {mtocsection}{\numberline {10.1}Normal (B9.1)}{61}{section.10.1}%
-\contentsline {section}{\numberline {10.1}Normal (B9.1)}{61}{section.10.1}%
-\contentsline {mtocsection}{\numberline {10.2}Abnormal (B9.2)}{61}{section.10.2}%
-\contentsline {section}{\numberline {10.2}Abnormal (B9.2)}{61}{section.10.2}%
-\contentsline {mtocsection}{\numberline {10.3}Therapeutics (B9.3)}{61}{section.10.3}%
-\contentsline {section}{\numberline {10.3}Therapeutics (B9.3)}{61}{section.10.3}%
-\contentsline {mtocsection}{\numberline {10.4}Health and social factors (B9.4)}{61}{section.10.4}%
-\contentsline {chapter}{\numberline {11}Reproductive System (B10)}{63}{chapter.11}%
+\contentsline {section}{\numberline {10.1}Normal (B9.1)}{59}{section.10.1}%
+\contentsline {mtocsection}{\numberline {10.1}Normal (B9.1)}{59}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Abnormal (B9.2)}{59}{section.10.2}%
+\contentsline {mtocsection}{\numberline {10.2}Abnormal (B9.2)}{59}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Therapeutics (B9.3)}{59}{section.10.3}%
+\contentsline {mtocsection}{\numberline {10.3}Therapeutics (B9.3)}{59}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Health and social factors (B9.4)}{59}{section.10.4}%
+\contentsline {mtocsection}{\numberline {10.4}Health and social factors (B9.4)}{59}{section.10.4}%
+\contentsline {chapter}{\numberline {11}Reproductive System (B10)}{61}{chapter.11}%
 \etoc@startlocaltoc {22}
 \etoc@startlocaltoc {23}
-\contentsline {mtocsection}{\numberline {11.1}Normal (B10.1)}{63}{section.11.1}%
-\contentsline {section}{\numberline {11.1}Normal (B10.1)}{63}{section.11.1}%
-\contentsline {mtocsection}{\numberline {11.2}Abnormal (B10.2)}{63}{section.11.2}%
-\contentsline {section}{\numberline {11.2}Abnormal (B10.2)}{63}{section.11.2}%
-\contentsline {mtocsection}{\numberline {11.3}Therapeutics (B10.3)}{63}{section.11.3}%
-\contentsline {section}{\numberline {11.3}Therapeutics (B10.3)}{63}{section.11.3}%
-\contentsline {mtocsection}{\numberline {11.4}Health and social factors (B10.4)}{63}{section.11.4}%
-\contentsline {chapter}{\numberline {12}Endocrine System (B11)}{65}{chapter.12}%
+\contentsline {section}{\numberline {11.1}Normal (B10.1)}{61}{section.11.1}%
+\contentsline {mtocsection}{\numberline {11.1}Normal (B10.1)}{61}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Abnormal (B10.2)}{61}{section.11.2}%
+\contentsline {mtocsection}{\numberline {11.2}Abnormal (B10.2)}{61}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Therapeutics (B10.3)}{61}{section.11.3}%
+\contentsline {mtocsection}{\numberline {11.3}Therapeutics (B10.3)}{61}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Health and social factors (B10.4)}{61}{section.11.4}%
+\contentsline {mtocsection}{\numberline {11.4}Health and social factors (B10.4)}{61}{section.11.4}%
+\contentsline {chapter}{\numberline {12}Endocrine System (B11)}{63}{chapter.12}%
 \etoc@startlocaltoc {24}
 \etoc@startlocaltoc {25}
-\contentsline {mtocsection}{\numberline {12.1}Normal (B11.1)}{65}{section.12.1}%
-\contentsline {section}{\numberline {12.1}Normal (B11.1)}{65}{section.12.1}%
-\contentsline {mtocsection}{\numberline {12.2}Abnormal (B11.2)}{65}{section.12.2}%
-\contentsline {section}{\numberline {12.2}Abnormal (B11.2)}{65}{section.12.2}%
-\contentsline {mtocsection}{\numberline {12.3}Therapeutics (B11.3)}{65}{section.12.3}%
-\contentsline {section}{\numberline {12.3}Therapeutics (B11.3)}{65}{section.12.3}%
-\contentsline {mtocsection}{\numberline {12.4}Health and social factors (B11.4)}{65}{section.12.4}%
-\contentsline {part}{\nonumberline Appendix A: Physiology}{67}{part*.8}%
-\contentsline {chapter}{\numberline {A1}Introduction to the Cellular and Molecular Basics of Physiology}{69}{appendix.appendixA1}%
+\contentsline {section}{\numberline {12.1}Normal (B11.1)}{63}{section.12.1}%
+\contentsline {mtocsection}{\numberline {12.1}Normal (B11.1)}{63}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Abnormal (B11.2)}{63}{section.12.2}%
+\contentsline {mtocsection}{\numberline {12.2}Abnormal (B11.2)}{63}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Therapeutics (B11.3)}{63}{section.12.3}%
+\contentsline {mtocsection}{\numberline {12.3}Therapeutics (B11.3)}{63}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Health and social factors (B11.4)}{63}{section.12.4}%
+\contentsline {mtocsection}{\numberline {12.4}Health and social factors (B11.4)}{63}{section.12.4}%
+\def \@chapapp {\appendixname }
+\contentsline {part}{\nonumberline Appendix A: Physiology}{65}{part*.10}%
+\contentsline {chapter}{\numberline {A1}Introduction to the Cellular and Molecular Basics of Physiology}{67}{appendix.appendixA1}%
 \etoc@startlocaltoc {26}
 \etoc@startlocaltoc {27}
-\contentsline {mtocsection}{\numberline {A1.1}Introduction}{69}{section.appendixA1.1}%
-\contentsline {section}{\numberline {A1.1}Introduction}{69}{section.appendixA1.1}%
-\contentsline {mtocsection}{\numberline {A1.2}Membranes \& Molecule Transport}{69}{section.appendixA1.2}%
-\contentsline {section}{\numberline {A1.2}Membranes \& Molecule Transport}{69}{section.appendixA1.2}%
-\contentsline {mtocsubsection}{\numberline {A1.2.1}Cell membrane}{69}{subsection.appendixA1.2.1}%
-\contentsline {subsection}{\numberline {A1.2.1}Cell membrane}{69}{subsection.appendixA1.2.1}%
-\contentsline {mtocsubsection}{\numberline {A1.2.2}Passive transport}{69}{subsection.appendixA1.2.2}%
-\contentsline {subsection}{\numberline {A1.2.2}Passive transport}{69}{subsection.appendixA1.2.2}%
-\contentsline {mtocsubsection}{\numberline {A1.2.3}Active transport}{69}{subsection.appendixA1.2.3}%
-\contentsline {subsection}{\numberline {A1.2.3}Active transport}{69}{subsection.appendixA1.2.3}%
-\contentsline {mtocsection}{\numberline {A1.3}Physiology learning-specification checklist}{69}{section.appendixA1.3}%
-\contentsline {section}{\numberline {A1.3}Physiology learning-specification checklist}{69}{section.appendixA1.3}%
+\contentsline {section}{\numberline {A1.1}Introduction}{67}{section.appendixA1.1}%
+\contentsline {mtocsection}{\numberline {A1.1}Introduction}{67}{section.appendixA1.1}%
+\contentsline {section}{\numberline {A1.2}Membranes \& Molecule Transport}{67}{section.appendixA1.2}%
+\contentsline {mtocsection}{\numberline {A1.2}Membranes \& Molecule Transport}{67}{section.appendixA1.2}%
+\contentsline {subsection}{\numberline {A1.2.1}Cell membrane}{68}{subsection.appendixA1.2.1}%
+\contentsline {mtocsubsection}{\numberline {A1.2.1}Cell membrane}{68}{subsection.appendixA1.2.1}%
+\contentsline {subsection}{\numberline {A1.2.2}Passive transport}{68}{subsection.appendixA1.2.2}%
+\contentsline {mtocsubsection}{\numberline {A1.2.2}Passive transport}{68}{subsection.appendixA1.2.2}%
+\contentsline {subsection}{\numberline {A1.2.3}Active transport}{68}{subsection.appendixA1.2.3}%
+\contentsline {mtocsubsection}{\numberline {A1.2.3}Active transport}{68}{subsection.appendixA1.2.3}%
+\contentsline {section}{\numberline {A1.3}Physiology learning-specification checklist}{68}{section.appendixA1.3}%
+\contentsline {mtocsection}{\numberline {A1.3}Physiology learning-specification checklist}{68}{section.appendixA1.3}%
 \contentsline {chapter}{\numberline {A2}Membrane Transport and Cellular Excitability}{71}{appendix.appendixA2}%
 \etoc@startlocaltoc {28}
 \etoc@startlocaltoc {29}
-\contentsline {mtocsection}{\numberline {A2.1}Transport across cell membranes}{71}{section.appendixA2.1}%
 \contentsline {section}{\numberline {A2.1}Transport across cell membranes}{71}{section.appendixA2.1}%
-\contentsline {mtocsection}{\numberline {A2.2}Osmosis and cell volume}{71}{section.appendixA2.2}%
+\contentsline {mtocsection}{\numberline {A2.1}Transport across cell membranes}{71}{section.appendixA2.1}%
 \contentsline {section}{\numberline {A2.2}Osmosis and cell volume}{71}{section.appendixA2.2}%
-\contentsline {mtocsection}{\numberline {A2.3}Resting membrane potential}{71}{section.appendixA2.3}%
+\contentsline {mtocsection}{\numberline {A2.2}Osmosis and cell volume}{71}{section.appendixA2.2}%
 \contentsline {section}{\numberline {A2.3}Resting membrane potential}{71}{section.appendixA2.3}%
-\contentsline {mtocsection}{\numberline {A2.4}Action potentials}{71}{section.appendixA2.4}%
+\contentsline {mtocsection}{\numberline {A2.3}Resting membrane potential}{71}{section.appendixA2.3}%
 \contentsline {section}{\numberline {A2.4}Action potentials}{71}{section.appendixA2.4}%
-\contentsline {part}{\nonumberline Appendix B: Pharmacology}{73}{part*.10}%
+\contentsline {mtocsection}{\numberline {A2.4}Action potentials}{71}{section.appendixA2.4}%
+\contentsline {part}{\nonumberline Appendix B: Pharmacology}{73}{part*.13}%
 \contentsline {chapter}{\numberline {B1}Overview of Pharmacology}{75}{appendix.appendixB1}%
 \etoc@startlocaltoc {30}
 \etoc@startlocaltoc {31}
-\contentsline {mtocsection}{\numberline {B1.1}Pharmacokinetics}{75}{section.appendixB1.1}%
 \contentsline {section}{\numberline {B1.1}Pharmacokinetics}{75}{section.appendixB1.1}%
-\contentsline {mtocsubsection}{\numberline {B1.1.1}Absorption}{75}{subsection.appendixB1.1.1}%
+\contentsline {mtocsection}{\numberline {B1.1}Pharmacokinetics}{75}{section.appendixB1.1}%
 \contentsline {subsection}{\numberline {B1.1.1}Absorption}{75}{subsection.appendixB1.1.1}%
-\contentsline {mtocsubsection}{\numberline {B1.1.2}Distribution}{75}{subsection.appendixB1.1.2}%
+\contentsline {mtocsubsection}{\numberline {B1.1.1}Absorption}{75}{subsection.appendixB1.1.1}%
 \contentsline {subsection}{\numberline {B1.1.2}Distribution}{75}{subsection.appendixB1.1.2}%
-\contentsline {mtocsubsection}{\numberline {B1.1.3}Metabolism}{75}{subsection.appendixB1.1.3}%
+\contentsline {mtocsubsection}{\numberline {B1.1.2}Distribution}{75}{subsection.appendixB1.1.2}%
 \contentsline {subsection}{\numberline {B1.1.3}Metabolism}{75}{subsection.appendixB1.1.3}%
+\contentsline {mtocsubsection}{\numberline {B1.1.3}Metabolism}{75}{subsection.appendixB1.1.3}%
+\contentsline {subsection}{\numberline {B1.1.4}Elimination}{75}{subsection.appendixB1.1.4}%
 \contentsline {mtocsubsection}{\numberline {B1.1.4}Elimination}{75}{subsection.appendixB1.1.4}%
-\contentsline {mtocsection}{\numberline {B1.2}Pharmacodynamics}{75}{section.appendixB1.2}%
 \contentsline {section}{\numberline {B1.2}Pharmacodynamics}{75}{section.appendixB1.2}%
-\contentsline {mtocsubsection}{\numberline {B1.2.1}Drug targets}{75}{subsection.appendixB1.2.1}%
+\contentsline {mtocsection}{\numberline {B1.2}Pharmacodynamics}{75}{section.appendixB1.2}%
 \contentsline {subsection}{\numberline {B1.2.1}Drug targets}{75}{subsection.appendixB1.2.1}%
-\contentsline {mtocsubsection}{\numberline {B1.2.2}Dose-response relationships}{75}{subsection.appendixB1.2.2}%
+\contentsline {mtocsubsection}{\numberline {B1.2.1}Drug targets}{75}{subsection.appendixB1.2.1}%
 \contentsline {subsection}{\numberline {B1.2.2}Dose-response relationships}{75}{subsection.appendixB1.2.2}%
+\contentsline {mtocsubsection}{\numberline {B1.2.2}Dose-response relationships}{75}{subsection.appendixB1.2.2}%
+\contentsline {subsection}{\numberline {B1.2.3}Agonists and antagonists}{75}{subsection.appendixB1.2.3}%
 \contentsline {mtocsubsection}{\numberline {B1.2.3}Agonists and antagonists}{75}{subsection.appendixB1.2.3}%
 \contentsline {chapter}{\numberline {B2}Safe and Rational Prescribing}{77}{appendix.appendixB2}%
 \etoc@startlocaltoc {32}
 \etoc@startlocaltoc {33}
-\contentsline {mtocsection}{\numberline {B2.1}Selecting a treatment}{77}{section.appendixB2.1}%
 \contentsline {section}{\numberline {B2.1}Selecting a treatment}{77}{section.appendixB2.1}%
-\contentsline {mtocsection}{\numberline {B2.2}Medication safety}{77}{section.appendixB2.2}%
+\contentsline {mtocsection}{\numberline {B2.1}Selecting a treatment}{77}{section.appendixB2.1}%
 \contentsline {section}{\numberline {B2.2}Medication safety}{77}{section.appendixB2.2}%
-\contentsline {mtocsection}{\numberline {B2.3}Monitoring response}{77}{section.appendixB2.3}%
+\contentsline {mtocsection}{\numberline {B2.2}Medication safety}{77}{section.appendixB2.2}%
 \contentsline {section}{\numberline {B2.3}Monitoring response}{77}{section.appendixB2.3}%
+\contentsline {mtocsection}{\numberline {B2.3}Monitoring response}{77}{section.appendixB2.3}%

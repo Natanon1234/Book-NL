@@ -1,0 +1,20 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{C}{4}
+  \fi
+}{}
+\chapter{Medical Parasitology: Parasites and Parasitic Diseases}
+\labch{appendix-c4-medical-parasitology}
+\margintoc
+
+\end{document}

@@ -1,0 +1,25 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{A}{3}
+  \fi
+}{}
+\chapter{Physiology appendix title}
+\labch{appendix-a-key}
+\margintoc
+
+% Add sections and chapter content below.
+% Example:
+% \section{Section title}
+% \labsec{section-key}
+
+\end{document}

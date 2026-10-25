@@ -2,7 +2,7 @@
 \babel@toc {english}{}\relax
 \babel@toc {english}{}\relax
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.2}{\ignorespaces Example table: this is an example table format to be used in the textbook.\relax }}{43}{table.1.2}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Example table: this is an example table format to be used in the textbook.}}{42}{table.caption.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -14,8 +14,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\def \@chapapp {\appendixname }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A1.1}{\ignorespaces Relevant cell-biology competencies\relax }}{69}{table.appendixA1.1}%
+\contentsline {table}{\numberline {A1.1}{\ignorespaces Relevant cell-biology competencies}}{67}{table.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

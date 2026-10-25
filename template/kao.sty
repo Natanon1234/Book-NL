@@ -124,6 +124,7 @@
 \@ifclasswith{\@baseclass}{f24paper}{\setlength{\hscale}{0.762mm}\setlength{\vscale}{0.808mm}}{}
 \@ifclasswith{\@baseclass}{a4paperlandscape}{\setlength{\hscale}{1.414mm}\setlength{\vscale}{0.707mm}}{}
 
+
 % Set the default page layout
 \RequirePackage[
 	paperwidth=210\hscale,
@@ -164,7 +165,7 @@
 }
 
 % Layout #3: no margins and no space above or below the body
-\newcommand{\fullwidthpage}{%
+\newcommand{\fullwidthlayout}{%
 	\newgeometry{
 		top=0mm,
 		bottom=0mm,
@@ -176,6 +177,8 @@
     \recalchead%
 }
 
+
+\newcommand{\fullwidthpage}{\fullwidthlayout}
 % Set the default page layout
 \AtBeginDocument{\pagelayout{margin}}
 
@@ -368,7 +371,7 @@
 	bottom,
 	hang,
 	flushmargin,
-	% perpage,
+	perpage,
 	stable,
 ]{footmisc} % Required to set up the footnotes
 \RequirePackage{footnotebackref} % Creates back references from footnotes to text
@@ -1031,8 +1034,8 @@
 	]{Noto Sans Condensed}
 	\setmonofont[
 		Scale=.89
-	]{Latin Modern Mono}
-	\setmathfont{Latin Modern Math}
+	]{lmmono10-regular.otf}
+	\setmathfont{latinmodern-math.otf}
     \ifluatex
     \else
         \RequirePackage{morewrites} % Fix some errors related to floats
@@ -1168,6 +1171,17 @@
 \RequirePackage{tikz}
 \RequirePackage[framemethod=TikZ]{mdframed}
 
+\newcounter{kaoboxcounter}[chapter]
+\renewcommand*{\thekaoboxcounter}{\thechapter.\arabic{kaoboxcounter}}
+\newcommand*{\kaobox@start}{%
+  \refstepcounter{kaoboxcounter}%
+  \let\kaobox@originalframetitle\mdf@frametitle%
+  \def\mdf@frametitle{Box~\thekaoboxcounter}%
+  \ifdefempty{\kaobox@originalframetitle}{}{%
+    \appto\mdf@frametitle{: \kaobox@originalframetitle}%
+  }%
+}
+
 %\mdfsetup{skipabove=\topskip,skipbelow=0pt}
 \mdfdefinestyle{kaoboxstyle}{
 	skipabove=1.5\topskip,
@@ -1178,6 +1192,8 @@
 	%innerbottommargin=3pt,
 	innerrightmargin=7pt,
 	innerleftmargin=7pt,
+	startcode={\kaobox@start},
+	startinnercode={\vspace{6pt}},
 	topline=false,
 	bottomline=false,
 	rightline=false,
@@ -1226,17 +1242,10 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{kaocounter}{
-	\refstepcounter{kaocounter}
-	\begin{kaobox}[frametitle=Comment~\thekaocounter\autodot]
+	\begin{kaobox}[frametitle={Comment}]
 }{
 	\end{kaobox}
 }
-
-\newcounter{kaocounter}
-\counterwithin{kaocounter}{section}
-\newcommand*{\kaocounterformat}{% Format for the caption
-	Comment~\thekaocounter\csname autodot\endcsname}
-\newcommand*{\fnum@kaocounter}{\kaocounterformat}
 
 
 %----------------------------------------------------------------------------------------
