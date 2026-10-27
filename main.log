@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  27 OCT 2026 14:13
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  27 OCT 2026 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2734,23 +2734,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 \openout4 = `main.mw'.
 
- [1
+ [2
 
 
 ] (./main.mw)
 \openout4 = `main.mw'.
 
-
-
-Package marginnote Warning: Consecutive odd pages found.
-(marginnote)                Note, it is not recommended to use consecutive
-(marginnote)                odd pages in a double-ended document.
-(marginnote)                The pages of your document should always
-(marginnote)                be a sequence: odd-even-odd-even-...
-(marginnote)                Maybe you've forgotten a \cleardoubleoddpage before
-(marginnote)                changing the page numbering on page i.
-
-Package marginnote Info: Using workaround for absolute page number on input line 143.
 LaTeX Font Info:    Font shape `TU/NotoSansThaiUI(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 144.
 Package microtype Info: Character `A' is missing
@@ -2914,19 +2903,7 @@ Package microtype Info: Character `\textgreater ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 \openout4 = `main.mw'.
 
-[2
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-\tf@toc=\write131
-\openout4 = `main.toc'.
-
-\openout4 = `main.mw'.
-
  [3
-
 
 
 ] (./main.mw)
@@ -2937,10 +2914,13 @@ Package microtype Info: Character `\textgreater ' is missing
  [4
 
 
+
 ] (./main.mw)
 \openout4 = `main.mw'.
 
-Package tocbasic Info: character protrusion at toc deactivated on input line 166.
+\tf@toc=\write131
+\openout4 = `main.toc'.
+
 \openout4 = `main.mw'.
 
  [5] (./main.mw)
@@ -2948,9 +2928,13 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 166
 
 \openout4 = `main.mw'.
 
- [6] (./main.mw)
+ [6
+
+
+] (./main.mw)
 \openout4 = `main.mw'.
 
+Package tocbasic Info: character protrusion at toc deactivated on input line 166.
 \openout4 = `main.mw'.
 
  [7] (./main.mw)
@@ -2958,7 +2942,17 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 166
 
 \openout4 = `main.mw'.
 
- [8
+ [8] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [9] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [10
 
 
 ] (./main.mw)
@@ -2976,12 +2970,12 @@ Overfull \hbox (1.12643pt too wide) in paragraph at lines 20--20
 
 \openout4 = `main.mw'.
 
- [9] (./main.mw)
+ [11] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
- [10
+ [12
 
 
 ] (./main.mw)
@@ -2999,12 +2993,12 @@ Overfull \hbox (0.96648pt too wide) in paragraph at lines 26--26
 
 \openout4 = `main.mw'.
 
- [11] (./main.mw)
+ [13] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
- [12
+ [14
 
 
 ] (./main.mw)
@@ -5338,13 +5332,8 @@ chapter without number
 ] (./main.mw)
 \openout4 = `main.mw'.
 
- (./main.ind)
-\openout4 = `main.mw'.
 
- [99
-
-
-] (./main.mw)
+No file main.ind.
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -5381,13 +5370,7 @@ chapter without number
 
 \openout4 = `main.mw'.
 
-\openout4 = `main.mw'.
-
- (./main.aux
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
+(./main.aux
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -6716,10 +6699,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 67607 strings out of 468168
- 1413658 string characters out of 5432815
- 3147049 words of memory out of 5000000
- 93409 multiletter control sequences out of 15000+600000
+ 67594 strings out of 468168
+ 1413441 string characters out of 5432815
+ 3146998 words of memory out of 5000000
+ 93402 multiletter control sequences out of 15000+600000
  635584 words of font info for 148 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,19n,159p,11242b,8983s stack positions out of 10000i,1000n,20000p,200000b,200000s
