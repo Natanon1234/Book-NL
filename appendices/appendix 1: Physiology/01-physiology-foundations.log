@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  25 OCT 2026 22:12
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  27 OCT 2026 13:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1257,13 +1257,13 @@ Package fontspec Info:
 (fontspec)             Condensed/BI/OT:script=latn;language=dflt;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1032.
+(Font)                  OT1/cmr/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1033.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/NotoSansCondensed(1)/m/it on input line 1032.
+(Font)                  OT1/cmr/m/it --> TU/NotoSansCondensed(1)/m/it on input line 1033.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1032.
+(Font)                  OT1/cmr/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1033.
 LaTeX Font Info:    Font shape `TU/NotoSansCondensed(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1032.
+(Font)              scaled to size 10.0pt on input line 1033.
 
 Package fontspec Info: 
 (fontspec)             Noto Sans Condensed scale = 1.
@@ -1273,9 +1273,9 @@ Package fontspec Info:
 (fontspec)             Noto Sans Condensed scale = 1.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1035.
+(Font)                  OT1/cmss/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1036.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1035.
+(Font)                  OT1/cmss/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1036.
 
 Package fontspec Info: 
 (fontspec)             lmmono10-regular scale = .89.
@@ -1316,9 +1316,9 @@ Package fontspec Info:
 (fontspec)             <->s*[.89]"[lmmono10-regular.otf]/OT:script=latn;language=dflt;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmmono10-regular.otf(1)/m/n on input line 1038.
+(Font)                  OT1/cmtt/m/n --> TU/lmmono10-regular.otf(1)/m/n on input line 1039.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmmono10-regular.otf(1)/b/n on input line 1038.
+(Font)                  OT1/cmtt/m/n --> TU/lmmono10-regular.otf(1)/b/n on input line 1039.
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(0)' created for font
@@ -1344,13 +1344,13 @@ Package fontspec Info:
 (fontspec)             <8.5->"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 1039.
+(Font)              `operators' in the math version `normal' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 1039.
+(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 1040.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 1039.
+(Font)              `operators' in the math version `bold' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 1039.
+(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 1040.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.0001.
@@ -1390,13 +1390,13 @@ Package fontspec Info:
 (fontspec)             <8.5->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 1039.
+(Font)              `symbols' in the math version `normal' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 1039.
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 1040.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 1039.
+(Font)              `symbols' in the math version `bold' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 1039.
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 1040.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999.
@@ -1430,13 +1430,13 @@ Package fontspec Info:
 (fontspec)             <8.5->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1039.
+(Font)              `largesymbols' in the math version `normal' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 1039.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 1040.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 1039.
+(Font)              `largesymbols' in the math version `bold' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 1039.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 1040.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/morewrites/morewrites.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/morewrites/primargs.sty
 Package: primargs 2024/02/02 Parsing arguments of primitives
 )
@@ -1455,10 +1455,10 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count422
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 1088.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 1088.
-Package hyperref Info: Option `breaklinks' set `true' on input line 1088.
-Package hyperref Info: Option `colorlinks' set `true' on input line 1088.
+Package hyperref Info: Option `unicode' set `true' on input line 1089.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 1089.
+Package hyperref Info: Option `breaklinks' set `true' on input line 1089.
+Package hyperref Info: Option `colorlinks' set `true' on input line 1089.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip120
@@ -1483,10 +1483,6 @@ Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
 \c@abspage=\count425
-
-
-LaTeX Warning: Command `\theabspage' already defined -- not changed on input line 61.
-
 Package zref Info: New property: abspage on input line 67.
 )
 \mdf@templength=\skip121
@@ -1579,7 +1575,7 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 \c@kaoboxcounter=\count432
 Package tocbasic Info: omitting babel extension for `loi'
-(tocbasic)             because of missing \bbl@set@language on input line 1268.
+(tocbasic)             because of missing \bbl@set@language on input line 1269.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -1913,13 +1909,15 @@ Package fontspec Info:
 Package fontspec Info: 
 (fontspec)             Font family 'lmmono10-regular.otf(2)' created for font
 (fontspec)             'lmmono10-regular.otf' with options
-(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,BoldFont={lmmonolt10-bold.otf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[lmmono10-regular.otf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[lmmonolt10-bold.otf]/OT:script=latn;language=dflt;"
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/latinmodern-math.otf(1)/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 31.
@@ -2010,6 +2008,8 @@ Package: ../../template/kaobiblio
  (/usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
 Package: iflang 2018/01/21 v1.7 Checks for the current language (HO)
 Package iflang Info: Naming convention for patterns: babel.
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
@@ -2240,7 +2240,7 @@ Package biblatex Info: ... and expl3
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-Package biblatex Info: Redefining '\fullcite' on input line 407.
+Package biblatex Info: Redefining '\fullcite' on input line 408.
 ) (../../template/kaotheorems.sty
 Package: ../../template/kaotheorems 
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
@@ -2352,8 +2352,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-
-No file 01-physiology-foundations.aux.
+ (./01-physiology-foundations.aux)
 \openout1 = `01-physiology-foundations.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -2418,6 +2417,7 @@ Package scrbase Info: activating english \contentsname on input line 9.
 * \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2488,23 +2488,19 @@ Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \@sidenotes@extrawidth=\skip303
 Package hyperref Info: Link coloring ON on input line 9.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \c@lstlisting=\count637
 Package tocbasic Info: setting babel extension for `lol' on input line 9.
 \scr@dte@lstlisting@maxnumwidth=\skip304
-(/usr/local/texlive/2026/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 \flrow@LT@lasthead=\box158
 \flrow@LT@prelastfoot=\box159
 \c@FBLTpage=\count638
 )
-No file 01-physiology-foundations.toc.
+\Etoc@tf=\read6
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: XeTeX detected.
@@ -2563,16 +2559,11 @@ LaTeX Warning: Citation 'Venter2001c' undefined on input line 9.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 chapter A1.
-
-Class scrbook Warning: odd/even page label number 1 undefined on input line 16.
-
 \tf@toc=\write131
 \openout4 = `01-physiology-foundations.toc'.
 
-Package marginnote Info: Suggest that margin note 1.1 will be on
-(marginnote)             absolute page 1.
-(marginnote)             This may be wrong on input line 18.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
+Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 18.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 18.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `latinmodern-math.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2609,19 +2600,13 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 7.99915pt on input line 19.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 19.
-
-
-LaTeX Warning: Hyper reference `bhfn:1' on page 1 undefined on input line 19.
-
 \openout4 = `01-physiology-foundations.mw'.
 
 \openout4 = `01-physiology-foundations.mw'.
+
 
 
 LaTeX Warning: Citation 'Barrett2012Ganong24' on page 1 undefined on input line 19.
-
-
-LaTeX Warning: Hyper reference `bhfn:2' on page 1 undefined on input line 19.
 
 \openout4 = `01-physiology-foundations.mw'.
 
@@ -2629,9 +2614,6 @@ LaTeX Warning: Hyper reference `bhfn:2' on page 1 undefined on input line 19.
 
 
 LaTeX Warning: Citation 'Hall2025Guyton' on page 1 undefined on input line 19.
-
-
-LaTeX Warning: Hyper reference `bhfn:3' on page 1 undefined on input line 19.
 
 \openout4 = `01-physiology-foundations.mw'.
 
@@ -2809,9 +2791,6 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 14.40152pt on input line 27.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 14.39845pt on input line 27.
-
-LaTeX Warning: Hyper reference `bhfn:3' on page 1 undefined on input line 27.
-
 \openout4 = `01-physiology-foundations.mw'.
 
 \openout4 = `01-physiology-foundations.mw'.
@@ -2961,13 +2940,10 @@ File: ../../appendices/appendix 1: Physiology/images/a1-membrane-transport-elect
 
 \openout4 = `01-physiology-foundations.mw'.
 
-
-
-LaTeX Warning: Hyper reference `bhfn:3' on page 3 undefined on input line 70.
-
 \openout4 = `01-physiology-foundations.mw'.
 
 \openout4 = `01-physiology-foundations.mw'.
+
 
 
 LaTeX Warning: Citation 'Alberts2022MBoC' on page 3 undefined on input line 70.
@@ -3093,9 +3069,6 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                01-physiology-foundations
 (biblatex)                and rerun LaTeX afterwards.
@@ -3115,12 +3088,12 @@ Package logreq Info: Writing requests to '01-physiology-foundations.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64421 strings out of 468168
- 1366052 string characters out of 5432815
- 2850224 words of memory out of 5000000
- 91984 multiletter control sequences out of 15000+600000
- 635361 words of font info for 123 fonts, out of 8000000 for 9000
+ 64456 strings out of 468168
+ 1367014 string characters out of 5432815
+ 2856666 words of memory out of 5000000
+ 92011 multiletter control sequences out of 15000+600000
+ 635369 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 148i,19n,176p,11339b,5382s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 148i,19n,176p,11339b,5398s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 01-physiology-foundations.pdf (4 pages).

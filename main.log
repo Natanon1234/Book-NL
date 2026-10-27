@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  24 OCT 2026 08:53
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.22)  27 OCT 2026 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -456,6 +456,11 @@ Package chngcntr Info: \counterwithout already defined.
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
 \FN@temptoken=\toks35
 \footnotemargin=\dimen187
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/bigfoot/perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count329
+)
+\c@pp@a@footnote=\count330
 Package footmisc Info: Declaring symbol style bringhurst on input line 549.
 Package footmisc Info: Declaring symbol style chicago on input line 557.
 Package footmisc Info: Declaring symbol style wiley on input line 566.
@@ -495,19 +500,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count329
+\c@section@level=\count331
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen188
-\Hy@linkcounter=\count330
-\Hy@pagecounter=\count331
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
  (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count332
+\Hy@SavedSpaceFactor=\count334
  (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 )
@@ -518,7 +523,7 @@ Package hyperref Info: Plain pages OFF on input line 4216.
 Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count333
+\c@Hy@tempcnt=\count335
  (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -530,7 +535,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count334
+\Fld@menulength=\count336
 \Field@Width=\dimen190
 \Fld@charsize=\dimen191
 Package hyperref Info: Hyper figures OFF on input line 6084.
@@ -540,18 +545,18 @@ Package hyperref Info: backreferencing OFF on input line 6099.
 Package hyperref Info: Link coloring OFF on input line 6104.
 Package hyperref Info: Link coloring with OCG OFF on input line 6109.
 Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count335
-\c@Item=\count336
-\c@Hfootnote=\count337
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
 )
 Package hyperref Info: Driver (autodetected): hxetex.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2026-01-29 v7.01p Hyperref driver for XeTeX
 \pdfm@box=\box110
-\c@Hy@AnnotLevel=\count338
-\HyField@AnnotCount=\count339
-\Fld@listcount=\count340
-\c@bookmark@seq@number=\count341
+\c@Hy@AnnotLevel=\count340
+\HyField@AnnotCount=\count341
+\Fld@listcount=\count342
+\c@bookmark@seq@number=\count343
  (/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -561,7 +566,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip95
 )
-\c@BackrefHyperFootnoteCounter=\count342
+\c@BackrefHyperFootnoteCounter=\count344
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
@@ -605,14 +610,14 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yd=\dimen261
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count343
-\c@pgf@countb=\count344
-\c@pgf@countc=\count345
-\c@pgf@countd=\count346
+\c@pgf@counta=\count345
+\c@pgf@countb=\count346
+\c@pgf@countc=\count347
+\c@pgf@countd=\count348
 \t@pgf@toka=\toks40
 \t@pgf@tokb=\toks41
 \t@pgf@tokc=\toks42
-\pgf@sys@id@count=\count347
+\pgf@sys@id@count=\count349
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
@@ -624,24 +629,24 @@ File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )
-\pgfsys@objnum=\count348
+\pgfsys@objnum=\count350
 ))) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count349
-\pgfsyssoftpath@bigbuffer@items=\count350
+\pgfsyssoftpath@smallbuffer@items=\count351
+\pgfsyssoftpath@bigbuffer@items=\count352
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen262
-\pgfmath@count=\count351
+\pgfmath@count=\count353
 \pgfmath@box=\box112
 \pgfmath@toks=\toks43
 \pgfmath@stack@operand=\toks44
 \pgfmath@stack@operation=\toks45
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count352
+\c@pgfmathroundto@lastzeros=\count354
 )) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen263
@@ -671,7 +676,7 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box113
 \pgf@hbox=\box114
 \pgf@layerbox@main=\box115
-\pgf@picture@serial@count=\count353
+\pgf@picture@serial@count=\count355
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen281
@@ -692,8 +697,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen286
-\pgf@sys@shading@range@num=\count354
-\pgf@shadingcount=\count355
+\pgf@sys@shading@range@num=\count356
+\pgf@shadingcount=\count357
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -728,7 +733,7 @@ Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count356
+\pgf@plot@mark@count=\count358
 \pgfplotmarksize=\dimen291
 )
 \tikz@lastx=\dimen292
@@ -743,24 +748,24 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@figbox@bg=\box119
 \tikz@tempbox=\box120
 \tikz@tempbox@bg=\box121
-\tikztreelevel=\count357
-\tikznumberofchildren=\count358
-\tikznumberofcurrentchild=\count359
-\tikz@fig@count=\count360
+\tikztreelevel=\count359
+\tikznumberofchildren=\count360
+\tikznumberofcurrentchild=\count361
+\tikz@fig@count=\count362
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count361
-\pgfmatrixcurrentcolumn=\count362
-\pgf@matrix@numberofcolumns=\count363
+\pgfmatrixcurrentrow=\count363
+\pgfmatrixcurrentcolumn=\count364
+\pgf@matrix@numberofcolumns=\count365
 )
-\tikz@expandcount=\count364
+\tikz@expandcount=\count366
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (/usr/local/texlive/2026/texmf-dist/tex/latex/tikzpagenodes/tikzpagenodes.sty
 Package: tikzpagenodes 2012/09/16 v1.1 Special PGF/TikZ nodes for areas of the page
  (/usr/local/texlive/2026/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count365
+\c@checkoddpage=\count367
 LaTeX Info: Redefining \checkoddpage on input line 45.
 )) (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -774,45 +779,45 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen307
 \cmidrulekern=\dimen308
 \defaultaddspace=\dimen309
-\@cmidla=\count366
-\@cmidlb=\count367
+\@cmidla=\count368
+\@cmidlb=\count369
 \@aboverulesep=\dimen310
 \@belowrulesep=\dimen311
-\@thisruleclass=\count368
-\@lastruleclass=\count369
+\@thisruleclass=\count370
+\@lastruleclass=\count371
 \@thisrulewidth=\dimen312
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip96
-\multirow@cntb=\count370
+\multirow@cntb=\count372
 \multirow@dima=\skip97
 \bigstrutjot=\dimen313
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
-\c@r@tfl@t=\count371
+\c@r@tfl@t=\count373
 \rotFPtop=\skip98
 \rotFPbot=\skip99
 \rot@float@box=\box122
 \rot@mess@toks=\toks48
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count372
+\lst@mode=\count374
 \lst@gtempboxa=\box123
 \lst@token=\toks49
-\lst@length=\count373
+\lst@length=\count375
 \lst@currlwidth=\dimen314
-\lst@column=\count374
-\lst@pos=\count375
+\lst@column=\count376
+\lst@pos=\count377
 \lst@lostspace=\dimen315
 \lst@width=\dimen316
-\lst@newlines=\count376
-\lst@lineno=\count377
+\lst@newlines=\count378
+\lst@lineno=\count379
 \lst@maxwidth=\dimen317
  (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count378
-\lst@skipnumbers=\count379
+\c@lstnumber=\count380
+\lst@skipnumbers=\count381
 \lst@framebox=\box124
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
@@ -827,7 +832,7 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count380
+\c@float@type=\count382
 \float@exts=\toks50
 \float@box=\box125
 \@floatcapt=\box126
@@ -844,18 +849,18 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \FBo@max=\skip103
 \FBc@max=\skip104
 \FBf@max=\skip105
-\c@FBl@b=\count381
-\floatbox@depth=\count382
-\c@FRobj=\count383
-\c@FRsobj=\count384
+\c@FBl@b=\count383
+\floatbox@depth=\count384
+\c@FRobj=\count385
+\c@FRsobj=\count386
 \Xhsize=\skip106
 \sXhsize=\skip107
 \Zhsize=\skip108
 \sZhsize=\skip109
 \flrow@rowbox=\box127
 \FR@Zunitlength=\dimen321
-\c@FBcnt=\count385
-\FPOScnt=\count386
+\c@FBcnt=\count387
+\FPOScnt=\count388
 \LTleft=\skip110
 \LTright=\skip111
 \LTleft=\skip112
@@ -869,11 +874,11 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/etoc/etoc.sty
 Package: etoc 2023/10/29 v1.2d Completely customisable TOCs (JFB)
 \Etoc@toctoks=\toks53
-\c@etoc@tocid=\count387
+\c@etoc@tocid=\count389
 \etoc@framed@titlebox=\box130
 \etoc@framed@contentsbox=\box131
 )
-\c@margintocdepth=\count388
+\c@margintocdepth=\count390
 \mtocshift=\skip116
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -897,17 +902,17 @@ Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaT
 Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
  (/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count389
-\l__fontspec_language_int=\count390
-\l__fontspec_strnum_int=\count391
-\l__fontspec_tmp_int=\count392
-\l__fontspec_tmpa_int=\count393
-\l__fontspec_tmpb_int=\count394
-\l__fontspec_tmpc_int=\count395
-\l__fontspec_em_int=\count396
-\l__fontspec_emdef_int=\count397
-\l__fontspec_strong_int=\count398
-\l__fontspec_strongdef_int=\count399
+\l__fontspec_script_int=\count391
+\l__fontspec_language_int=\count392
+\l__fontspec_strnum_int=\count393
+\l__fontspec_tmp_int=\count394
+\l__fontspec_tmpa_int=\count395
+\l__fontspec_tmpb_int=\count396
+\l__fontspec_tmpc_int=\count397
+\l__fontspec_em_int=\count398
+\l__fontspec_emdef_int=\count399
+\l__fontspec_strong_int=\count400
+\l__fontspec_strongdef_int=\count401
 \l__fontspec_tmpa_dim=\dimen322
 \l__fontspec_tmpb_dim=\dimen323
 \l__fontspec_tmpc_dim=\dimen324
@@ -1062,14 +1067,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count400
+\inf@bad=\count402
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count401
-\leftroot@=\count402
+\uproot@=\count403
+\leftroot@=\count404
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count403
-\DOTSCASE@=\count404
+\classnum@=\count405
+\DOTSCASE@=\count406
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -1082,20 +1087,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen327
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count405
+\macc@depth=\count407
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count406
+\c@MaxMatrixCols=\count408
 \dotsspace@=\muskip18
-\c@parentequation=\count407
-\dspbrk@lvl=\count408
+\c@parentequation=\count409
+\dspbrk@lvl=\count410
 \tag@help=\toks56
-\row@=\count409
-\column@=\count410
-\maxfields@=\count411
+\row@=\count411
+\column@=\count412
+\maxfields@=\count413
 \andhelp@=\toks57
 \eqnshift@=\dimen328
 \alignsep@=\dimen329
@@ -1110,9 +1115,9 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
-\g__um_fam_int=\count412
-\g__um_fonts_used_int=\count413
-\l__um_primecount_int=\count414
+\g__um_fam_int=\count414
+\g__um_fonts_used_int=\count415
+\l__um_primecount_int=\count416
 \g__um_primekern_muskip=\muskip19
  (/usr/local/texlive/2026/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
 
@@ -1247,13 +1252,13 @@ Package fontspec Info:
 (fontspec)             Condensed/BI/OT:script=latn;language=dflt;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1029.
+(Font)                  OT1/cmr/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1033.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/NotoSansCondensed(1)/m/it on input line 1029.
+(Font)                  OT1/cmr/m/it --> TU/NotoSansCondensed(1)/m/it on input line 1033.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1029.
+(Font)                  OT1/cmr/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1033.
 LaTeX Font Info:    Font shape `TU/NotoSansCondensed(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1029.
+(Font)              scaled to size 10.0pt on input line 1033.
 
 Package fontspec Info: 
 (fontspec)             Noto Sans Condensed scale = 1.
@@ -1263,163 +1268,105 @@ Package fontspec Info:
 (fontspec)             Noto Sans Condensed scale = 1.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1032.
+(Font)                  OT1/cmss/m/n --> TU/NotoSansCondensed(1)/m/n on input line 1036.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1032.
+(Font)                  OT1/cmss/bx/n --> TU/NotoSansCondensed(1)/b/n on input line 1036.
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Mono scale = .89.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Latin Modern Mono/B" (it
-(fontspec)             probably doesn't exist).
+(fontspec)             lmmono10-regular scale = .89.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Mono scale = .89.
+(fontspec)             lmmono10-regular scale = .89.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Mono/I scale = .89.
-
-
-Package fontspec Info: 
-(fontspec)             Latin Modern Mono/BI scale = .89.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'LatinModernMono(0)' created for font
-(fontspec)             'Latin Modern Mono' with options
+(fontspec)             Font family 'lmmono10-regular.otf(0)' created for font
+(fontspec)             'lmmono10-regular.otf' with options
 (fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,Scale=.89].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[.89]"Latin
-(fontspec)             Modern Mono/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[.89]"Latin
-(fontspec)             Modern Mono/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[.89]"Latin Modern
-(fontspec)             Mono/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[.89]"[lmmono10-regular.otf]/OT:script=latn;language=dflt;"
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Mono scale = .89.
+(fontspec)             lmmono10-regular scale = .89.
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "Latin Modern Mono/B" (it
-(fontspec)             probably doesn't exist).
+(fontspec)             lmmono10-regular scale = .89.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Mono scale = .89.
-
-
-Package fontspec Info: 
-(fontspec)             Latin Modern Mono/I scale = .89.
-
-
-Package fontspec Info: 
-(fontspec)             Latin Modern Mono/BI scale = .89.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'LatinModernMono(1)' created for font
-(fontspec)             'Latin Modern Mono' with options [Scale=.89].
+(fontspec)             Font family 'lmmono10-regular.otf(1)' created for font
+(fontspec)             'lmmono10-regular.otf' with options [Scale=.89].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[.89]"Latin
-(fontspec)             Modern Mono/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[.89]"Latin
-(fontspec)             Modern Mono/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[.89]"Latin Modern
-(fontspec)             Mono/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[.89]"[lmmono10-regular.otf]/OT:script=latn;language=dflt;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/LatinModernMono(1)/m/n on input line 1035.
+(Font)                  OT1/cmtt/m/n --> TU/lmmono10-regular.otf(1)/m/n on input line 1039.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/LatinModernMono(1)/b/n on input line 1035.
+(Font)                  OT1/cmtt/m/n --> TU/lmmono10-regular.otf(1)/b/n on input line 1039.
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "Latin Modern Math/B" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'LatinModernMath(0)' created for font
-(fontspec)             'Latin Modern Math' with options
+(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Latin Modern
-(fontspec)             Math/OT:script=math;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "Latin Modern Math/B" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'LatinModernMath(1)' created for font
-(fontspec)             'Latin Modern Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=Latin
-(fontspec)             Modern Math,Style=MathScript},{Size=-6,Font=Latin
-(fontspec)             Modern Math,Style=MathScriptScript}}].
+(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <8.5->"Latin Modern
-(fontspec)             Math/OT:script=math;language=dflt;"<6-8.5>"Latin Modern
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6>"Latin
-(fontspec)             Modern Math/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 1036.
+(Font)              `operators' in the math version `normal' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line 1036.
+(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 1040.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 1036.
+(Font)              `operators' in the math version `bold' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/b/n on input line 1036.
+(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 1040.
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 1.0001.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Latin Modern Math/B" (it
-(fontspec)             probably doesn't exist).
+(fontspec)             latinmodern-math scale = 1.0001.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 1.0001.
+(fontspec)             latinmodern-math scale = 1.0001.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 1.0001.
+(fontspec)             latinmodern-math scale = 1.0001.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 1.0001.
+(fontspec)             latinmodern-math scale = 1.0001.
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'LatinModernMath(2)' created for font
-(fontspec)             'Latin Modern Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=Latin
-(fontspec)             Modern Math,Style=MathScript},{Size=-6,Font=Latin
-(fontspec)             Modern
-(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdjustment={\fontdimen
 (fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
 (fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
 (fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
@@ -1435,49 +1382,37 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[1.0001]"Latin Modern
-(fontspec)             Math/OT:script=math;language=dflt;"<6-8.5>s*[1.0001]"Latin
-(fontspec)             Modern
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.0001]"Latin
-(fontspec)             Modern Math/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 1036.
+(Font)              `symbols' in the math version `normal' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input line 1036.
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 1040.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 1036.
+(Font)              `symbols' in the math version `bold' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/b/n on input line 1036.
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 1040.
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 0.9999.
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Latin Modern Math/B" (it
-(fontspec)             probably doesn't exist).
+(fontspec)             latinmodern-math scale = 0.9999.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 0.9999.
+(fontspec)             latinmodern-math scale = 0.9999.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 0.9999.
+(fontspec)             latinmodern-math scale = 0.9999.
 
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 0.9999.
+(fontspec)             latinmodern-math scale = 0.9999.
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'LatinModernMath(3)' created for font
-(fontspec)             'Latin Modern Math' with options
-(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=Latin
-(fontspec)             Modern Math,Style=MathScript},{Size=-6,Font=Latin
-(fontspec)             Modern
-(fontspec)             Math,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdjustment={\fontdimen
 (fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
 (fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
 (fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
@@ -1487,50 +1422,46 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[0.9999]"Latin Modern
-(fontspec)             Math/OT:script=math;language=dflt;"<6-8.5>s*[0.9999]"Latin
-(fontspec)             Modern
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999]"Latin
-(fontspec)             Modern Math/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1036.
+(Font)              `largesymbols' in the math version `normal' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input line 1036.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 1040.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 1036.
+(Font)              `largesymbols' in the math version `bold' on input line 1040.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/b/n on input line 1036.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 1040.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/morewrites/morewrites.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/morewrites/primargs.sty
 Package: primargs 2024/02/02 Parsing arguments of primitives
 )
 Package: morewrites 2024/02/02 Always room for a new write
-\g__morewrites_later_int=\count415
-\l__morewrites_user_int=\count416
+\g__morewrites_later_int=\count417
+\l__morewrites_user_int=\count418
 \g__morewrites_iow=\write4
 \g__morewrites_ior=\read3
-\g__morewrites_group_level_int=\count417
+\g__morewrites_group_level_int=\count419
 \g__morewrites_shipout_box=\box134
-\l__morewrites_collect_next_int=\count418
-\g__morewrites_alloc_write_int=\count419
+\l__morewrites_collect_next_int=\count420
+\g__morewrites_alloc_write_int=\count421
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
-\BKM@id=\count420
+\BKM@id=\count422
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 1085.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 1085.
-Package hyperref Info: Option `breaklinks' set `true' on input line 1085.
-Package hyperref Info: Option `colorlinks' set `true' on input line 1085.
+Package hyperref Info: Option `unicode' set `true' on input line 1089.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 1089.
+Package hyperref Info: Option `breaklinks' set `true' on input line 1089.
+Package hyperref Info: Option `colorlinks' set `true' on input line 1089.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip120
 \enit@outerparindent=\dimen334
 \enit@toks=\toks60
 \enit@inbox=\box135
-\enit@count@id=\count421
-\enitdp@description=\count422
+\enit@count@id=\count423
+\enitdp@description=\count424
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
  (/usr/local/texlive/2026/texmf-dist/tex/latex/zref/zref-abspage.sty
@@ -1546,11 +1477,11 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count423
+\c@abspage=\count425
 Package zref Info: New property: abspage on input line 67.
 )
 \mdf@templength=\skip121
-\c@mdf@globalstyle@cnt=\count424
+\c@mdf@globalstyle@cnt=\count426
 \mdf@skipabove@length=\skip122
 \mdf@skipbelow@length=\skip123
 \mdf@leftmargin@length=\skip124
@@ -1625,21 +1556,21 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@horizontalspaceofbox=\skip185
 \mdfsubtitleheight=\skip186
 \mdfsubsubtitleheight=\skip187
-\c@mdfcountframes=\count425
+\c@mdfcountframes=\count427
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count426
-\c@mdf@env@i=\count427
-\c@mdf@env@ii=\count428
-\c@mdf@zref@counter=\count429
+\mdf@envdepth=\count428
+\c@mdf@env@i=\count429
+\c@mdf@env@ii=\count430
+\c@mdf@zref@counter=\count431
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\c@kaocounter=\count430
+\c@kaoboxcounter=\count432
 Package tocbasic Info: omitting babel extension for `loi'
-(tocbasic)             because of missing \bbl@set@language on input line 1259.
+(tocbasic)             because of missing \bbl@set@language on input line 1269.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -1653,13 +1584,13 @@ Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2025/07/23 v0.6g Pdfpages driver for XeTeX (AM)
 )
-\pdfpages@includegraphics@status=\count431
+\pdfpages@includegraphics@status=\count433
 \AM@pagebox=\box141
 \AM@global@opts=\toks61
-\AM@pagecnt=\count432
+\AM@pagecnt=\count434
 \AM@toc@title=\toks62
 \AM@lof@heading=\toks63
-\c@AM@survey=\count433
+\c@AM@survey=\count435
 \AM@templatesizebox=\box142
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
@@ -1671,13 +1602,13 @@ Package: todonotes 2024/01/05
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-\c@@todonotes@numberoftodonotes=\count434
+\c@@todonotes@numberoftodonotes=\count436
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 299 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 550 replaced by U+FFFD.
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count435
+\c@AlgoLine=\count437
 \algocf@hangindent=\skip188
  (/usr/local/texlive/2026/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
@@ -1712,9 +1643,9 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip260
 \algotitleheightruledefault=\skip261
 \algotitleheightrule=\skip262
-\c@algocfline=\count436
-\c@algocfproc=\count437
-\c@algocf=\count438
+\c@algocfline=\count438
+\c@algocfproc=\count439
+\c@algocf=\count440
 \algocf@algoframe=\box149
 \algocf@algobox=\box150
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/ccicons/ccicons.sty
@@ -1739,44 +1670,44 @@ Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
  (/usr/local/texlive/2026/texmf-dist/tex/generic/tracklang/tracklang.tex))
-\l__datatool_tmpa_int=\count439
-\l__datatool_tmpb_int=\count440
-\l__datatool_tmpc_int=\count441
-\l__datatool_tmpd_int=\count442
-\l__datatool_count_int=\count443
-\l__datatool_tmp_datatype_int=\count444
+\l__datatool_tmpa_int=\count441
+\l__datatool_tmpb_int=\count442
+\l__datatool_tmpc_int=\count443
+\l__datatool_tmpd_int=\count444
+\l__datatool_count_int=\count445
+\l__datatool_tmp_datatype_int=\count446
 \l__datatool_tmpa_dim=\dimen346
 \l__datatool_tmpb_dim=\dimen347
  (/usr/local/texlive/2026/texmf-dist/tex/latex/datatool/datatool-l3fp.def
 File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
 )
 \@dtl@toks=\toks68
-\@dtl@tmpcount=\count445
+\@dtl@tmpcount=\count447
 \dtl@tmplength=\skip263
 \l__datatool_measure_box=\box151
-\dtl@sortresult=\count446
+\dtl@sortresult=\count448
  (/usr/local/texlive/2026/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@datatype=\count447
-\c_datatool_unknown_int=\count448
-\l__datatool_year_int=\count449
-\l__datatool_month_int=\count450
-\l__datatool_day_int=\count451
-\l__datatool_hour_int=\count452
-\l__datatool_minute_int=\count453
-\l__datatool_second_int=\count454
-\l__datatool_tzhour_int=\count455
-\l__datatool_tzminute_int=\count456
-\l__datatool_julian_int=\count457
-\l__datatool_local_julian_int=\count458
-\l__datatool_prefix_int=\count459
-\l__datatool_suffix_int=\count460
-\@dtl@foreach@level=\count461
-\dtl@codeA=\count462
-\dtl@codeB=\count463
+\@dtl@datatype=\count449
+\c_datatool_unknown_int=\count450
+\l__datatool_year_int=\count451
+\l__datatool_month_int=\count452
+\l__datatool_day_int=\count453
+\l__datatool_hour_int=\count454
+\l__datatool_minute_int=\count455
+\l__datatool_second_int=\count456
+\l__datatool_tzhour_int=\count457
+\l__datatool_tzminute_int=\count458
+\l__datatool_julian_int=\count459
+\l__datatool_local_julian_int=\count460
+\l__datatool_prefix_int=\count461
+\l__datatool_suffix_int=\count462
+\@dtl@foreach@level=\count463
+\dtl@codeA=\count464
+\dtl@codeB=\count465
 )
-\gls@level=\count464
+\gls@level=\count466
 \@gls@tmpb=\toks69
 \gls@tmplen=\skip264
 \l__glossaries_tmpa_dim=\dimen348
@@ -1798,17 +1729,17 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTright=\skip267
 \LTpre=\skip268
 \LTpost=\skip269
-\LTchunksize=\count465
+\LTchunksize=\count467
 \LTcapwidth=\dimen350
 \LT@head=\box152
 \LT@firsthead=\box153
 \LT@foot=\box154
 \LT@lastfoot=\box155
 \LT@gbox=\box156
-\LT@cols=\count466
-\LT@rows=\count467
-\c@LT@tables=\count468
-\c@LT@chunks=\count469
+\LT@cols=\count468
+\LT@rows=\count469
+\c@LT@tables=\count470
+\c@LT@chunks=\count471
 \LT@p@ftn=\toks74
 )
 Class scrbook Info: longtable captions redefined on input line 47.
@@ -1818,7 +1749,7 @@ Class scrbook Info: longtable captions redefined on input line 47.
 Package: glossary-super 2026/03/06 v5.0 (NLCT)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2025/06/26 v4.2d the supertabular environment
-\c@tracingst=\count470
+\c@tracingst=\count472
 \ST@wd=\dimen351
 \ST@rightskip=\skip272
 \ST@leftskip=\skip273
@@ -1835,7 +1766,7 @@ Package: supertabular 2025/06/26 v4.2d the supertabular environment
 \ST@pbox=\box157
 )) (/usr/local/texlive/2026/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2026/03/06 v5.0 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count471
+\l__glossaries_tree_max_known_level_int=\count473
 \l__glossaries_tree_offset_dim=\dimen361
 \l__glossaries_tree_namewidth_dim=\dimen362
 \l__glossaries_tree_symbolwidth_dim=\dimen363
@@ -1845,7 +1776,7 @@ Package: glossary-tree 2026/03/06 v5.0 (NLCT)
 \l__glossaries_tree_symbolwidth_padding_dim=\dimen367
 \l__glossaries_tree_namesymbolwidth_dim=\dimen368
 \l__glossaries_tree_namesymbolwidth_padding_dim=\dimen369
-\l__glossaries_tree_level_int=\count472
+\l__glossaries_tree_level_int=\count474
 \glstreeindent=\skip275
 )) (/usr/local/texlive/2026/texmf-dist/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2021/11/10 v5.6 Nomenclature package
@@ -1858,7 +1789,7 @@ Package tocbasic Info: omitting babel extension for `nls'
 \nomitemsep=\skip276
 ))) (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2026/03/08 v26.4 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
-\babel@savecnt=\count473
+\babel@savecnt=\count475
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
@@ -1870,7 +1801,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
 \l@unhyphenated=\language92
  (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/xebabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count474
+\bbl@dirlevel=\count476
  (/usr/local/texlive/2026/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 4330.
@@ -1884,12 +1815,12 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 108.
 )) (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count475
-\csq@gtype=\count476
-\csq@glevel=\count477
-\csq@qlevel=\count478
-\csq@maxlvl=\count479
-\csq@tshold=\count480
+\csq@reset=\count477
+\csq@gtype=\count478
+\csq@glevel=\count479
+\csq@qlevel=\count480
+\csq@maxlvl=\count481
+\csq@tshold=\count482
 \csq@ltx@everypar=\toks75
  (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
@@ -1973,45 +1904,38 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Could not resolve font "Latin Modern Mono/B" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'LatinModernMono(2)' created for font
-(fontspec)             'Latin Modern Mono' with options
-(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
+(fontspec)             Font family 'lmmono10-regular.otf(2)' created for font
+(fontspec)             'lmmono10-regular.otf' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,BoldFont={lmmonolt10-bold.otf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Latin Modern
-(fontspec)             Mono/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Latin Modern
-(fontspec)             Mono/I/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Latin
-(fontspec)             Modern Mono/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[lmmono10-regular.otf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[lmmonolt10-bold.otf]/OT:script=latn;language=dflt;"
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/LatinModernMath(1)/m/n --> TU/LatinModernMath(1)/m/n on input line 31.
+(Font)                  TU/latinmodern-math.otf(1)/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/LatinModernMath(1)/b/n --> TU/LatinModernMath(1)/b/n on input line 31.
+(Font)                  TU/latinmodern-math.otf(1)/b/n --> TU/latinmodern-math.otf(1)/b/n on input line 31.
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 1.0001.
+(fontspec)             latinmodern-math scale = 1.0001.
 
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  TU/LatinModernMath(2)/m/n --> TU/LatinModernMath(2)/m/n on input line 31.
+(Font)                  TU/latinmodern-math.otf(2)/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  TU/LatinModernMath(2)/b/n --> TU/LatinModernMath(2)/b/n on input line 31.
+(Font)                  TU/latinmodern-math.otf(2)/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 31.
 
 Package fontspec Info: 
-(fontspec)             Latin Modern Math scale = 0.9999.
+(fontspec)             latinmodern-math scale = 0.9999.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  TU/LatinModernMath(3)/m/n --> TU/LatinModernMath(3)/m/n on input line 31.
+(Font)                  TU/latinmodern-math.otf(3)/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  TU/LatinModernMath(3)/b/n --> TU/LatinModernMath(3)/b/n on input line 31.
+(Font)                  TU/latinmodern-math.otf(3)/b/n --> TU/latinmodern-math.otf(3)/b/n on input line 31.
 
 Package fontspec Info: 
 (fontspec)             Noto Sans Thai UI scale = 0.9999971532194241.
@@ -2058,82 +1982,82 @@ Package: ucharclasses 2022/10/20 v2.6.0 Unicode block character classes for XeLa
 \ThaiClass=\XeTeXcharclass5
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-\c@blindtext=\count481
-\c@Blindtext=\count482
-\c@blind@countparstart=\count483
-\blind@countxx=\count484
-\blindtext@numBlindtext=\count485
-\blind@countyy=\count486
-\c@blindlist=\count487
-\c@blindlistlevel=\count488
-\c@blindlist@level=\count489
-\blind@listitem=\count490
-\c@blind@listcount=\count491
-\c@blind@levelcount=\count492
-\blind@mathformula=\count493
-\blind@Mathformula=\count494
-\c@blind@randomcount=\count495
-\c@blind@randommax=\count496
-\c@blind@pangramcount=\count497
-\c@blind@pangrammax=\count498
+\c@blindtext=\count483
+\c@Blindtext=\count484
+\c@blind@countparstart=\count485
+\blind@countxx=\count486
+\blindtext@numBlindtext=\count487
+\blind@countyy=\count488
+\c@blindlist=\count489
+\c@blindlistlevel=\count490
+\c@blindlist@level=\count491
+\blind@listitem=\count492
+\c@blind@listcount=\count493
+\c@blind@levelcount=\count494
+\blind@mathformula=\count495
+\blind@Mathformula=\count496
+\c@blind@randomcount=\count497
+\c@blind@randommax=\count498
+\c@blind@pangramcount=\count499
+\c@blind@pangrammax=\count500
 ) (./template/kaobiblio.sty
 Package: template/kaobiblio 
- (/usr/local/texlive/2026/texmf-dist/tex/latex/bigfoot/perpage.sty
-Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-) (/usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
 Package: iflang 2018/01/21 v1.7 Checks for the current language (HO)
 Package iflang Info: Naming convention for patterns: babel.
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count499
+\lrq@indent=\count501
  (/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count500
-\c@listtotal=\count501
-\c@listcount=\count502
-\c@liststart=\count503
-\c@liststop=\count504
-\c@citecount=\count505
-\c@citetotal=\count506
-\c@multicitecount=\count507
-\c@multicitetotal=\count508
-\c@instcount=\count509
-\c@maxnames=\count510
-\c@minnames=\count511
-\c@maxitems=\count512
-\c@minitems=\count513
-\c@citecounter=\count514
-\c@maxcitecounter=\count515
-\c@savedcitecounter=\count516
-\c@uniquelist=\count517
-\c@uniquename=\count518
-\c@refsection=\count519
-\c@refsegment=\count520
-\c@maxextratitle=\count521
-\c@maxextratitleyear=\count522
-\c@maxextraname=\count523
-\c@maxextradate=\count524
-\c@maxextraalpha=\count525
-\c@abbrvpenalty=\count526
-\c@highnamepenalty=\count527
-\c@lownamepenalty=\count528
-\c@maxparens=\count529
-\c@parenlevel=\count530
-\blx@tempcnta=\count531
-\blx@tempcntb=\count532
-\blx@tempcntc=\count533
-\c@blx@maxsection=\count534
-\blx@maxsegment@0=\count535
-\blx@notetype=\count536
-\blx@parenlevel@text=\count537
-\blx@parenlevel@foot=\count538
-\blx@sectionciteorder@0=\count539
-\blx@sectionciteorderinternal@0=\count540
-\blx@entrysetcounter=\count541
-\blx@biblioinstance=\count542
+\c@tabx@nest=\count502
+\c@listtotal=\count503
+\c@listcount=\count504
+\c@liststart=\count505
+\c@liststop=\count506
+\c@citecount=\count507
+\c@citetotal=\count508
+\c@multicitecount=\count509
+\c@multicitetotal=\count510
+\c@instcount=\count511
+\c@maxnames=\count512
+\c@minnames=\count513
+\c@maxitems=\count514
+\c@minitems=\count515
+\c@citecounter=\count516
+\c@maxcitecounter=\count517
+\c@savedcitecounter=\count518
+\c@uniquelist=\count519
+\c@uniquename=\count520
+\c@refsection=\count521
+\c@refsegment=\count522
+\c@maxextratitle=\count523
+\c@maxextratitleyear=\count524
+\c@maxextraname=\count525
+\c@maxextradate=\count526
+\c@maxextraalpha=\count527
+\c@abbrvpenalty=\count528
+\c@highnamepenalty=\count529
+\c@lownamepenalty=\count530
+\c@maxparens=\count531
+\c@parenlevel=\count532
+\blx@tempcnta=\count533
+\blx@tempcntb=\count534
+\blx@tempcntc=\count535
+\c@blx@maxsection=\count536
+\blx@maxsegment@0=\count537
+\blx@notetype=\count538
+\blx@parenlevel@text=\count539
+\blx@parenlevel@foot=\count540
+\blx@sectionciteorder@0=\count541
+\blx@sectionciteorderinternal@0=\count542
+\blx@entrysetcounter=\count543
+\blx@biblioinstance=\count544
 \labelnumberwidth=\skip277
 \labelalphawidth=\skip278
 \biblabelsep=\skip279
@@ -2145,9 +2069,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read5
 \blx@bcfout=\write129
 \blx@langwohyphens=\language93
-\c@mincomprange=\count543
-\c@maxcomprange=\count544
-\c@mincompwidth=\count545
+\c@mincomprange=\count545
+\c@maxcomprange=\count546
+\c@mincompwidth=\count547
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -2159,74 +2083,74 @@ Package biblatex Info: Trying to load biblatex bibstyle data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count546
-\c@savedafterword=\count547
-\c@annotator=\count548
-\c@savedannotator=\count549
-\c@author=\count550
-\c@savedauthor=\count551
-\c@bookauthor=\count552
-\c@savedbookauthor=\count553
-\c@commentator=\count554
-\c@savedcommentator=\count555
-\c@editor=\count556
-\c@savededitor=\count557
-\c@editora=\count558
-\c@savededitora=\count559
-\c@editorb=\count560
-\c@savededitorb=\count561
-\c@editorc=\count562
-\c@savededitorc=\count563
-\c@foreword=\count564
-\c@savedforeword=\count565
-\c@holder=\count566
-\c@savedholder=\count567
-\c@introduction=\count568
-\c@savedintroduction=\count569
-\c@namea=\count570
-\c@savednamea=\count571
-\c@nameb=\count572
-\c@savednameb=\count573
-\c@namec=\count574
-\c@savednamec=\count575
-\c@translator=\count576
-\c@savedtranslator=\count577
-\c@shortauthor=\count578
-\c@savedshortauthor=\count579
-\c@shorteditor=\count580
-\c@savedshorteditor=\count581
-\c@labelname=\count582
-\c@savedlabelname=\count583
-\c@institution=\count584
-\c@savedinstitution=\count585
-\c@lista=\count586
-\c@savedlista=\count587
-\c@listb=\count588
-\c@savedlistb=\count589
-\c@listc=\count590
-\c@savedlistc=\count591
-\c@listd=\count592
-\c@savedlistd=\count593
-\c@liste=\count594
-\c@savedliste=\count595
-\c@listf=\count596
-\c@savedlistf=\count597
-\c@location=\count598
-\c@savedlocation=\count599
-\c@organization=\count600
-\c@savedorganization=\count601
-\c@origlocation=\count602
-\c@savedoriglocation=\count603
-\c@origpublisher=\count604
-\c@savedorigpublisher=\count605
-\c@publisher=\count606
-\c@savedpublisher=\count607
-\c@language=\count608
-\c@savedlanguage=\count609
-\c@origlanguage=\count610
-\c@savedoriglanguage=\count611
-\c@pageref=\count612
-\c@savedpageref=\count613
+\c@afterword=\count548
+\c@savedafterword=\count549
+\c@annotator=\count550
+\c@savedannotator=\count551
+\c@author=\count552
+\c@savedauthor=\count553
+\c@bookauthor=\count554
+\c@savedbookauthor=\count555
+\c@commentator=\count556
+\c@savedcommentator=\count557
+\c@editor=\count558
+\c@savededitor=\count559
+\c@editora=\count560
+\c@savededitora=\count561
+\c@editorb=\count562
+\c@savededitorb=\count563
+\c@editorc=\count564
+\c@savededitorc=\count565
+\c@foreword=\count566
+\c@savedforeword=\count567
+\c@holder=\count568
+\c@savedholder=\count569
+\c@introduction=\count570
+\c@savedintroduction=\count571
+\c@namea=\count572
+\c@savednamea=\count573
+\c@nameb=\count574
+\c@savednameb=\count575
+\c@namec=\count576
+\c@savednamec=\count577
+\c@translator=\count578
+\c@savedtranslator=\count579
+\c@shortauthor=\count580
+\c@savedshortauthor=\count581
+\c@shorteditor=\count582
+\c@savedshorteditor=\count583
+\c@labelname=\count584
+\c@savedlabelname=\count585
+\c@institution=\count586
+\c@savedinstitution=\count587
+\c@lista=\count588
+\c@savedlista=\count589
+\c@listb=\count590
+\c@savedlistb=\count591
+\c@listc=\count592
+\c@savedlistc=\count593
+\c@listd=\count594
+\c@savedlistd=\count595
+\c@liste=\count596
+\c@savedliste=\count597
+\c@listf=\count598
+\c@savedlistf=\count599
+\c@location=\count600
+\c@savedlocation=\count601
+\c@organization=\count602
+\c@savedorganization=\count603
+\c@origlocation=\count604
+\c@savedoriglocation=\count605
+\c@origpublisher=\count606
+\c@savedorigpublisher=\count607
+\c@publisher=\count608
+\c@savedpublisher=\count609
+\c@language=\count610
+\c@savedlanguage=\count611
+\c@origlanguage=\count612
+\c@savedoriglanguage=\count613
+\c@pageref=\count614
+\c@savedpageref=\count615
 \shorthandwidth=\skip285
 \shortjournalwidth=\skip286
 \shortserieswidth=\skip287
@@ -2253,19 +2177,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count614
-\c@textcitetotal=\count615
-\c@textcitemaxnames=\count616
-\c@biburlbigbreakpenalty=\count617
-\c@biburlbreakpenalty=\count618
-\c@biburlnumpenalty=\count619
-\c@biburlucpenalty=\count620
-\c@biburllcpenalty=\count621
+\c@textcitecount=\count616
+\c@textcitetotal=\count617
+\c@textcitemaxnames=\count618
+\c@biburlbigbreakpenalty=\count619
+\c@biburlbreakpenalty=\count620
+\c@biburlnumpenalty=\count621
+\c@biburlucpenalty=\count622
+\c@biburllcpenalty=\count623
 \biburlbigskip=\muskip20
 \biburlnumskip=\muskip21
 \biburlucskip=\muskip22
 \biburllcskip=\muskip23
-\c@smartand=\count622
+\c@smartand=\count624
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -2275,17 +2199,17 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count623
-\c@bbx:relatedtotal=\count624
+\c@bbx:relatedcount=\count625
+\c@bbx:relatedtotal=\count626
 ))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count625
-\c@cbx@tempcntb=\count626
-\c@cbx@tempcntc=\count627
-\c@cbx@tempcntd=\count628
+\c@cbx@tempcnta=\count627
+\c@cbx@tempcntb=\count628
+\c@cbx@tempcntc=\count629
+\c@cbx@tempcntd=\count630
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -2313,7 +2237,7 @@ Package biblatex Info: ... and expl3
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-Package biblatex Info: Redefining '\fullcite' on input line 407.
+Package biblatex Info: Redefining '\fullcite' on input line 410.
 ) (./template/kaotheorems.sty
 Package: template/kaotheorems 
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
@@ -2332,7 +2256,7 @@ Class scrbook Info: amsthm's \deferred@thm@head patched.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2023/05/04 v0.76
 \thmt@toks=\toks82
-\c@thmt@dummyctr=\count629
+\c@thmt@dummyctr=\count631
  (/usr/local/texlive/2026/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2023/05/04 v0.76
  (/usr/local/texlive/2026/texmf-dist/tex/latex/thmtools/parseargs.sty
@@ -2354,15 +2278,15 @@ Package: thm-restate 2023/05/04 v0.76
 Package: thm-amsthm 2023/05/04 v0.76
 \thmt@style@headstyle=\toks84
 ))
-\c@theorem=\count630
-\c@definition=\count631
-\c@remark=\count632
-\c@example=\count633
+\c@theorem=\count632
+\c@definition=\count633
+\c@remark=\count634
+\c@example=\count635
 Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 386.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2023/05/04 v0.76
 )
-\c@exercise=\count634
+\c@exercise=\count636
 ) (./template/kaorefs.sty
 Package: template/kaorefs 
  (/usr/local/texlive/2026/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -2394,7 +2318,9 @@ Package cleveref Info: include cross-reference names in hyperlinks on input line
 Package cleveref Info: no abbreviation of names on input line 7852.
 )
 ==> First Aid for cleveref.sty applied!
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+)
+Package hyperref Info: Option `hypertexnames' set `false' on input line 50.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
  (/usr/local/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
@@ -2426,37 +2352,37 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-Package scrbase Info: activating english \partname on input line 63.
-Package scrbase Info: activating english \chaptername on input line 63.
-Package scrbase Info: activating english \appendixname on input line 63.
-Package scrbase Info: activating english \figurename on input line 63.
-Package scrbase Info: activating english \tablename on input line 63.
-Package scrbase Info: activating english \contentsname on input line 63.
-Package scrbase Info: activating english \listfigurename on input line 63.
-Package scrbase Info: activating english \listtablename on input line 63.
-Package scrbase Info: activating english \bibname on input line 63.
-Package scrbase Info: activating english \indexname on input line 63.
-Package scrbase Info: activating english \contentsname on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+Package scrbase Info: activating english \partname on input line 68.
+Package scrbase Info: activating english \chaptername on input line 68.
+Package scrbase Info: activating english \appendixname on input line 68.
+Package scrbase Info: activating english \figurename on input line 68.
+Package scrbase Info: activating english \tablename on input line 68.
+Package scrbase Info: activating english \contentsname on input line 68.
+Package scrbase Info: activating english \listfigurename on input line 68.
+Package scrbase Info: activating english \listtablename on input line 68.
+Package scrbase Info: activating english \bibname on input line 68.
+Package scrbase Info: activating english \indexname on input line 68.
+Package scrbase Info: activating english \contentsname on input line 68.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: 
 * paper: custom
@@ -2524,13 +2450,13 @@ Package scrbase Info: activating english \contentsname on input line 63.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 63.
-Package microtype Info: Applying patch `item' on input line 63.
-Package microtype Info: Applying patch `toc' on input line 63.
-Package microtype Info: Applying patch `eqnum' on input line 63.
-Package microtype Info: Applying patch `footnote' on input line 63.
-Package microtype Info: Applying patch `verbatim' on input line 63.
-LaTeX Info: Redefining \microtypesetup on input line 63.
+LaTeX Info: Redefining \microtypecontext on input line 68.
+Package microtype Info: Applying patch `item' on input line 68.
+Package microtype Info: Applying patch `toc' on input line 68.
+Package microtype Info: Applying patch `eqnum' on input line 68.
+Package microtype Info: Applying patch `footnote' on input line 68.
+Package microtype Info: Applying patch `verbatim' on input line 68.
+LaTeX Info: Redefining \microtypesetup on input line 68.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -2558,15 +2484,15 @@ Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \@sidenotes@extrawidth=\skip303
-Package hyperref Info: Link coloring ON on input line 63.
-\c@lstlisting=\count635
-Package tocbasic Info: setting babel extension for `lol' on input line 63.
+Package hyperref Info: Link coloring ON on input line 68.
+\c@lstlisting=\count637
+Package tocbasic Info: setting babel extension for `lol' on input line 68.
 \scr@dte@lstlisting@maxnumwidth=\skip304
  (/usr/local/texlive/2026/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 \flrow@LT@lasthead=\box158
 \flrow@LT@prelastfoot=\box159
-\c@FBLTpage=\count636
+\c@FBLTpage=\count638
 )
 \Etoc@tf=\read6
 Package biblatex Info: Trying to load language 'english'...
@@ -2585,47 +2511,14 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.mw'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 63.
-Package biblatex Info: Reference segment=0 on input line 63.
-Package scrbase Info: activating english \contentsname on input line 65.
-(./template/cover.tex)
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: xetex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(70.56247pt, 456.383pt, 70.56247pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12671pt, 77.96011pt)
-* \paperwidth=597.50793pt
-* \paperheight=845.04694pt
-* \textwidth=456.383pt
-* \textheight=689.12671pt
-* \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-27.30988pt
-* \headheight=15.0pt
-* \headsep=18.0pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=0.0pt
-* \marginparsep=0.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-File: assets/minimal-blue-medical-competency-cover.png Graphic file (type bmp)
-<assets/minimal-blue-medical-competency-cover.png>
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 68.
+Package biblatex Info: Reference segment=0 on input line 68.
+Package scrbase Info: activating english \contentsname on input line 70.
+ (./template/cover.tex)
+File: assets/book-cover-minimal-blue-medical-design.png Graphic file (type bmp)
+<assets/book-cover-minimal-blue-medical-design.png>
 \openout4 = `main.mw'.
 
  [1
@@ -2633,6 +2526,12 @@ File: assets/minimal-blue-medical-competency-cover.png Graphic file (type bmp)
 
 
 
+] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [2
 
 
 
@@ -2640,7 +2539,7 @@ File: assets/minimal-blue-medical-competency-cover.png Graphic file (type bmp)
 \openout4 = `main.mw'.
 
 LaTeX Font Info:    Font shape `TU/NotoSansThaiUI(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 130.
+(Font)              scaled to size 10.0pt on input line 143.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `NotoSansThaiUI' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2805,34 +2704,34 @@ Package microtype Info: Character `\textgreater ' is missing
 (microtype)             in font `\TU/NotoSansThaiUI(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 10.0pt on input line 130.
+(Font)              scaled to size 10.0pt on input line 143.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LatinModernMono' (encoding: TU).
+(microtype)             `lmmono10-regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LatinModernMath' (encoding: TU).
+(microtype)             `latinmodern-math.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 130.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 130.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 130.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 130.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 130.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 130.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 130.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 143.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 130.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -2840,14 +2739,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 \openout4 = `main.mw'.
 
- [2
-
+ [1
 
 ] (./main.mw)
 \openout4 = `main.mw'.
 
 LaTeX Font Info:    Font shape `TU/NotoSansThaiUI(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
+(Font)              scaled to size 14.4pt on input line 144.
 Package microtype Info: Character `A' is missing
 (microtype)             in font `\TU/NotoSansThaiUI(0)/m/n/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3009,16 +2907,7 @@ Package microtype Info: Character `\textgreater ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 \openout4 = `main.mw'.
 
- [3
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [4
-
+ [2
 
 
 ] (./main.mw)
@@ -3029,18 +2918,32 @@ Package microtype Info: Character `\textgreater ' is missing
 
 \openout4 = `main.mw'.
 
- [5] (./main.mw)
-\openout4 = `main.mw'.
+ [3
 
-\openout4 = `main.mw'.
-
- [6
 
 
 ] (./main.mw)
 \openout4 = `main.mw'.
 
-Package tocbasic Info: character protrusion at toc deactivated on input line 148.
+\openout4 = `main.mw'.
+
+ [4
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+Package tocbasic Info: character protrusion at toc deactivated on input line 166.
+\openout4 = `main.mw'.
+
+ [5] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [6] (./main.mw)
+\openout4 = `main.mw'.
+
 \openout4 = `main.mw'.
 
  [7] (./main.mw)
@@ -3048,8 +2951,16 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 148
 
 \openout4 = `main.mw'.
 
- [8] (./main.mw)
+ [8
+
+
+] (./main.mw)
 \openout4 = `main.mw'.
+
+Package tocbasic Info: character protrusion at lof deactivated on input line 167.
+ (./main.lof)
+\tf@lof=\write132
+\openout4 = `main.lof'.
 
 \openout4 = `main.mw'.
 
@@ -3064,10 +2975,10 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 148
 ] (./main.mw)
 \openout4 = `main.mw'.
 
-Package tocbasic Info: character protrusion at lof deactivated on input line 149.
- (./main.lof)
-\tf@lof=\write132
-\openout4 = `main.lof'.
+Package tocbasic Info: character protrusion at lot deactivated on input line 169.
+ (./main.lot)
+\tf@lot=\write133
+\openout4 = `main.lot'.
 
 \openout4 = `main.mw'.
 
@@ -3077,24 +2988,6 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 149
 \openout4 = `main.mw'.
 
  [12
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-Package tocbasic Info: character protrusion at lot deactivated on input line 151.
- (./main.lot)
-\tf@lot=\write133
-\openout4 = `main.lot'.
-
-\openout4 = `main.mw'.
-
- [13] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [14
 
 
 ] (./main.mw)
@@ -3134,16 +3027,16 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 151
 
  (./chapters/chapter0.tex
 chapter 1.
-Package marginnote Info: Margin note 15.1 is on absolute page 15 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 18.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 18.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 18.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 18.
+Package marginnote Info: Margin note 15.1 is on absolute page 15 on input line 14.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 14.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 19.
 \openout4 = `main.mw'.
 
 [1
@@ -3650,52 +3543,17 @@ part without number
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package marginnote Info: Suggest that margin note 55.1 will be on
-(marginnote)             absolute page 55.
-(marginnote)             This may be wrong on input line 71.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 71.
-Package mdframed Info: mdframed works in twoside mode on input line 71.
+Package marginnote Info: Margin note 55.1 is on absolute page 55 on input line 70.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 70.
+Package mdframed Info: mdframed works in twoside mode on input line 70.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 71.
+(mdframed)              on input line 70.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 71.
+(mdframed)              on input line 70.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 71.
-File: images/example_response.png Graphic file (type bmp)
-<images/example_response.png>
-File: images/example_dist_expr.png Graphic file (type bmp)
-<images/example_dist_expr.png>
-Package mdframed Info: mdframed works in twoside mode on input line 89.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 89.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 90.
-Package mdframed Info: mdframed works in twoside mode on input line 92.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 92.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
-Package mdframed Info: mdframed works in twoside mode on input line 96.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 96.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 98.
-Package mdframed Info: mdframed works in twoside mode on input line 100.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 100.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 102.
-Package mdframed Info: Not enough space on this page on input line 102.
+ mdframed uses option nobreak mdframed on input line 70.
 \openout4 = `main.mw'.
 
  [41
@@ -3703,204 +3561,70 @@ Package mdframed Info: Not enough space on this page on input line 102.
 ] (./main.mw)
 \openout4 = `main.mw'.
 
-Package mdframed Info: Not enough space on this page on input line 102.
-) (./chapters/chapter1.tex
+Package mdframed Info: mdframed works in twoside mode on input line 130.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 130.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 131.
+Package mdframed Info: Not enough space on this page on input line 131.
+Package mdframed Info: mdframed works in twoside mode on input line 132.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 132.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 134.
+Package mdframed Info: mdframed works in twoside mode on input line 135.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 135.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 137.
+Package mdframed Info: mdframed works in twoside mode on input line 138.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 138.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 140.
+Package mdframed Info: mdframed works in twoside mode on input line 142.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 142.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 143.
+Package mdframed Info: mdframed works in twoside mode on input line 144.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 144.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 146.
+Package mdframed Info: mdframed works in twoside mode on input line 147.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 147.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 149.
+Package marginnote Info: Margin note 56.1 is on absolute page 56 on input line 150.
+Package mdframed Info: mdframed works in twoside mode on input line 150.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 150.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 150.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 150.
+Package marginnote Info: xpos seems to be 222.50258pt on input line 150.
 \openout4 = `main.mw'.
 
  [42] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 2.
-Package marginnote Info: Margin note 57.1 is on absolute page 57 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter2.tex
-\openout4 = `main.mw'.
-
- [43
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [44
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 3.
-Package marginnote Info: Margin note 59.1 is on absolute page 59 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter3.tex
-\openout4 = `main.mw'.
-
- [45] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [46
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 4.
-Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter4.tex
-\openout4 = `main.mw'.
-
- [47] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [48
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 5.
-Package marginnote Info: Margin note 63.1 is on absolute page 63 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter5.tex
-\openout4 = `main.mw'.
-
- [49] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [50
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 6.
-Package marginnote Info: Margin note 65.1 is on absolute page 65 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter6.tex
-\openout4 = `main.mw'.
-
- [51] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [52
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 7.
-Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter7.tex
-\openout4 = `main.mw'.
-
- [53] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [54
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 8.
-Package marginnote Info: Margin note 69.1 is on absolute page 69 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter8.tex
-\openout4 = `main.mw'.
-
- [55] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [56
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 9.
-Package marginnote Info: Margin note 71.1 is on absolute page 71 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter9.tex
-\openout4 = `main.mw'.
-
- [57] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [58
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 10.
-Package marginnote Info: Margin note 73.1 is on absolute page 73 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter10.tex
-\openout4 = `main.mw'.
-
- [59] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [60
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 11.
-Package marginnote Info: Margin note 75.1 is on absolute page 75 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./chapters/chapter11.tex
-\openout4 = `main.mw'.
-
- [61] (./main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
- [62
-
-
-] (./main.mw)
-\openout4 = `main.mw'.
-
-
-chapter 12.
-Package marginnote Info: Margin note 77.1 is on absolute page 77 on input line 13.
-Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
-) (./appendices/appendix-volume.tex (./appendices/appendix 1: Physiology/physiology-volume.tex
-\openout4 = `main.mw'.
-
- [63] (./main.mw)
 \openout4 = `main.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3937,7 +3661,373 @@ Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
 
 \openout4 = `main.mw'.
 
+ [43
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(0.0pt, 597.50793pt, 0.0pt)
+* v-part:(T,H,B)=(0.0pt, 845.04694pt, 0.0pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=597.50793pt
+* \textheight=845.04694pt
+* \oddsidemargin=-72.26999pt
+* \evensidemargin=-72.26999pt
+* \topmargin=-105.26999pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout4 = `main.mw'.
+
+ [44
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.50258pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12671pt, 77.96011pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=304.44289pt
+* \textheight=689.12671pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.23259pt
+* \topmargin=-27.30988pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Font shape `TU/NotoSansCondensed(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 201.
+LaTeX Font Info:    Font shape `TU/NotoSansCondensed(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 201.
+LaTeX Font Info:    Font shape `TU/NotoSansCondensed(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 201.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 204.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 208.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 212.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+Package marginnote Info: Margin note 59.1 is on absolute page 59 on input line 218.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 218.
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+) (./chapters/chapter1.tex
+\openout4 = `main.mw'.
+
+ [45
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [46
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 2.
+Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter2.tex
+\openout4 = `main.mw'.
+
+ [47] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [48
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 3.
+Package marginnote Info: Margin note 63.1 is on absolute page 63 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter3.tex
+\openout4 = `main.mw'.
+
+ [49] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [50
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 4.
+Package marginnote Info: Margin note 65.1 is on absolute page 65 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter4.tex
+\openout4 = `main.mw'.
+
+ [51] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [52
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 5.
+Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter5.tex
+\openout4 = `main.mw'.
+
+ [53] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [54
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 6.
+Package marginnote Info: Margin note 69.1 is on absolute page 69 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter6.tex
+\openout4 = `main.mw'.
+
+ [55] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [56
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 7.
+Package marginnote Info: Margin note 71.1 is on absolute page 71 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter7.tex
+\openout4 = `main.mw'.
+
+ [57] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [58
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 8.
+Package marginnote Info: Margin note 73.1 is on absolute page 73 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter8.tex
+\openout4 = `main.mw'.
+
+ [59] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [60
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 9.
+Package marginnote Info: Margin note 75.1 is on absolute page 75 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter9.tex
+\openout4 = `main.mw'.
+
+ [61] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [62
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 10.
+Package marginnote Info: Margin note 77.1 is on absolute page 77 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter10.tex
+\openout4 = `main.mw'.
+
+ [63] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
  [64
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 11.
+Package marginnote Info: Margin note 79.1 is on absolute page 79 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./chapters/chapter11.tex
+\openout4 = `main.mw'.
+
+ [65] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [66
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter 12.
+Package marginnote Info: Margin note 81.1 is on absolute page 81 on input line 13.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
+) (./appendices/appendix-volume.tex (./appendices/appendix 1: Physiology/physiology-volume.tex
+\openout4 = `main.mw'.
+
+ [67] (./main.mw)
+\openout4 = `main.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.383pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12671pt, 77.96011pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=456.383pt
+* \textheight=689.12671pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-27.30988pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout4 = `main.mw'.
+
+ [68
 
 
 
@@ -3948,12 +4038,12 @@ Package marginnote Info: xpos seems to be 70.56247pt on input line 13.
 part without number
 \openout4 = `main.mw'.
 
-[65] (./main.mw)
+[69] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
- [66] (./main.mw)
+ [70] (./main.mw)
 \openout4 = `main.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3990,75 +4080,57 @@ part without number
 
  (./appendices/appendix 1: Physiology/01-physiology-foundations.tex
 chapter A1.
-Package marginnote Info: Suggest that margin note 81.1 will be on
-(marginnote)             absolute page 81.
-(marginnote)             This may be wrong on input line 18.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+Package marginnote Info: Margin note 85.1 is on absolute page 85 on input line 18.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 18.
+LaTeX Font Info:    Font shape `TU/NotoSansCondensed(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 19.
+LaTeX Font Info:    Font shape `TU/NotoSansCondensed(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 19.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 8.00085pt on input line 19.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 7.99915pt on input line 19.
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
+\openout4 = `main.mw'.
 
-LaTeX Warning: Citation 'Barrett2012Ganong24' on page 67 undefined on input line 19.
+\openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
-
-LaTeX Warning: Citation 'Hall2025Guyton' on page 67 undefined on input line 19.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-
-LaTeX Warning: Citation 'Koeppen2023Berne' on page 67 undefined on input line 19.
-
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+LaTeX Font Info:    Font shape `TU/NotoSansCondensed(1)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 27.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 14.40152pt on input line 27.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 14.39845pt on input line 27.
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
+\openout4 = `main.mw'.
 
-LaTeX Warning: Citation 'Alberts2022MBoC' on page 67 undefined on input line 27.
+\openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
-
-LaTeX Warning: Citation 'Costanzo2014BRS' on page 67 undefined on input line 27.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[][][][]\TU/NotoSansCondensed(2)/m/n/8 Based on \TU/NotoSansCondensed(2)/m/it/8 Molecular Biology of the Cell \TU/NotoSansCondensed(2)/m/n/8 [[]] and \TU/NotoSansCondensed(2)/m/it/8 BRS Physiology
- []
-
+LaTeX Font Info:    Font shape `TU/NotoSansCondensed(1)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 35.
 \openout4 = `main.mw'.
 
-[67
+[71
 
 
 
 ] (./main.mw)
 \openout4 = `main.mw'.
 
-
-Overfull \hbox (5.7472pt too wide) in paragraph at lines 52--53
-\TU/NotoSansCondensed(3)/m/n/10 as the concentration or electrochemical gradient drives equalization. Passive trans-
- []
-
-\openout4 = `main.mw'.
-
-[68] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -4071,6 +4143,112 @@ Overfull \hbox (5.7472pt too wide) in paragraph at lines 52--53
 
 \openout4 = `main.mw'.
 
+File: appendices/appendix 1: Physiology/images/a1-membrane-transport-electrochemical-gradient.png Graphic file (type bmp)
+<appendices/appendix 1: Physiology/images/a1-membrane-transport-electrochemical-gradient.png>
+\openout4 = `main.mw'.
+
+ [72] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [73] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -4080,27 +4258,32 @@ Overfull \hbox (5.7472pt too wide) in paragraph at lines 52--53
 ) (./appendices/appendix 1: Physiology/02-membrane-transport-and-excitability.tex
 \openout4 = `main.mw'.
 
- [69] (./main.mw)
+ [74] (./main.mw)
 \openout4 = `main.mw'.
 
+
+chapter A2.
+Package marginnote Info: Margin note 89.1 is on absolute page 89 on input line 18.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 18.
+)) (./appendices/appendix 2: Pharmacology/pharmacology-volume.tex
 \openout4 = `main.mw'.
 
- [70
+ [75
 
 
 ] (./main.mw)
 \openout4 = `main.mw'.
 
-
-chapter A2.
-Package marginnote Info: Suggest that margin note 85.1 will be on
-(marginnote)             absolute page 85.
-(marginnote)             This may be wrong on input line 18.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
-)) (./appendices/appendix 2: Pharmacology/pharmacology-volume.tex
 \openout4 = `main.mw'.
 
- [71] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
 \openout4 = `main.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -4137,7 +4320,7 @@ Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
 
 \openout4 = `main.mw'.
 
- [72
+ [76
 
 
 
@@ -4148,12 +4331,12 @@ Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
 part without number
 \openout4 = `main.mw'.
 
-[73] (./main.mw)
+[77] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
- [74] (./main.mw)
+ [78] (./main.mw)
 \openout4 = `main.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -4190,14 +4373,12 @@ part without number
 
  (./appendices/appendix 2: Pharmacology/overview-of-pharmacology.tex
 chapter B1.
-Package marginnote Info: Suggest that margin note 89.1 will be on
-(marginnote)             absolute page 89.
-(marginnote)             This may be wrong on input line 18.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
+Package marginnote Info: Margin note 93.1 is on absolute page 93 on input line 18.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 18.
 (./appendices/appendix 2: Pharmacology/01-pharmacokinetics.tex) (./appendices/appendix 2: Pharmacology/02-pharmacodynamics.tex)) (./appendices/appendix 2: Pharmacology/02-safe-prescribing.tex
 \openout4 = `main.mw'.
 
- [75
+ [79
 
 
 
@@ -4206,7 +4387,7 @@ Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
 
 \openout4 = `main.mw'.
 
- [76
+ [80
 
 
 ] (./main.mw)
@@ -4214,17 +4395,327 @@ Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 18.
 
 
 chapter B2.
-Package marginnote Info: Margin note 91.1 is on absolute page 91 on input line 18.
+Package marginnote Info: Margin note 95.1 is on absolute page 95 on input line 18.
 Package marginnote Info: xpos seems to be 70.56247pt on input line 18.
+)) (./appendices/appendix 3: Medical Microbiology and Immunology/medical-microbiology-volume.tex
+\openout4 = `main.mw'.
+
+ [81] (./main.mw)
+\openout4 = `main.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.383pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12671pt, 77.96011pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=456.383pt
+* \textheight=689.12671pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-27.30988pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout4 = `main.mw'.
+
+ [82
+
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+part without number
+\openout4 = `main.mw'.
+
+[83] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [84] (./main.mw)
+\openout4 = `main.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.50258pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12671pt, 77.96011pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=304.44289pt
+* \textheight=689.12671pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.23259pt
+* \topmargin=-27.30988pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (./appendices/appendix 3: Medical Microbiology and Immunology/01-bacteriology.tex
+chapter C1.
+Package marginnote Info: Margin note 99.1 is on absolute page 99 on input line 19.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 19.
+) (./appendices/appendix 3: Medical Microbiology and Immunology/02-virology.tex
+\openout4 = `main.mw'.
+
+ [85
+
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [86
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter C2.
+Package marginnote Info: Margin note 101.1 is on absolute page 101 on input line 19.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 19.
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+Package mdframed Info: mdframed works in twoside mode on input line 62.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 62.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 62.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 62.
+\openout4 = `main.mw'.
+
+[87] (./main.mw)
+\openout4 = `main.mw'.
+
+File: appendices/appendix 3: Medical Microbiology and Immunology/images/c2-capsid-shapes.png Graphic file (type bmp)
+<appendices/appendix 3: Medical Microbiology and Immunology/images/c2-capsid-shapes.png>
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [88] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+File: appendices/appendix 3: Medical Microbiology and Immunology/images/c2-baltimore-classification.png Graphic file (type bmp)
+<appendices/appendix 3: Medical Microbiology and Immunology/images/c2-baltimore-classification.png>
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [89] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+) (./appendices/appendix 3: Medical Microbiology and Immunology/03-medical-mycology.tex
+\openout4 = `main.mw'.
+
+ [90] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter C3.
+Package marginnote Info: Margin note 105.1 is on absolute page 105 on input line 19.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 19.
+) (./appendices/appendix 3: Medical Microbiology and Immunology/04-medical-parasitology.tex
+\openout4 = `main.mw'.
+
+ [91
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [92
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter C4.
+Package marginnote Info: Margin note 107.1 is on absolute page 107 on input line 19.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 19.
+) (./appendices/appendix 3: Medical Microbiology and Immunology/05-immunology-bacterial-infection.tex
+\openout4 = `main.mw'.
+
+ [93] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [94
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+
+chapter C5.
+Package marginnote Info: Margin note 109.1 is on absolute page 109 on input line 19.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 19.
 )))
 \openout4 = `main.mw'.
 
- [77] (./main.mw)
+ [95] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
 
- [78
+ [96
 
 
 ] (./main.mw)
@@ -4267,13 +4758,31 @@ Package marginnote Info: xpos seems to be 70.56247pt on input line 18.
 \openout4 = `main.mw'.
 
 
+chapter without number
+\openout4 = `main.mw'.
 
-LaTeX Warning: Citation 'Venter2001c' undefined on input line 191.
+[97
 
 
-LaTeX Warning: Empty bibliography on input line 194.
 
-No file main.ind.
+] (./main.mw)
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ [98
+
+
+] (./main.mw)
+\openout4 = `main.mw'.
+
+ (./main.ind)
+\openout4 = `main.mw'.
+
+ [99
+
+
+] (./main.mw)
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -4298,7 +4807,325 @@ No file main.ind.
 
 \openout4 = `main.mw'.
 
-(./main.aux
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+ (./main.aux
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
+\openout4 = `main.mw'.
+
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -5309,9 +6136,6 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
 (biblatex)                and rerun LaTeX afterwards.
@@ -5335,12 +6159,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66332 strings out of 468168
- 1390035 string characters out of 5432815
- 3138669 words of memory out of 5000000
- 92713 multiletter control sequences out of 15000+600000
- 635593 words of font info for 142 fonts, out of 8000000 for 9000
+ 67619 strings out of 468168
+ 1413984 string characters out of 5432815
+ 3146346 words of memory out of 5000000
+ 93413 multiletter control sequences out of 15000+600000
+ 635600 words of font info for 150 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,19n,159p,11242b,7481s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,19n,159p,11242b,7486s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (92 pages).
+Output written on main.pdf (113 pages).

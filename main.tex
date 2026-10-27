@@ -26,7 +26,7 @@
 % Use visually matched Latin and Thai sans fonts; Sarabun is not installed here.
 \setmainfont{Noto Sans Condensed}[SlantedFont={Noto Sans Condensed Italic}]
 \setsansfont{Noto Sans Condensed}
-\setmonofont{lmmono10-regular.otf}
+\setmonofont{lmmono10-regular.otf}[BoldFont={lmmonolt10-bold.otf}]
 \setmathfont{latinmodern-math.otf}
 \newfontfamily\thaifont{Noto Sans Thai UI}[Script=Thai, Scale=MatchLowercase]
 \usepackage[BasicLatin,Thai]{ucharclasses}
@@ -138,6 +138,7 @@
 \makeatletter
 \@mainmatterfalse
 \makeatother
+\cleardoubleoddpage
 \pagenumbering{roman} % Start lowercase Roman page numbering after the unnumbered cover
 \makecopyrightpage
 \makededicationpage

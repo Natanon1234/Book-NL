@@ -2,7 +2,8 @@
 \babel@toc {english}{}\relax
 \babel@toc {english}{}\relax
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Example in-text figure caption: distribution of expression values across samples, highlighting how visual summaries can clarify variation in biological data.}}{41}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A small margin illustration.}}{41}{figure.caption.18}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A TikZ figure with nodes, fills, and arrows.}}{41}{figure.caption.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -16,7 +17,18 @@
 \addvspace {10\p@ }
 \def \@chapapp {\appendixname }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A1.1}{\ignorespaces Membrane transport and electrochemical gradients}}{73}{figure.caption.151}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C2.1}{\ignorespaces Common viral capsid morphologies}}{88}{figure.caption.199}%
+\contentsline {figure}{\numberline {C2.2}{\ignorespaces Baltimore classification of viruses}}{89}{figure.caption.205}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\babel@toc {english}{}\relax
+\addvspace {10\p@ }
+\babel@toc {english}{}\relax
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

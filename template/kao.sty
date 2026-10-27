@@ -10,6 +10,7 @@
 \RequirePackage{etoolbox}
 \RequirePackage{silence}
 \WarningFilter{caption}{Unknown document class} % Easy programming to modify TeX stuff
+\WarningFilter{latex}{Command `\theabspage' already defined} % Emitted by mdframed's zref dependency
 \RequirePackage{calc} % Make calculations
 \RequirePackage[dvipsnames,table]{xcolor} % Colours
 \RequirePackage{iftex} % Check wether XeTeX is being used

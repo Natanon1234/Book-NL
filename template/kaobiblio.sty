@@ -6,6 +6,7 @@
 \RequirePackage{xparse} % Parse arguments for macros
 \RequirePackage{xstring} % Parse strings
 \RequirePackage{hyperref} % Required for hyperlinks
+\RequirePackage{xurl} % Permit line breaks in long bibliography URLs
 \RequirePackage{kvoptions} % Handle package options
 
 \SetupKeyvalOptions{
@@ -52,6 +53,8 @@
 
 % Load biblatex
 \RequirePackage{biblatex}
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
 
 % Remove some unwanted entries from the bibliography
 \AtEveryBibitem{
@@ -61,7 +64,7 @@
 	\clearfield{arxivId}
 	\clearfield{pmid}
 	\clearfield{eprint}
-	\ifentrytype{online}{}{\ifentrytype{misc}{}{\clearfield{url}}}
+	\ifentrytype{online}{\clearfield{url}}{\ifentrytype{misc}{}{\clearfield{url}}}
 	\ifentrytype{book}{\clearfield{doi}}{}
 }
 
@@ -142,12 +145,12 @@
 
 % Command to format the marginnote created for cited items
 \NewDocumentCommand{\formatmargincitation}{m}{% The parameter is a single citation key
-	\parencite{#1}: \citeauthor*{#1} (\citeyear{#1}), \citetitle{#1}%
+	\parencite{#1}:~\citeauthor*{#1} (\citeyear{#1}),~\citetitle{#1}%
 }
 
 % Command to format the marginnote created for supercited items
 \NewDocumentCommand{\formatmarginsupercitation}{m}{% The parameter is a single citation key
-    \supercite{#1} \citeauthor*{#1} (\citeyear{#1})%
+    \supercite{#1}~\citeauthor*{#1} (\citeyear{#1})%
 }
 
 % The following command needs to be redefined every time \sidecite is called in order for \DeclareCiteCommand's wrapper to work correctly
@@ -162,7 +165,7 @@
     % Third optional argument is always the postnote
     % Mandatory argument is always the citation key(s)
 
-% Command to \cite and print a citation in the margin
+% Command to~\cite and print a citation in the margin
 % First optional argument: vertical shift
 % Second optional argument: postnote if the third argument isn't specified; prenote if the third argument is specified (same pattern as the \textcite command)
 % Third optional argument: postnote

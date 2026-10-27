@@ -1,0 +1,392 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Costanzo2014BRS}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f087c89c9eab0494b6765a4e64f1baf8}{%
+           family={Costanzo},
+           familyi={C\bibinitperiod},
+           given={Linda\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Lippincott Williams \& Wilkins}%
+      }
+      \strng{namehash}{f087c89c9eab0494b6765a4e64f1baf8}
+      \strng{fullhash}{f087c89c9eab0494b6765a4e64f1baf8}
+      \strng{fullhashraw}{f087c89c9eab0494b6765a4e64f1baf8}
+      \strng{bibnamehash}{f087c89c9eab0494b6765a4e64f1baf8}
+      \strng{authorbibnamehash}{f087c89c9eab0494b6765a4e64f1baf8}
+      \strng{authornamehash}{f087c89c9eab0494b6765a4e64f1baf8}
+      \strng{authorfullhash}{f087c89c9eab0494b6765a4e64f1baf8}
+      \strng{authorfullhashraw}{f087c89c9eab0494b6765a4e64f1baf8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6}
+      \field{isbn}{9781451187953}
+      \field{title}{BRS Physiology}
+      \field{year}{2014}
+    \endentry
+    \entry{Barrett2012Ganong24}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=1e3b89aa25b741240835b3af89cfadb6}{%
+           family={Barrett},
+           familyi={B\bibinitperiod},
+           given={Kim\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=788676d448aa44adc64be8aa0cf87416}{%
+           family={Barman},
+           familyi={B\bibinitperiod},
+           given={Susan\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a7da12031a25c089ce625bbd5641f89b}{%
+           family={Boitano},
+           familyi={B\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7a69dccf5a1f53e3b00d0d1019d364f2}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Heddwen\bibnamedelima L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Medical}%
+      }
+      \strng{namehash}{30107c1ec77a5529dcaa8801e0f71950}
+      \strng{fullhash}{a67a69a6fe2d7e13d30b2a12c99b4696}
+      \strng{fullhashraw}{a67a69a6fe2d7e13d30b2a12c99b4696}
+      \strng{bibnamehash}{30107c1ec77a5529dcaa8801e0f71950}
+      \strng{authorbibnamehash}{30107c1ec77a5529dcaa8801e0f71950}
+      \strng{authornamehash}{30107c1ec77a5529dcaa8801e0f71950}
+      \strng{authorfullhash}{a67a69a6fe2d7e13d30b2a12c99b4696}
+      \strng{authorfullhashraw}{a67a69a6fe2d7e13d30b2a12c99b4696}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{24}
+      \field{isbn}{9780071780032}
+      \field{title}{Ganong's Review of Medical Physiology}
+      \field{year}{2012}
+    \endentry
+    \entry{Hall2025Guyton}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=570554af6f0e5ad0570daf633fa752c3}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3660e53b392a8db5dde4212d4c5fe8aa}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{03e474d6da4c7a256c2da5c483b1367f}
+      \strng{fullhash}{03e474d6da4c7a256c2da5c483b1367f}
+      \strng{fullhashraw}{03e474d6da4c7a256c2da5c483b1367f}
+      \strng{bibnamehash}{03e474d6da4c7a256c2da5c483b1367f}
+      \strng{authorbibnamehash}{03e474d6da4c7a256c2da5c483b1367f}
+      \strng{authornamehash}{03e474d6da4c7a256c2da5c483b1367f}
+      \strng{authorfullhash}{03e474d6da4c7a256c2da5c483b1367f}
+      \strng{authorfullhashraw}{03e474d6da4c7a256c2da5c483b1367f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{15}
+      \field{isbn}{9780443111013}
+      \field{title}{Guyton and Hall Textbook of Medical Physiology}
+      \field{year}{2025}
+    \endentry
+    \entry{Koeppen2023Berne}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=03876b87e03ec6176698161b041240b4}{%
+           family={Koeppen},
+           familyi={K\bibinitperiod},
+           given={Bruce\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7ee61eca938bd028161ff874b4fd53bc}{%
+           family={Stanton},
+           familyi={S\bibinitperiod},
+           given={Bruce\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=c0cc28ed3888090284f1c6548afe0e1c}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Julianne\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3ab35ebe6347fc671c4d11c08469686a}{%
+           family={Swiatecka-Urban},
+           familyi={S\bibinithyphendelim U\bibinitperiod},
+           given={Agnieszka},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{62730eb09503bf5af30921dd4e863304}
+      \strng{fullhash}{62730eb09503bf5af30921dd4e863304}
+      \strng{fullhashraw}{62730eb09503bf5af30921dd4e863304}
+      \strng{bibnamehash}{62730eb09503bf5af30921dd4e863304}
+      \strng{authorbibnamehash}{62730eb09503bf5af30921dd4e863304}
+      \strng{authornamehash}{62730eb09503bf5af30921dd4e863304}
+      \strng{authorfullhash}{62730eb09503bf5af30921dd4e863304}
+      \strng{authorfullhashraw}{62730eb09503bf5af30921dd4e863304}
+      \strng{editorbibnamehash}{8e99f9359fec55cba9965ccc029d0e2c}
+      \strng{editornamehash}{8e99f9359fec55cba9965ccc029d0e2c}
+      \strng{editorfullhash}{8e99f9359fec55cba9965ccc029d0e2c}
+      \strng{editorfullhashraw}{8e99f9359fec55cba9965ccc029d0e2c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8}
+      \field{isbn}{9780323847902}
+      \field{title}{Berne \& Levy Physiology}
+      \field{year}{2023}
+    \endentry
+    \entry{Alberts2022MBoC}{book}{}{}
+      \name{author}{7}{}{%
+        {{hash=fb62457c285c73db074f895ec8f95805}{%
+           family={Alberts},
+           familyi={A\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8f3bb258bb06846d54b421d7d3521505}{%
+           family={Heald},
+           familyi={H\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f99df14c1f32023184c881c2b99105bd}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9e142d24b7c7fe4199234dadc866c1d2}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0312c5684b42a3225b0b0ea32937a033}{%
+           family={Raff},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=079205eca33fb4f81cd49113f2b13d21}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+        {{hash=92f833ece2868f0e33bb37e24935ca85}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {W. W. Norton \& Company}%
+      }
+      \strng{namehash}{e9a8f9a71c33ec6ac86a6beb3554e231}
+      \strng{fullhash}{510cfd295d360f3865eb2cca8d76b69b}
+      \strng{fullhashraw}{510cfd295d360f3865eb2cca8d76b69b}
+      \strng{bibnamehash}{e9a8f9a71c33ec6ac86a6beb3554e231}
+      \strng{authorbibnamehash}{e9a8f9a71c33ec6ac86a6beb3554e231}
+      \strng{authornamehash}{e9a8f9a71c33ec6ac86a6beb3554e231}
+      \strng{authorfullhash}{510cfd295d360f3865eb2cca8d76b69b}
+      \strng{authorfullhashraw}{510cfd295d360f3865eb2cca8d76b69b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{7}
+      \field{isbn}{9780393884647}
+      \field{title}{Molecular Biology of the Cell}
+      \field{year}{2022}
+    \endentry
+    \entry{Murray2026MedicalMicrobiology}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=e6acd1cd18e5e8b912d71082dab89959}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Patrick\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=06d0d8c5636d107e7d47a12f0fa06d5b}{%
+           family={Rosenthal},
+           familyi={R\bibinitperiod},
+           given={Ken\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8a6f95649ef8852487b9e2d374bcd70f}{%
+           family={Pfaller},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{15ee22c9a0c7431495566e7ee70882ee}
+      \strng{fullhash}{15ee22c9a0c7431495566e7ee70882ee}
+      \strng{fullhashraw}{15ee22c9a0c7431495566e7ee70882ee}
+      \strng{bibnamehash}{15ee22c9a0c7431495566e7ee70882ee}
+      \strng{authorbibnamehash}{15ee22c9a0c7431495566e7ee70882ee}
+      \strng{authornamehash}{15ee22c9a0c7431495566e7ee70882ee}
+      \strng{authorfullhash}{15ee22c9a0c7431495566e7ee70882ee}
+      \strng{authorfullhashraw}{15ee22c9a0c7431495566e7ee70882ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10}
+      \field{isbn}{9780443261336}
+      \field{title}{Medical Microbiology}
+      \field{year}{2026}
+    \endentry
+    \entry{CK12CapsidShapes}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=516e1a0fc56ca0abed22cfc2f0afb590}{%
+           family={{CK-12 Foundation}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {CK-12 Foundation}%
+      }
+      \strng{namehash}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \strng{fullhash}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \strng{fullhashraw}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \strng{bibnamehash}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \strng{authorbibnamehash}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \strng{authornamehash}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \strng{authorfullhash}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \strng{authorfullhashraw}{516e1a0fc56ca0abed22cfc2f0afb590}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Living Environment}
+      \field{title}{Capsid Shapes in Viruses}
+      \field{urlday}{25}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ck12.org/user:amftzxmucgllckbyzwrqywnrzxqub3jn/book/the-living-environment/section/14.2/
+      \endverb
+      \verb{url}
+      \verb https://www.ck12.org/user:amftzxmucgllckbyzwrqywnrzxqub3jn/book/the-living-environment/section/14.2/
+      \endverb
+    \endentry
+    \entry{ViralZoneBaltimore}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6ff2b451d908962b9a4f063f5db52dd2}{%
+           family={{ViralZone}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {SIB Swiss Institute of Bioinformatics}%
+      }
+      \strng{namehash}{6ff2b451d908962b9a4f063f5db52dd2}
+      \strng{fullhash}{6ff2b451d908962b9a4f063f5db52dd2}
+      \strng{fullhashraw}{6ff2b451d908962b9a4f063f5db52dd2}
+      \strng{bibnamehash}{6ff2b451d908962b9a4f063f5db52dd2}
+      \strng{authorbibnamehash}{6ff2b451d908962b9a4f063f5db52dd2}
+      \strng{authornamehash}{6ff2b451d908962b9a4f063f5db52dd2}
+      \strng{authorfullhash}{6ff2b451d908962b9a4f063f5db52dd2}
+      \strng{authorfullhashraw}{6ff2b451d908962b9a4f063f5db52dd2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Baltimore Classification}
+      \field{urlday}{25}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://viralzone.expasy.org/254
+      \endverb
+      \verb{url}
+      \verb https://viralzone.expasy.org/254
+      \endverb
+    \endentry
+    \entry{Venter2001c}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=db0095877d5635ee693659f77683c7a0}{%
+           family={Venter},
+           familyi={V\bibinitperiod},
+           given={J\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3279a0e8b17757485c8d54d708aa6624}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Et},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{668c98e77da194026145bfe61312c788}
+      \strng{fullhash}{668c98e77da194026145bfe61312c788}
+      \strng{fullhashraw}{668c98e77da194026145bfe61312c788}
+      \strng{bibnamehash}{668c98e77da194026145bfe61312c788}
+      \strng{authorbibnamehash}{668c98e77da194026145bfe61312c788}
+      \strng{authornamehash}{668c98e77da194026145bfe61312c788}
+      \strng{authorfullhash}{668c98e77da194026145bfe61312c788}
+      \strng{authorfullhashraw}{668c98e77da194026145bfe61312c788}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A 2.91-billion base pair (bp) consensus sequence of the euchromatic portion of the human genome was generated by the whole-genome shotgun sequencing method. The 14.8-billion bp DNA sequence was generated over 9 months from 27,271,853 high-quality sequence reads (5.11-fold coverage of the genome) from both ends of plasmid clones made from the DNA of five individuals. Two assembly strategies-a whole-genome assembly and a regional chromosome assembly-were used, each combining sequence data from Celera and the publicly funded genome effort. The public data were shredded into 550-bp segments to create a 2.9-fold coverage of those genome regions that had been sequenced, without including biases inherent in the cloning and assembly procedure used by the publicly funded group. This brought the effective coverage in the assemblies to eightfold, reducing the number and size of gaps in the final assembly over what would be obtained with 5.11-fold coverage. The two assembly strategies yielded very similar results that largely agree with independent mapping data. The assemblies effectively cover the euchromatic regions of the human chromosomes. More than 90{\%} of the genome is in scaffold assemblies of 100,000 bp or more, and 25{\%} of the genome is in scaffolds of 10 million bp or larger. Analysis of the genome sequence revealed 26,588 protein-encoding transcripts for which there was strong corroborating evidence and an additional approximately 12,000 computationally derived genes with mouse matches or other weak supporting evidence. Although gene-dense clusters are obvious, almost half the genes are dispersed in low G+C sequence separated by large tracts of apparently noncoding sequence. Only 1.1{\%} of the genome is spanned by exons, whereas 24{\%} is in introns, with 75{\%} of the genome being intergenic DNA. Duplications of segmental blocks, ranging in size up to chromosomal lengths, are abundant throughout the genome and reveal a complex evolutionary history. Comparative genomic analysis indicates vertebrate expansions of genes associated with neuronal function, with tissue-specific developmental regulation, and with the hemostasis and immune systems. DNA sequence comparisons between the consensus sequence and publicly funded genome data provided locations of 2.1 million single-nucleotide polymorphisms (SNPs). A random pair of human haploid genomes differed at a rate of 1 bp per 1250 on average, but there was marked heterogeneity in the level of polymorphism across the genome. Less than 1{\%} of all SNPs resulted in variation in proteins, but the task of determining which SNPs have functional consequences remains an open challenge.}
+      \field{journaltitle}{Science}
+      \field{number}{5507}
+      \field{title}{{The sequence of the human genome}}
+      \field{volume}{291}
+      \field{year}{2001}
+      \true{nocite}
+      \field{pages}{1304\bibrangedash 1351}
+      \range{pages}{48}
+      \verb{doi}
+      \verb 10.1126/science.1058040
+      \endverb
+      \verb{urlraw}
+      \verb http://www.ncbi.nlm.nih.gov/cgi-bin/Entrez/referer?http://www.ncbi.nlm.nih.gov/htbin-post/Omim/getmim?field=medline{\_}uid{\&}search=11181995
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/cgi-bin/Entrez/referer?http://www.ncbi.nlm.nih.gov/htbin-post/Omim/getmim?field=medline%7B%5C_%7Duid%7B%5C&%7Dsearch=11181995
+      \endverb
+      \keyw{*Genome,Human,*Human Genome Project,*Sequence Analysis,DNA/methods,Algorithms,Animal,Chromosome Banding,Chromosome Mapping,Chromosomes,Artificial,Bacterial,Computational Biology,Consensus Sequence,CpG Islands,DNA,Intergenic,Databases,Factual,Evolution,Molecular,Exons,Female,Gene Duplication,Genes,Human,Introns,Male,Phenotype,Physical Chromosome Mapping,Polymorphism,Single Nucleotide,Proteins/genetics/physiology,Pseudogenes,Repetitive Sequences,Nucleic Acid,Retroelements,Species Specificity,Support,Non-U.S. Gov't,Variation (Genetics)}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
