@@ -6,7 +6,6 @@
 \RequirePackage{xparse} % Parse arguments for macros
 \RequirePackage{xstring} % Parse strings
 \RequirePackage{hyperref} % Required for hyperlinks
-\RequirePackage{xurl} % Permit line breaks in long bibliography URLs
 \RequirePackage{kvoptions} % Handle package options
 
 \SetupKeyvalOptions{
@@ -53,8 +52,6 @@
 
 % Load biblatex
 \RequirePackage{biblatex}
-\setcounter{biburlnumpenalty}{100}
-\setcounter{biburlucpenalty}{100}
 
 % Remove some unwanted entries from the bibliography
 \AtEveryBibitem{
@@ -64,7 +61,7 @@
 	\clearfield{arxivId}
 	\clearfield{pmid}
 	\clearfield{eprint}
-	\ifentrytype{online}{\clearfield{url}}{\ifentrytype{misc}{}{\clearfield{url}}}
+	\ifentrytype{online}{}{\ifentrytype{misc}{}{\clearfield{url}}}
 	\ifentrytype{book}{\clearfield{doi}}{}
 }
 

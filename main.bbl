@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{Costanzo2014BRS}{book}{}{}
+    \entry{Costanzo2014BRS}{book}{}{6}
       \name{author}{1}{}{%
         {{hash=f087c89c9eab0494b6765a4e64f1baf8}{%
            family={Costanzo},
@@ -38,8 +38,8 @@
       \strng{authornamehash}{f087c89c9eab0494b6765a4e64f1baf8}
       \strng{authorfullhash}{f087c89c9eab0494b6765a4e64f1baf8}
       \strng{authorfullhashraw}{f087c89c9eab0494b6765a4e64f1baf8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{6}
@@ -47,7 +47,7 @@
       \field{title}{BRS Physiology}
       \field{year}{2014}
     \endentry
-    \entry{Barrett2012Ganong24}{book}{}{}
+    \entry{Barrett2012Ganong24}{book}{}{2}
       \name{author}{4}{}{%
         {{hash=1e3b89aa25b741240835b3af89cfadb6}{%
            family={Barrett},
@@ -84,8 +84,8 @@
       \strng{authornamehash}{30107c1ec77a5529dcaa8801e0f71950}
       \strng{authorfullhash}{a67a69a6fe2d7e13d30b2a12c99b4696}
       \strng{authorfullhashraw}{a67a69a6fe2d7e13d30b2a12c99b4696}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{24}
@@ -93,7 +93,7 @@
       \field{title}{Ganong's Review of Medical Physiology}
       \field{year}{2012}
     \endentry
-    \entry{Hall2025Guyton}{book}{}{}
+    \entry{Hall2025Guyton}{book}{}{1}
       \name{author}{2}{}{%
         {{hash=570554af6f0e5ad0570daf633fa752c3}{%
            family={Hall},
@@ -117,8 +117,8 @@
       \strng{authornamehash}{03e474d6da4c7a256c2da5c483b1367f}
       \strng{authorfullhash}{03e474d6da4c7a256c2da5c483b1367f}
       \strng{authorfullhashraw}{03e474d6da4c7a256c2da5c483b1367f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{15}
@@ -126,7 +126,7 @@
       \field{title}{Guyton and Hall Textbook of Medical Physiology}
       \field{year}{2025}
     \endentry
-    \entry{Koeppen2023Berne}{book}{}{}
+    \entry{Koeppen2023Berne}{book}{}{1}
       \name{author}{2}{}{%
         {{hash=03876b87e03ec6176698161b041240b4}{%
            family={Koeppen},
@@ -166,8 +166,8 @@
       \strng{editornamehash}{8e99f9359fec55cba9965ccc029d0e2c}
       \strng{editorfullhash}{8e99f9359fec55cba9965ccc029d0e2c}
       \strng{editorfullhashraw}{8e99f9359fec55cba9965ccc029d0e2c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{8}
@@ -175,7 +175,7 @@
       \field{title}{Berne \& Levy Physiology}
       \field{year}{2023}
     \endentry
-    \entry{Alberts2022MBoC}{book}{}{}
+    \entry{Alberts2022MBoC}{book}{}{2}
       \name{author}{7}{}{%
         {{hash=fb62457c285c73db074f895ec8f95805}{%
            family={Alberts},
@@ -227,8 +227,8 @@
       \strng{authornamehash}{e9a8f9a71c33ec6ac86a6beb3554e231}
       \strng{authorfullhash}{510cfd295d360f3865eb2cca8d76b69b}
       \strng{authorfullhashraw}{510cfd295d360f3865eb2cca8d76b69b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{7}
@@ -236,7 +236,7 @@
       \field{title}{Molecular Biology of the Cell}
       \field{year}{2022}
     \endentry
-    \entry{Murray2026MedicalMicrobiology}{book}{}{}
+    \entry{Murray2026MedicalMicrobiology}{book}{}{1}
       \name{author}{3}{}{%
         {{hash=e6acd1cd18e5e8b912d71082dab89959}{%
            family={Murray},
@@ -274,7 +274,7 @@
       \field{title}{Medical Microbiology}
       \field{year}{2026}
     \endentry
-    \entry{CK12CapsidShapes}{online}{}{}
+    \entry{CK12CapsidShapes}{online}{}{1}
       \name{author}{1}{}{%
         {{hash=516e1a0fc56ca0abed22cfc2f0afb590}{%
            family={{CK-12 Foundation}},
@@ -291,8 +291,8 @@
       \strng{authornamehash}{516e1a0fc56ca0abed22cfc2f0afb590}
       \strng{authorfullhash}{516e1a0fc56ca0abed22cfc2f0afb590}
       \strng{authorfullhashraw}{516e1a0fc56ca0abed22cfc2f0afb590}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Living Environment}
@@ -308,7 +308,7 @@
       \verb https://www.ck12.org/user:amftzxmucgllckbyzwrqywnrzxqub3jn/book/the-living-environment/section/14.2/
       \endverb
     \endentry
-    \entry{ViralZoneBaltimore}{online}{}{}
+    \entry{ViralZoneBaltimore}{online}{}{1}
       \name{author}{1}{}{%
         {{hash=6ff2b451d908962b9a4f063f5db52dd2}{%
            family={{ViralZone}},
@@ -325,8 +325,8 @@
       \strng{authornamehash}{6ff2b451d908962b9a4f063f5db52dd2}
       \strng{authorfullhash}{6ff2b451d908962b9a4f063f5db52dd2}
       \strng{authorfullhashraw}{6ff2b451d908962b9a4f063f5db52dd2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Baltimore Classification}
@@ -362,8 +362,8 @@
       \strng{authornamehash}{668c98e77da194026145bfe61312c788}
       \strng{authorfullhash}{668c98e77da194026145bfe61312c788}
       \strng{authorfullhashraw}{668c98e77da194026145bfe61312c788}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A 2.91-billion base pair (bp) consensus sequence of the euchromatic portion of the human genome was generated by the whole-genome shotgun sequencing method. The 14.8-billion bp DNA sequence was generated over 9 months from 27,271,853 high-quality sequence reads (5.11-fold coverage of the genome) from both ends of plasmid clones made from the DNA of five individuals. Two assembly strategies-a whole-genome assembly and a regional chromosome assembly-were used, each combining sequence data from Celera and the publicly funded genome effort. The public data were shredded into 550-bp segments to create a 2.9-fold coverage of those genome regions that had been sequenced, without including biases inherent in the cloning and assembly procedure used by the publicly funded group. This brought the effective coverage in the assemblies to eightfold, reducing the number and size of gaps in the final assembly over what would be obtained with 5.11-fold coverage. The two assembly strategies yielded very similar results that largely agree with independent mapping data. The assemblies effectively cover the euchromatic regions of the human chromosomes. More than 90{\%} of the genome is in scaffold assemblies of 100,000 bp or more, and 25{\%} of the genome is in scaffolds of 10 million bp or larger. Analysis of the genome sequence revealed 26,588 protein-encoding transcripts for which there was strong corroborating evidence and an additional approximately 12,000 computationally derived genes with mouse matches or other weak supporting evidence. Although gene-dense clusters are obvious, almost half the genes are dispersed in low G+C sequence separated by large tracts of apparently noncoding sequence. Only 1.1{\%} of the genome is spanned by exons, whereas 24{\%} is in introns, with 75{\%} of the genome being intergenic DNA. Duplications of segmental blocks, ranging in size up to chromosomal lengths, are abundant throughout the genome and reveal a complex evolutionary history. Comparative genomic analysis indicates vertebrate expansions of genes associated with neuronal function, with tissue-specific developmental regulation, and with the hemostasis and immune systems. DNA sequence comparisons between the consensus sequence and publicly funded genome data provided locations of 2.1 million single-nucleotide polymorphisms (SNPs). A random pair of human haploid genomes differed at a rate of 1 bp per 1250 on average, but there was marked heterogeneity in the level of polymorphism across the genome. Less than 1{\%} of all SNPs resulted in variation in proteins, but the task of determining which SNPs have functional consequences remains an open challenge.}

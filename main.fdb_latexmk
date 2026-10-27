@@ -1,23 +1,24 @@
 # Fdb version 4
-["biber main"] 1793082060.41182 "main.bcf" "main.bbl" "main" 1793082063.18711 2
-  "main.bcf" 1793082062.04752 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+["biber main"] 1793084811.48788 "main.bcf" "main.bbl" "main" 1793084831.89856 0
+  "main.bcf" 1793084827.16284 111215 00ff5017958367b728587ef38edfcad4 "xelatex"
   "main.bib" 1793081458 45779 a02f75cc9d3429eeb1c6bb31ae28a644 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["makeindex main.idx"] 1793081795.97032 "main.idx" "main.ind" "main" 1793082063.17871 0
-  "main.idx" 1793082061.5075 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+["makeindex main.idx"] 1793084811.38708 "main.idx" "main.ind" "main" 1793084831.8985 0
+  "main.idx" 1793084827.16405 2381 59a1934d8f299461e0125ee3e77e4fe9 "xelatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["xdvipdfmx"] 1793081836.51407 "main.xdv" "main.pdf" "main" 1793081844.38915 0
-  "main.xdv" 1793082059.70989 1806912 c2e2c92cff97f4c9b73d43692140600f "xelatex"
+["xdvipdfmx"] 1793084827.45076 "main.xdv" "main.pdf" "main" 1793084831.90152 0
+  "main.xdv" 1793084827.1658 1835492 de2585072cfd08bd2128f9005d2d74a2 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1793082046.68509 "main.tex" "main.xdv" "main" 1793082063.17896 0
+["xelatex"] 1793084820.61164 "/Users/natanon/Documents/CICM/Book-NL/main.tex" "main.xdv" "main" 1793084831.89859 0
+  "/Users/natanon/Documents/CICM/Book-NL/main.tex" 1793084677.19666 10808 6058a38ce76736486f5c6685f7772a2e ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -303,14 +304,13 @@
   "/usr/local/texlive/2026/texmf-dist/tex/latex/xifthen/xifthen.sty" 1448319911 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1762376337 5006 d7e899bb5d9717c7f214e9bc0284de7b ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty" 1585258158 8314 7803f78066c4f9d008405191a4b43073 ""
-  "/usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty" 1641763214 4675 e4b8c405820368c2dfb03526e16d725a ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/zref/zref-abspage.sty" 1773002214 2269 91cd03da61ab1da00145ba8a81560051 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/zref/zref-base.sty" 1773002214 20785 8db5f0a2b2ce96dda9fac87ccab29449 ""
   "/usr/local/texlive/2026/texmf-dist/tex/xelatex/ucharclasses/ucharclasses.sty" 1666470014 37049 cd9997f7514c6d89e198c50b51933571 ""
   "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "/usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt" 1774209578 5948559 ca66a59f4cdd4ce9709bed46018cb9cb ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "appendices/appendix 1: Physiology/01-physiology-foundations.tex" 1793081984.66839 12756 0b3ca48227636aeed01ae10b7e48cf89 ""
+  "appendices/appendix 1: Physiology/01-physiology-foundations.tex" 1793083049.13576 12705 e3e5b25b614b442a0576a100fd51c1f9 ""
   "appendices/appendix 1: Physiology/02-membrane-transport-and-excitability.tex" 1793081458 1818 f8f48760045e46969a328dfec4ae6a63 ""
   "appendices/appendix 1: Physiology/images/a1-membrane-transport-electrochemical-gradient.png" 1793081459 470451 1cbdaaf9aa926ccf594c1bdcf3f86604 ""
   "appendices/appendix 1: Physiology/physiology-volume.tex" 1793081458 946 bdbef4673567a07c70b7bb0d991f3f4e ""
@@ -320,7 +320,7 @@
   "appendices/appendix 2: Pharmacology/overview-of-pharmacology.tex" 1793081458 950 dd4c2b90356a9cc1f1eb9e73e11c470f ""
   "appendices/appendix 2: Pharmacology/pharmacology-volume.tex" 1793081458 912 edce38ec320b6a70837d0b3d0c44c5bc ""
   "appendices/appendix 3: Medical Microbiology and Immunology/01-bacteriology.tex" 1793081458 559 bb4ae8745861e31b77d5ada854d04108 ""
-  "appendices/appendix 3: Medical Microbiology and Immunology/02-virology.tex" 1793081996.26746 10452 1f0e450398d85283b5d4bf6a3fd4a193 ""
+  "appendices/appendix 3: Medical Microbiology and Immunology/02-virology.tex" 1793082793.03693 10320 0bbeb7cc27ae01f654223fa7558ccaff ""
   "appendices/appendix 3: Medical Microbiology and Immunology/03-medical-mycology.tex" 1793081458 561 148fb85190f26a2e8b5d005f6406788d ""
   "appendices/appendix 3: Medical Microbiology and Immunology/04-medical-parasitology.tex" 1793081458 576 61a9ffb89dd9754e59ba11e434b9e3ab ""
   "appendices/appendix 3: Medical Microbiology and Immunology/05-immunology-bacterial-infection.tex" 1793081458 583 fbf717d9e75e646244efd686b4833309 ""
@@ -329,7 +329,7 @@
   "appendices/appendix 3: Medical Microbiology and Immunology/medical-microbiology-volume.tex" 1793081458 1412 911979389f6ef2a906b9cd3600b5d9cc ""
   "appendices/appendix-volume.tex" 1793081458 953 5ad085d4833e65decdb924d7a9056cee ""
   "assets/book-cover-minimal-blue-medical-design.png" 1793081459 136727 545985b0f5c5b6c5e6ad03f05b4c6647 ""
-  "chapters/chapter0.tex" 1793081984.56799 11544 e8c09175f12640a8c8da9084157ff0ea ""
+  "chapters/chapter0.tex" 1793081458 11501 d71c2e7496e2c403bdd70e44358b5dfa ""
   "chapters/chapter1.tex" 1793081458 1489 3d9d364a22998c76fc94726745c80035 ""
   "chapters/chapter10.tex" 1793081458 972 89cc8d0a474ae8ecd4b14bb78dd7b0c9 ""
   "chapters/chapter11.tex" 1793081458 957 fb328ef71e517e9b10a2415cba9f2f6a ""
@@ -341,18 +341,18 @@
   "chapters/chapter7.tex" 1793081458 968 583aef848bdcd28c0ee1c1fb2ec740cc ""
   "chapters/chapter8.tex" 1793081458 978 157080d038e9de84f9e96c94c096a355 ""
   "chapters/chapter9.tex" 1793081458 963 58720ddf6113e151b64d2c0dfa3c7f62 ""
-  "main.aux" 1793082061.70144 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "main.bbl" 1793082063.15757 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.ind" 1793081796.13746 2308 a117cd30e9a0339acb68f7c4ffd5dbc6 "makeindex main.idx"
-  "main.lof" 1793082059.70821 1264 80b841eaab43f2469bc088fe9305a5ae "xelatex"
-  "main.lot" 1793082059.70857 1132 10d1ce5de1d68870de26d231b46d6c83 "xelatex"
-  "main.mw" 1793082063.06347 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "main.run.xml" 1793082059.70482 2339 c4daf18274cdda13407d6baef92d6709 "xelatex"
-  "main.tex" 1793081984.27158 10862 08af0552ac475ef3372c991e3a423f57 ""
-  "main.toc" 1793082062.36946 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "main.aux" 1793084826.96807 61661 21e09c350c36bc9ca53646b3d9a16d92 "xelatex"
+  "main.bbl" 1793084813.49578 18886 52c6d1fcad7d1bc3a64c5bfcef64ce43 "biber main"
+  "main.ind" 1793084811.48714 2308 a117cd30e9a0339acb68f7c4ffd5dbc6 "makeindex main.idx"
+  "main.lof" 1793084827.16529 2147 6844a43ed5b552cea17bd9f55325daf2 "xelatex"
+  "main.lot" 1793084827.16545 1278 261e69a15523d6531030ce58052ab9dc "xelatex"
+  "main.mw" 1793084827.15753 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "main.run.xml" 1793084827.16377 2339 c96ab0698b8e4866df462ccd1f55b7eb "xelatex"
+  "main.tex" 1793084677.19666 10808 6058a38ce76736486f5c6685f7772a2e ""
+  "main.toc" 1793084827.16507 19518 13765ae2a8611271ba9c9099331ae532 "xelatex"
   "template/cover.tex" 1793081458 1946 424f9d391a22073f22ae15285184210a ""
-  "template/kao.sty" 1793081984.37385 50793 f3cf7a5e6046c7e49ae0b50cdabfbad6 ""
-  "template/kaobiblio.sty" 1793081984.47224 14995 d09c98c41a1c94edad4ef1119eedf612 ""
+  "template/kao.sty" 1793081458 50691 a57258cdbb65c8e691d81a079c73aa39 ""
+  "template/kaobiblio.sty" 1793082793.03681 14925 2082aee75a64fa237bdc8151cb322a47 ""
   "template/kaobook.cls" 1793081458 9203 1bd9ec37f5860240c26583bdec38dc39 ""
   "template/kaorefs.sty" 1793081458 9446 7417cd25049a1efaab7623d16981907b ""
   "template/kaotheorems.sty" 1793081458 11974 de98620155354f236f235753c829f66b ""

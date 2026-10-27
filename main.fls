@@ -2,7 +2,7 @@ PWD /Users/natanon/Documents/CICM/Book-NL
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt
-INPUT main.tex
+INPUT /Users/natanon/Documents/CICM/Book-NL/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
 INPUT ./template/kaobook.cls
@@ -472,8 +472,6 @@ INPUT ./template/kaobiblio.sty
 INPUT template/kaobiblio.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/oberdiek/iflang.sty
-INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
-INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
@@ -584,9 +582,6 @@ INPUT ./assets/book-cover-minimal-blue-medical-design.png
 INPUT ./assets/book-cover-minimal-blue-medical-design.png
 OUTPUT main.mw
 OUTPUT main.xdv
-INPUT main.mw
-OUTPUT main.mw
-OUTPUT main.mw
 INPUT main.mw
 OUTPUT main.mw
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/ccicons/ccicons.tfm
@@ -805,6 +800,21 @@ INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
 OUTPUT main.mw
 INPUT main.mw
 OUTPUT main.mw
@@ -1207,6 +1217,9 @@ OUTPUT main.mw
 OUTPUT main.mw
 INPUT main.mw
 OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
 INPUT ./appendices/appendix 3: Medical Microbiology and Immunology/images/c2-capsid-shapes.png
 INPUT ./appendices/appendix 3: Medical Microbiology and Immunology/images/c2-capsid-shapes.png
 INPUT appendices/appendix 3: Medical Microbiology and Immunology/images/c2-capsid-shapes.png
@@ -1342,6 +1355,12 @@ OUTPUT main.mw
 OUTPUT main.mw
 INPUT main.mw
 OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
 INPUT ./main.ind
 INPUT ./main.ind
 INPUT main.ind
@@ -1376,6 +1395,15 @@ OUTPUT main.mw
 INPUT main.mw
 OUTPUT main.mw
 INPUT main.aux
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
+OUTPUT main.mw
+INPUT main.mw
+OUTPUT main.mw
 OUTPUT main.mw
 INPUT main.mw
 OUTPUT main.mw
