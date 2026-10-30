@@ -1,0 +1,37 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixcollectionparent\endcsname
+  \else
+    \mainmatter
+    \setchapterstyle{kao}
+    \appendix
+  \fi
+}{}
+\appendixchaptergroup{C}
+\pagelayout{wide}
+\addpart{Appendix C: Medical Microbiology and Immunology}
+\pagelayout{margin}
+
+\def\appendixchapterparent{true}
+\ifcsname appendixcollectionparent\endcsname
+  \subfile{01-bacteriology.tex}
+  \subfile{02-virology.tex}
+  \subfile{03-medical-mycology.tex}
+  \subfile{04-medical-parasitology.tex}
+  \subfile{05-immunology-bacterial-infection.tex}
+\else
+  \subfile{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/01-bacteriology.tex}
+  \subfile{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/02-virology.tex}
+  \subfile{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/03-medical-mycology.tex}
+  \subfile{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/04-medical-parasitology.tex}
+  \subfile{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/05-immunology-bacterial-infection.tex}
+\fi
+\end{document}

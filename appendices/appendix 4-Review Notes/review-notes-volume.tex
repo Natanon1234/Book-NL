@@ -1,0 +1,47 @@
+% !TEX program = xelatex
+\IfFileExists{Book\space NL/template/kaobook.cls}{
+  \IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+    \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+      \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+        \documentclass[Book\space NL/main.tex]{subfiles}
+      }
+    }
+  }
+}{
+  \IfFileExists{../../template/kaobook.cls}{\documentclass[../../main.tex]{subfiles}}{\documentclass{book}}
+}
+\IfFileExists{Book\space NL/template/kaobook.cls}{}{\IfFileExists{../../template/kaobook.cls}{}{\InputIfFileExists{review-notes-standalone.tex}{}{\InputIfFileExists{Book\space NL/appendices/appendix 4-Review Notes/review-notes-standalone.tex}{}{}}}}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixcollectionparent\endcsname
+  \else
+    \mainmatter
+    \setchapterstyle{kao}
+    \appendix
+  \fi
+}{}
+\appendixchaptergroup{D}
+\pagelayout{wide}
+\addpart{Appendix D: Integrated Topic Reviews}
+\pagelayout{margin}
+
+\noindent\textit{Editorial note. Chapters D1--D6 transcribe and organize the substantive content of the supplied CMM233, CMM127, CMM110, MD212, and MD215 notes by topic. Spelling and grammar may be corrected, but suspected factual errors are not silently rewritten; bold accuracy notes flag statements that need correction or verification. Histology-laboratory photographs, gross-laboratory checklists, export instructions, introductory messages, and examination-technique advice are excluded. Text-based figures and tables are transcribed where practicable.}\par
+\noindent\textbf{[Verify the course attribution: the supplied file is named “CMM233 Summary.docx,” but its internal title reads “MD213 Summary.”]}\par\medskip
+
+\def\appendixchapterparent{true}
+\ifcsname appendixcollectionparent\endcsname
+  \subfile{cardiovascular-respiratory-system-review.tex}
+  \subfile{research-methods-critical-appraisal.tex}
+  \subfile{cellular-molecular-biology-review-questions.tex}
+  \subfile{metabolism-molecular-biology-genetics-review.tex}
+  \subfile{integumentary-musculoskeletal-review.tex}
+  \subfile{renal-urinary-reproductive-review.tex}
+\else
+  \subfile{\booknlroot appendices/appendix 4-Review Notes/cardiovascular-respiratory-system-review.tex}
+  \subfile{\booknlroot appendices/appendix 4-Review Notes/research-methods-critical-appraisal.tex}
+  \subfile{\booknlroot appendices/appendix 4-Review Notes/cellular-molecular-biology-review-questions.tex}
+  \subfile{\booknlroot appendices/appendix 4-Review Notes/metabolism-molecular-biology-genetics-review.tex}
+  \subfile{\booknlroot appendices/appendix 4-Review Notes/integumentary-musculoskeletal-review.tex}
+  \subfile{\booknlroot appendices/appendix 4-Review Notes/renal-urinary-reproductive-review.tex}
+\fi
+\end{document}

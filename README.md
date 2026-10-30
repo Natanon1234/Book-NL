@@ -2,13 +2,13 @@
 
 - `main.tex` — full book entry point; includes the planning and LaTeX-cookbook chapter and the combined appendix collection.
 - `appendices/appendix-volume.tex` — combined appendix entry point; it collects the independent physiology, pharmacology, and medical microbiology and immunology volumes.
-- `appendices/appendix 1: Physiology/physiology-volume.tex` — standalone physiology volume with chapters A1 and A2.
-- `appendices/appendix 2: Pharmacology/pharmacology-volume.tex` — standalone pharmacology volume with chapters B1 and B2.
-- `appendices/appendix 3: Medical Microbiology and Immunology/medical-microbiology-volume.tex` — standalone volume with chapters C1–C5 on bacteriology, virology, medical mycology, medical parasitology, and immune responses to bacterial infection.
+- `appendices/appendix 1-Physiology/physiology-volume.tex` — standalone physiology volume with chapters A1 and A2.
+- `appendices/appendix 2-Pharmacology/pharmacology-volume.tex` — standalone pharmacology volume with chapters B1 and B2.
+- `appendices/appendix 3-Medical Microbiology and Immunology/medical-microbiology-volume.tex` — standalone volume with chapters C1–C5 on bacteriology, virology, medical mycology, medical parasitology, and immune responses to bacterial infection.
 - `chapters/` — independently compilable main-book chapters, including the active planning and LaTeX-cookbook chapter `chapter0.tex`.
 - `appendices/` — independently compilable appendix chapters and pharmacology topic files.
 - `chapters/images/` — chapter figures; current B1 examples are `b1-expression-distribution-histogram.png` and `b1-gene-transcription-translation-diagram.png`.
-- `appendices/appendix 1: Physiology/images/` and `appendices/appendix 2: Pharmacology/images/` — figures for their respective appendix chapters; the A1 membrane-transport figure is chapter-prefixed and descriptive.
+- `appendices/appendix 1-Physiology/images/` and `appendices/appendix 2-Pharmacology/images/` — figures for their respective appendix chapters; the A1 membrane-transport figure is chapter-prefixed and descriptive.
 - `template/part1a-table-rows.tex` — table-row fragment used by the cookbook chapter; it is not a standalone document.
 - `main.bib` — bibliography database shared by the full book and standalone content files.
 - `assets/` — active book-cover image and other book assets.
@@ -77,24 +77,24 @@ The build writes `main.pdf` and temporary LaTeX files beside `main.tex`. The cov
 Compile all appendices together, or each appendix as its own volume:
 
 - `latexmk -xelatex -outdir=build/appendices appendices/appendix-volume.tex`
-- `latexmk -xelatex -outdir=build/physiology "appendices/appendix 1: Physiology/physiology-volume.tex"`
-- `latexmk -xelatex -outdir=build/pharmacology "appendices/appendix 2: Pharmacology/pharmacology-volume.tex"`
-- `latexmk -xelatex -outdir=build/medical-microbiology "appendices/appendix 3: Medical Microbiology and Immunology/medical-microbiology-volume.tex"`
+- `latexmk -xelatex -outdir=build/physiology "appendices/appendix 1-Physiology/physiology-volume.tex"`
+- `latexmk -xelatex -outdir=build/pharmacology "appendices/appendix 2-Pharmacology/pharmacology-volume.tex"`
+- `latexmk -xelatex -outdir=build/medical-microbiology "appendices/appendix 3-Medical Microbiology and Immunology/medical-microbiology-volume.tex"`
 
 For rapid previews, compile individual chapters directly:
 
 - `latexmk -xelatex -outdir=build chapters/chapter0.tex`
-- `latexmk -xelatex -outdir=build "appendices/appendix 1: Physiology/01-physiology-foundations.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 1: Physiology/02-membrane-transport-and-excitability.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 2: Pharmacology/overview-of-pharmacology.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 2: Pharmacology/01-pharmacokinetics.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 2: Pharmacology/02-pharmacodynamics.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 2: Pharmacology/02-safe-prescribing.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 3: Medical Microbiology and Immunology/01-bacteriology.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 3: Medical Microbiology and Immunology/02-virology.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 3: Medical Microbiology and Immunology/03-medical-mycology.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 3: Medical Microbiology and Immunology/04-medical-parasitology.tex"`
-- `latexmk -xelatex -outdir=build "appendices/appendix 3: Medical Microbiology and Immunology/05-immunology-bacterial-infection.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 1-Physiology/01-physiology-foundations.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 1-Physiology/02-membrane-transport-and-excitability.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 2-Pharmacology/overview-of-pharmacology.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 2-Pharmacology/01-pharmacokinetics.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 2-Pharmacology/02-pharmacodynamics.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 2-Pharmacology/02-safe-prescribing.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 3-Medical Microbiology and Immunology/01-bacteriology.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 3-Medical Microbiology and Immunology/02-virology.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 3-Medical Microbiology and Immunology/03-medical-mycology.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 3-Medical Microbiology and Immunology/04-medical-parasitology.tex"`
+- `latexmk -xelatex -outdir=build "appendices/appendix 3-Medical Microbiology and Immunology/05-immunology-bacterial-infection.tex"`
 
 The cookbook chapter uses self-contained TikZ examples, so it can be compiled to the build folder like other standalone chapters.
 
@@ -199,8 +199,8 @@ To compile the empty templates directly from `Book NL`, use the same standalone 
 
 ```sh
 latexmk -xelatex -outdir=build chapters/chapter-template.tex
-latexmk -xelatex -outdir=build "appendices/appendix 1: Physiology/chapter-template.tex"
-latexmk -xelatex -outdir=build "appendices/appendix 2: Pharmacology/chapter-template.tex"
+latexmk -xelatex -outdir=build "appendices/appendix 1-Physiology/chapter-template.tex"
+latexmk -xelatex -outdir=build "appendices/appendix 2-Pharmacology/chapter-template.tex"
 ```
 
 The generated files go under `build/`; do not add template source files to the volume `\subfile` lists unless they are first copied and given real chapter content.

@@ -1,0 +1,31 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixcollectionparent\endcsname
+  \else
+    \mainmatter
+    \setchapterstyle{kao}
+    \appendix
+  \fi
+}{}
+\appendixchaptergroup{A}
+\pagelayout{wide}
+\addpart{Appendix A: Physiology}
+\pagelayout{margin}
+
+\def\appendixchapterparent{true}
+\ifcsname appendixcollectionparent\endcsname
+  \subfile{01-physiology-foundations.tex}
+  \subfile{02-membrane-transport-and-excitability.tex}
+\else
+  \subfile{\booknlroot appendices/appendix 1-Physiology/01-physiology-foundations.tex}
+  \subfile{\booknlroot appendices/appendix 1-Physiology/02-membrane-transport-and-excitability.tex}
+\fi
+\end{document}

@@ -9,7 +9,7 @@
       {\def\booknlroot{}}}}
 \edef\input@path{{\booknlroot}{\booknlroot template/}}
 \makeatother
-\PassOptionsToPackage{compatibility=false}{caption}
+\PassOptionsToPackage{c ompatibility=false}{caption}
 \documentclass[
     secnumdepth=1,
 ]{template/kaobook}
@@ -24,6 +24,7 @@
 \usetikzlibrary{arrows.meta, decorations.pathreplacing,positioning,calc,backgrounds}
 \usepackage{graphicx}
 \usepackage{pifont}
+\usepackage{tabularx}
 
 % Explicitly load fontspec for XeLaTeX font handling
 \usepackage{fontspec}
@@ -59,7 +60,7 @@
 \AtBeginDocument{\ifSubfilesClassLoaded{\nocite{Venter2001c}}{}}
 \usepackage{pdflscape}
 
-\graphicspath{{\booknlroot assets/}{\booknlroot chapters/images/}{\booknlroot appendices/appendix 1: Physiology/images/}{\booknlroot appendices/appendix 2: Pharmacology/images/}{\booknlroot ./}} % Paths where images are looked for
+\graphicspath{{\booknlroot assets/}{\booknlroot chapters/images/}{\booknlroot appendices/appendix 1-Physiology/images/}{\booknlroot appendices/appendix 2-Pharmacology/images/}{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/images/}{\booknlroot appendices/appendix 4-Review Notes/images/}{\booknlroot ./}} % Paths where images are looked for
 \newcommand{\bookrunningtitle}{NL1 Guide --- Natanon Kittimongkulsuk}
 \renewcommand{\chaptermark}[1]{\markboth{\bookrunningtitle}{\thechapter\enspace #1}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace #1}}

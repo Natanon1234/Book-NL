@@ -1,0 +1,36 @@
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{tabularx}
+\usepackage[BasicLatin,Thai]{ucharclasses}
+
+\setmainfont{Noto Sans Condensed}
+\setsansfont{Noto Sans Condensed}
+\newfontfamily\thaifont{Noto Sans Thai UI}[Script=Thai,Scale=MatchLowercase]
+\setTransitionsFor{Thai}{\thaifont}{\normalfont}
+\XeTeXlinebreaklocale "th"
+\XeTeXlinebreakskip=0pt plus 1pt
+
+\IfFileExists{Book\space NL/main.tex}{
+  \def\booknlroot{Book\space NL/}
+}{
+  \IfFileExists{../../main.tex}{
+    \def\booknlroot{../../}
+  }{
+    \def\booknlroot{}
+  }
+}
+
+\providecommand{\ifSubfilesClassLoaded}[2]{#2}
+\providecommand{\margintoc}{}
+\providecommand{\pagelayout}[1]{}
+\providecommand{\appendixchaptergroup}[1]{\setcounter{chapter}{0}\renewcommand{\thechapter}{#1\arabic{chapter}}}
+\providecommand{\theHchapter}{\thechapter}
+\providecommand{\addpart}[1]{\part{#1}}
+\providecommand{\labch}[1]{\label{ch:#1}}
+\providecommand{\labfig}[1]{\label{fig:#1}}
+\providecommand{\labtab}[1]{\label{tab:#1}}
+\newcounter{margintocdepth}

@@ -1,0 +1,95 @@
+% !TEX program = xelatex
+\IfFileExists{main.tex}{\documentclass[main.tex]{subfiles}}{
+  \IfFileExists{../../main.tex}{\documentclass[../../main.tex]{subfiles}}{
+    \IfFileExists{../main.tex}{\documentclass[../main.tex]{subfiles}}{
+      \documentclass[Book\space NL/main.tex]{subfiles}
+    }
+  }
+}
+\begin{document}
+\ifSubfilesClassLoaded{
+  \ifcsname appendixchapterparent\endcsname
+  \else
+    \standaloneappendixchaptersetup{A}{1}
+  \fi
+}{}
+\chapter{Introduction to the Cellular and Molecular Basics of Physiology}
+\margintoc
+
+The physiology section of this book is mainly based on physiology from Ganong's Review of Medical Physiology\footnote{\cite{Barrett2012Ganong24}} (24th ed.) and also draws from Guyton and Hall Physiology\footnote{\cite{Hall2025Guyton}} (15th ed.) and Berne and Levy Physiology\footnote{\cite{Koeppen2023Berne}} (8th ed.)
+
+หมายเหตุ: วิชาสรีรวิทยามีเนื้อหากว้างมาก บทนี้จึงเป็นเพียงสรุปความรู้จากมุมมองของนักศึกษาคนหนึ่ง เนื้อหาอาจไม่ครบถ้วนหรือมีข้อผิดพลาดบ้าง (แต่ก็หวังว่าจะเป็นประโยชน์นะ!)
+
+\section{Introduction}
+\textbf{Balance}\index{physiological balance} is at the core of physiology, from pressure between the \textbf{fluid compartments}\index{body fluid compartments} to blood concentration and acidity to urine output. The human body aims to strike a delicate balance between all elements internal to external, which requires numerous mechanisms to control each parameter in the body. At the microscopic level, cells maintain a balance between their internal and outer environments across a \textbf{cell membrane}\index{cell membrane}, which serves to regulate the micro environment to allow for cellular activity. If this balance is disrupted, damage of the cell and/or degradation of its functions occurs.
+
+\section[The Cell membrane]{The Cell membrane\protect\footnotemark}
+\footnotetext{Based on \textit{Molecular Biology of the Cell}~\cite[chap.~11]{Alberts2022MBoC}, \textit{BRS Physiology}~\cite[chap.~1]{Costanzo2014BRS}, and \textit{Ganong's Review of Medical Physiology}~\cite{Barrett2012Ganong24}.}
+
+\begin{center}
+\captionof{table}{Relevant cell-biology competencies}
+\labtab{membrane_transport_competencies}
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{0.10\textwidth}>{\RaggedRight\arraybackslash}p{0.50\textwidth}>{\RaggedRight\arraybackslash}p{0.36\textwidth}@{}}
+\toprule
+\textbf{Code} & \textbf{Competency} & \textbf{Coverage} \\
+\midrule
+B1.2.1 & Structure and function of cell components (e.g., endoplasmic reticulum, Golgi complex, mitochondria, lysosome, peroxisome, endosome, centriole, microtubule, ribosome, polysome, plasma membrane, cytosol, cilia, nucleus, cytoskeleton) & Partial: plasma membrane transport and cytosol are discussed; other listed components are outside this section. \\
+B1.2.2 & Signal transduction (including basic principles, receptors and channels, second messengers, signal transduction pathways) & Partial: channels and signaling are mentioned; receptors, second messengers, and pathways are not explained. \\
+B1.2.5 & Intracellular sorting (e.g., trafficking, endocytosis) & Not covered here: vesicular trafficking and endocytosis are outside the current content.\\
+B1.2.6 & Cellular homeostasis (e.g., turnover, pH maintenance, proteasome, ions, soluble proteins) & Partial: pH, solutes, ions, and gradients are mentioned; homeostatic mechanisms are not explained. \\
+\bottomrule
+\end{tabular}
+\end{center}
+\noindent{\footnotesize Source: Medical Council Notification 12/2555, Part 1A. Active and passive transport are not listed separately; they map here to B1.2.1 and B1.2.6.}
+
+\subsection{Structure \& Composition of the Cell Membrane}
+\textbf{Cell membranes}\index{cell membrane} are a key part of all cells: they separate the intracellular\index{intracellular environment} and extracellular\index{extracellular environment} environments, allowing cells to regulate their cytosol\index{cytosol}, such as controlling solute concentration and internal pH\index{pH}. This is essential for the performance of functions within the cell, as well as intracellular signaling\index{intracellular signaling}. However, cell membranes are not perfectly impermeable barriers: substances can cross either into or out of the cell through multiple mechanisms, either regulated or unregulated. These mechanisms exist to allow cells to interact with the outside world, acquiring nutrients and excreting waste, as well as sending and receiving signals. While some molecules are able to effectively permeate through the cell membrane, most require some form of assistance to cross the \textbf{lipid bilayer}\index{lipid bilayer}. For these molecules, both energy-expending and energy-independent mechanisms exist. These mechanisms, as well as their controls are discussed further in this chapter.
+
+
+
+\section{Passive transport}
+A major mechanism for the movement of molecules is \textbf{diffusion}\index{diffusion}, which involves the movement of small particles following the concentration gradient\index{concentration gradient}, which refers to the difference in concentration between the two sides of a permeable membrane. \textbf{Passive transport}\index{passive transport} does not require energy expenditure from the cell, as the concentration or electrochemical gradient\index{electrochemical gradient} drives equalization. Passive transport can be achieved through both membrane diffusion (where small lipid soluble molecules move through the cell membrane) and \textbf{facilitated diffusion}\index{facilitated diffusion}.
+
+Facilitated (passive) diffusion mainly refers to \textbf{channel-mediated transport}\index{channel-mediated transport} or transport via carrier proteins\index{carrier protein}. Channel-mediated transport is typically used for substances such as ions\index{ion}, which are not able to independently cross the cell membrane effectively. In channel-mediated transport, channel proteins form aqueous pores, which allow substances to diffuse across. For instance, K$^{+}$ channels allow the flow of potassium ions. Alternatively, in carrier-mediated transport\index{carrier-mediated transport}, a carrier protein binds to a substance and undergoes conformational changes to transport specific substances (such as glucose) across the cell membrane.
+
+\section{Active transport}
+Another major mechanism for particles is \textbf{active transport}\index{active transport}, which is a broad category of mechanisms where cellular energy (in the form of \textbf{ATP}\index{ATP}) is used, either directly or indirectly, to transport substances. The major mechanisms for this are through \textbf{direct active transport}\index{direct active transport} and \textbf{secondary active transport}\index{secondary active transport}. These mechanisms differ depending on if transport directly utilizes ATP to mobilize the target substrate.
+
+Direct active transport refers to the usage of \textbf{ATP-dependent transporters}\index{ATP-dependent transporter}, often referred to as pumps\index{pump}, which actively bind to the target substrate and undergo conformational changes which result in a specific substance being transported against the concentration gradient directly (see: Na-K ATPase [todo]). This type of transport establishes a potential gradient\index{potential gradient} within the cell, which may be utilized in other processes. For instance, in neurons, the gradient of sodium and potassium is equalized during signaling, resulting in the subsequent release of calcium and neurotransmitters (see: depolarization of the neuron [todo]).
+
+
+\begin{center}
+  \centering
+  \includegraphics[width=\textwidth]{\booknlroot appendices/appendix 1-Physiology/images/a1-membrane-transport-electrochemical-gradient.png}
+  \captionof{figure}{Forms of membrane transport and the influence of the membrane. (A) Passive transport moves solutes down their concentration or electrochemical gradient by simple diffusion, channels, or passive carriers. Active transport moves solutes against a gradient and requires metabolic energy. (B) The electrochemical gradient\index{electrochemical gradient} combines the concentration gradient and membrane potential; the electrical and chemical components may reinforce or oppose one another.\footnotemark}
+  \labfig{a1-membrane-transport-electrochemical-gradient}
+\end{center}
+\footnotetext{Reproduced from Fig.~11--4 in \textit{Molecular Biology of the Cell}, 7th ed.~\cite[chap.~11, fig.~11--4]{Alberts2022MBoC}.}
+
+\section{Physiology learning-specification checklist}
+
+Use this list to plan the physiology chapters. It collects relevant foundational topics and the specification's normal-system objectives; disease, diagnosis, and treatment objectives are outside this list.
+
+\begingroup
+\RaggedRight
+\begin{itemize}
+  \item \textbf{B1: Cross-cutting foundations} — energy metabolism (B1.1.6); cell structure, signal transduction, cellular homeostasis, and basic tissue components (B1.2.1, B1.2.2, B1.2.6, B1.2.8); exercise and sleep physiology (B1.7.3--B1.7.4).
+  \item \textbf{B2.1: Hematopoietic and lymphoreticular systems} — development and perinatal changes; bone marrow, lymph nodes, thymus, and spleen; production and function of erythrocytes, hemoglobin, O$_2$/CO$_2$ transport, leukocytes, platelets, coagulation and fibrinolysis; repair and life-stage changes.
+  \item \textbf{B3.1: Central and peripheral nervous systems} — development; spinal cord, brain stem, brain, sensory and motor systems, autonomic nervous system, and peripheral nerves; neuronal excitability, neurotransmitters and receptors, glia and myelin; brain homeostasis, blood-brain barrier, and cerebrospinal fluid; life-stage changes.
+  \item \textbf{B4.1: Skin and related connective tissue} — development and structure; barrier function, thermal regulation, and eccrine function; repair and changes across life stages and ethnicity; skin defenses and normal flora.
+  \item \textbf{B5.1: Musculoskeletal system} — development and structure; bones, joints, tendons, and skeletal muscle; exercise and physical conditioning; repair and life-stage changes.
+  \item \textbf{B6.1: Respiratory system} — development; airways, mechanics and regulation of breathing; lung ventilation, perfusion, and gas exchange; pleura and upper airways; surfactant and alveolar structure; repair, life-stage changes, pulmonary defenses, and normal flora.
+  \item \textbf{B7.1: Cardiovascular system} — development; chambers, valves, cardiac cycle, mechanics, heart sounds, and conduction; hemodynamics and circulation in specific vascular beds; heart muscle, endothelium, vascular smooth muscle, microcirculation, and lymph flow; neural and hormonal regulation, including responses to posture, exercise, and tissue metabolism; life-stage changes.
+  \item \textbf{B8.1: Gastrointestinal system} — development; alimentary canal, liver and biliary system, salivary glands, and exocrine pancreas; motility, digestion, and absorption; neural and hormonal regulation; gastrointestinal, pancreatic, and hepatic secretions and liver metabolism; repair, life-stage changes, defenses, and normal flora.
+  \item \textbf{B9.1: Renal and urinary system} — development; kidneys, ureters, bladder, and urethra; glomerular filtration and hemodynamics; tubular reabsorption and secretion; urine concentration and dilution; acid-base and body-fluid homeostasis; micturition; renal metabolism and hormones; life-stage changes.
+  \item \textbf{B10.1: Reproductive and perinatal physiology} — development and perinatal changes; female and male reproductive structure and function; menstrual cycle, puberty, menopause, spermatogenesis, intercourse, and orgasm; pregnancy, labor, delivery, puerperium, and lactation; hypothalamic-pituitary-gonadal axis and reproductive hormones; defenses and life-stage changes.
+  \item \textbf{B11.1: Endocrine system} — development; hypothalamus, pituitary, thyroid, parathyroids, adrenals, pancreatic islets, gonads, and adipose tissue; hormone synthesis, secretion, action, and metabolism, including peptide, steroid, thyroid, and catecholamine hormones and the renin-angiotensin system; life-stage changes.
+\end{itemize}
+\endgroup
+
+\noindent\emph{Source: Medical Council Notification 12/2555, Part 1A, foundational topics and normal-system competencies B2.1--B11.1.}
+
+\end{document}
