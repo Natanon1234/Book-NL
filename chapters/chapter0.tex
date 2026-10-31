@@ -67,6 +67,209 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 
 \section{Figures and TikZ diagrams}
 \labsec{cookbook-figures}
+
+% =====================================================================
+%  FIGURE AND TABLE TEMPLATES  (kaobook, NL virology notes)
+% =====================================================================
+%
+%  RULES
+%   1. Every figure and table is a float (figure / table, or the kaobook
+%      variants below). Never use  center + \captionof.
+%   2. Order inside the float:
+%        figure:  \centering -> content -> \caption -> \labfig
+%        table:   \centering -> \caption -> \labtab -> content
+%      The label goes IMMEDIATELY after \caption. A label placed before
+%      the caption points at the section number instead of the float.
+%   3. Always give a short caption in [ ]. It is what appears in the list
+%      of figures / tables. Keep \cite and \footnote out of the short caption.
+%   4. Labels are the bare name with no prefix: \labfig{c2-capsid-shapes}.
+%      (\labfig / \labtab add fig: / tab: themselves.)
+%      Naming convention: <chapter>-<kebab-case-name>, e.g. c2-dissemination.
+%   5. Refer to every float in the text with \reffig{name} / \reftab{name}.
+%      They print "Figure N" / "Table N", so never type "Figure~\ref{...}".
+%      Place the float right after the paragraph that first refers to it.
+%   6. Non-float references stay as they are:
+%        Section~\ref{...}   Chapter~\ref{...}   Box~\ref{box:...}
+%   7. Credit the source in the caption ("Reproduced from ...",
+%      "Adapted from ...") and add the entry to the .bib file so that
+%      \cite{bibkey} works. Leave the credit out for original figures.
+%
+%  ASSUMED MACRO DEFINITIONS  (compare with your preamble; do not
+%  uncomment if they already exist)
+%    \newcommand{\labfig}[1]{\label{fig:#1}}
+%    \newcommand{\reffig}[1]{Figure~\ref{fig:#1}}
+%    \newcommand{\labtab}[1]{\label{tab:#1}}
+%    \newcommand{\reftab}[1]{Table~\ref{tab:#1}}
+%
+%  PACKAGES THESE TEMPLATES USE
+%    graphicx, tikz, booktabs, array, ragged2e,
+%    longtable (only for template 7)
+%
+% =====================================================================
+
+
+% ---------------------------------------------------------------------
+%  1. IMAGE FIGURE
+% ---------------------------------------------------------------------
+%  In the text:   ... as shown in \reffig{c2-short-name}.
+%                 (see \reffig{c2-short-name})
+%                 \reffig{c2-short-name} shows ...
+%  Narrow images: use width=0.7\textwidth instead of \textwidth.
+%
+
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=\textwidth]{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/images/FILENAME.png}
+%   \caption[Short title for the list of figures]{Full caption. Say what is shown and explain any colours, symbols or abbreviations. Reproduced from Author, \textit{Title}~\cite{bibkey}.}
+%   \labfig{c2-short-name}
+% \end{figure}
+
+
+% ---------------------------------------------------------------------
+%  2. TIKZ FIGURE
+% ---------------------------------------------------------------------
+%  - Keep colours and helper macros INSIDE the float so they stay local.
+%  - \newcommand errors if the name already exists. Put macros that are
+%    shared between figures in the preamble instead.
+%  - \resizebox scales the drawing to the text width. The % signs after
+%    the opening brace and after \end{tikzpicture} are required.
+%
+\begin{figure}[htbp]
+  \centering
+  \definecolor{mycolour}{RGB}{33,102,172}
+  \resizebox{\textwidth}{!}{%
+  \begin{tikzpicture}[font=\sffamily]
+    \node[draw=mycolour, fill=mycolour!15, rounded corners=3pt] {Example node};
+  \end{tikzpicture}%
+  }
+  \caption[Short title for the list of figures]{Full caption. Explain the colour coding and any symbols.}
+  \labfig{c2-short-name}
+\end{figure}
+
+
+% ---------------------------------------------------------------------
+%  3. FULL-WIDTH FIGURE  (kaobook: spans text block and margin)
+% ---------------------------------------------------------------------
+%  Use for wide diagrams that become unreadable at normal text width.
+%
+% \begin{figure*}[htbp]
+%   \centering
+%   \includegraphics[width=\linewidth]{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/images/FILENAME.png}
+%   \caption[Short title for the list of figures]{Full caption.}
+%   \labfig{c2-short-name}
+% \end{figure*}
+
+
+% ---------------------------------------------------------------------
+%  4. MARGIN FIGURE  (kaobook)
+% ---------------------------------------------------------------------
+%  Use for small supporting images. Margin floats take no placement
+%  argument.
+%
+% \begin{marginfigure}
+%   \centering
+%   \includegraphics[width=\linewidth]{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/images/FILENAME.png}
+%   \caption[Short title for the list of figures]{Full caption.}
+%   \labfig{c2-short-name}
+% \end{marginfigure}
+
+
+% ---------------------------------------------------------------------
+%  5. STANDARD TABLE
+% ---------------------------------------------------------------------
+%  In the text:   \reftab{c2-short-name} lists ...
+%                 (see \reftab{c2-short-name})
+%  \footnotesize comes AFTER \caption so the caption stays normal size.
+%  Use booktabs rules only (\toprule, \midrule, \bottomrule), no vertical
+%  lines and no \hline.
+%
+\begin{table}[htbp]
+  \centering
+  \caption[Short title for the list of tables]{Full caption. Source: Author (Year)~\cite{bibkey}.}
+  \labtab{c2-short-name}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.12}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+    \midrule
+    Row 1 & Value & Value \\
+    Row 2 & Value & Value \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+% ---------------------------------------------------------------------
+%  6. TABLE WITH WRAPPING TEXT COLUMNS
+% ---------------------------------------------------------------------
+%  Use p{} columns when cells contain sentences. Column widths should add
+%  up to about 0.95 to 0.97 of \textwidth (the rest is column padding).
+%  Needs array and ragged2e.
+%
+\begin{table}[htbp]
+  \centering
+  \caption[Short title for the list of tables]{Full caption.}
+  \labtab{c2-short-name}
+  \footnotesize
+  \setlength{\tabcolsep}{2pt}
+  \renewcommand{\arraystretch}{1.12}
+  \begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}>{\RaggedRight\arraybackslash}p{0.35\textwidth}>{\RaggedRight\arraybackslash}p{0.40\textwidth}@{}}
+    \toprule
+    \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+    \midrule
+    Short entry & A longer entry that wraps onto several lines. & Another longer entry that wraps onto several lines. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+% ---------------------------------------------------------------------
+%  7. TABLE LONGER THAN ONE PAGE  (not a float)
+% ---------------------------------------------------------------------
+%  longtable is NOT a float: it breaks across pages and sits exactly where
+%  it is written, and the caption goes INSIDE it with \\ after the label.
+%  Only use it when the table cannot fit on one page. Otherwise use
+%  template 5 or 6. Reference it with \reftab as usual.
+%
+\begin{longtable}{@{}p{0.30\textwidth}p{0.65\textwidth}@{}}
+  \caption[Short title for the list of tables]{Full caption.}\labtab{c2-short-name}\\
+  \toprule
+  \textbf{Column 1} & \textbf{Column 2} \\
+  \midrule
+  \endfirsthead
+  \toprule
+  \textbf{Column 1} & \textbf{Column 2} \\
+  \midrule
+  \endhead
+  \bottomrule
+  \endfoot
+  Row 1 & Entry \\
+  Row 2 & Entry \\
+\end{longtable}
+
+
+% ---------------------------------------------------------------------
+%  PLACEMENT OPTIONS
+% ---------------------------------------------------------------------
+%   [htbp]   default: here, top, bottom, or own page
+%   [!htbp]  same, but pushes LaTeX harder to honour the order
+%   [p]      own float page (for page-sized figures such as mind maps)
+%
+%  If a float drifts too far from its first reference, move the float
+%  environment earlier in the source rather than forcing [H].
+
+% ---------------------------------------------------------------------
+%  COMMON MISTAKES
+% ---------------------------------------------------------------------
+%   - center + \captionof         -> not a float; use figure / table
+%   - \labfig before \caption     -> reference shows the section number
+%   - \labfig{fig:name}           -> becomes fig:fig:name; use \labfig{name}
+%   - typing Figure~\ref{fig:..}  -> use \reffig{name}
+%   - \cite / \footnote in [short caption] -> breaks the list of figures
+%   - float with no \reffig/\reftab anywhere in the text
+
 \marginclinicalcorrelation[.5cm][frametitle={Clinical takeaway},backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]{Connect a mechanism to bedside recognition, diagnosis, or management. For example, altered gene expression can explain why the same mutation may produce different clinical severity across patients.}
 
 % This self-contained TikZ drawing does not depend on external image assets.

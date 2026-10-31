@@ -856,14 +856,140 @@ The \textbf{serological methods}\index{serological method (of virus detection)} 
 
 Methods for the detection of antibodies include: enzyme immunoassay, radioimmunoassay, western blot, latex particle agglutination, viral neutralization, hemagglutination inhibition, plaque reduction neutralization, immunofluorescent, immunodiffusion and compliment fixation. Refer to Chapter~\ref{sec:immuno_diag} for details.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%% NEW WORK (WAIT FOR CLAUDE)
 \chapter{Poxviridae and Parvoviridae Species}
 
 \section{Poxviridae}
 
-The \textbf{Poxviridae}\index{Poxviridae} family are a complex and enveloped dsDNA viruses. They are also known as the largest and most complex viruses. This family is historically known for their characteristic skin lesions (known as \textbf{pocks}\index{pocks}).
+The \textbf{Poxviridae}\index{Poxviridae} family are a complex and enveloped dsDNA viruses (genome size 130-300 Kbp). They are also known as the largest and most complex viruses. This family is historically known for their characteristic skin lesions (known as \textbf{pocks}\index{pocks}). Members of this family are shown in \reftab{c6-poxviridae-classification}.
+
+\begin{table}[htbp]
+  \centering
+  %\caption[Classification of poxviruses]{Classification of selected genera of the family Poxviridae, representative viruses, primary hosts, and associated diseases.} -- fix this when we know how to use the \caption command
+  \labtab{c6-poxviridae-classification}
+  \footnotesize
+  \setlength{\tabcolsep}{2pt}
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabular}{@{}
+    >{\RaggedRight\arraybackslash}p{0.16\textwidth}
+    >{\RaggedRight\arraybackslash}p{0.22\textwidth}
+    >{\RaggedRight\arraybackslash}p{0.18\textwidth}
+    >{\RaggedRight\arraybackslash}p{0.39\textwidth}
+    @{}}
+    \toprule
+    \textbf{Genus} &
+    \textbf{Virus} &
+    \textbf{Primary host} &
+    \textbf{Disease} \\
+    \midrule
+
+    \multirow{4}{0.16\textwidth}{\centering\itshape Orthopoxvirus}
+    & Variola
+    & Humans
+    & Smallpox (now eliminated) \\
+
+    & Vaccinia
+    & Humans
+    & Localized lesion; used for smallpox vaccination \\
+
+    & Mpox (Monkeypox) (Jan, 2022 outbreak)
+    & Rodents, monkeys
+    & Human infections rare; generalized disease \\
+
+    & Cowpox
+    & Cows
+    & Human infections rare; localized ulcerating lesion \\
+
+    \midrule
+
+    \multirow{3}{0.16\textwidth}{\centering\itshape Parapoxvirus}
+    & Orf
+    & Sheep
+    & \multirow{3}{0.39\textwidth}{\RaggedRight
+      Human infections rare; localized lesion} \\
+
+    & Pseudocowpox
+    & Cows
+    & \\
+
+    & Bovine papular stomatitis
+    & Cows
+    & \\
+
+    \midrule
+
+    \multirow{1}{0.16\textwidth}{\centering\itshape Molluscipoxvirus}
+    & Molluscum contagiosum
+    & Humans
+    & Many benign skin nodules \\
+
+    \midrule
+
+    \multirow{2}{0.16\textwidth}{\centering\itshape Yatapoxvirus}
+    & Tanapox
+    & Monkeys
+    & Human infections rare; localized lesion \\
+
+    & Yabapox
+    & Monkeys
+    & Human infections very rare and accidental;
+      localized skin tumors \\
+
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The poxviruses are enveloped and brick/ovoid shaped viruses with a dumbbell core (where nucleic acids are stored) and lateral bodies. The virus also contains a DNA-dependant RNA polymerase which allows it to replicate within the cytoplasm, and it exists in two forms: an external enveloped virion (EEV) and an internal mature virion (IMV). The external enveloped form is simply the IMV covered inside an envelope.
+
+\subsection{Smallpox}
+
+\textbf{Smallpox}\index{smallpox} (โรคฝีดาษ/ไข้ทรพิษ) is a disease caused by the Variola virus (a member of the Poxviridae family), and it was the the first disease with a large-scale effective vaccination campaign. Smallpox is a human-specific virus (without an animal resivoir) with inhaled and cutaneous transmission. After infection, incubation is typically between 10 to 12 days (the range is between 7 to 17 days).
+
+Two clinical forms of variola exist: Variola major and Variola minor. \textbf{Variola major}\index{Variola major} posesseses a high fatality rate (30\%) and severity. It is the most common form of the virus worldwide. Meanwhile, \textbf{Variola minor}\index{Variola minor} is a less severe form with 1--2\% a mortality rate that only exists in some countries. Vaccines are available for smallpox. Signs and symptoms of smallpox include:
+
+\begin{itemize}
+  \item Prodromal symptoms: fever (of 38.3\textdegree{}C), severe headache, myalgia, fatigue, nausea and vomiting.
+  \item Evolving rash initially appearing on the face and trunk, developing over 2--3 weeks with deep seated vesicles or pustules \textbf{at the same stage of development}, often with a centrifugal distribution\footnote{This means that lesions appear with the greatest concentration of lesions on the face and distal extremities.} (development process: macules \faArrowRight{} papules \faArrowRight{} vesicles \faArrowRight{} pustules \faArrowRight{} crusts).
+\end{itemize}
+
+The laboratory of smallpox requires BSL4, and includes NAAT as well as vesicle/fluid/scab samples.
+
+One possible differential of smallpox is chickenpox, which also induces pox lesions, though clinical presentation differs. In chickenpox, lesions are more centrally distributed (with none on the palms or soles), rapidly developing and appear at the same time as fever. However, death from smallpox is relatively common (1 in 10) when compared to chickenpox.\footnote{Note that Smallpox has been eradicated.}
+
+\subsection{Mpox}
+
+\textbf{Mpox}\index{Mpox} is an infection caused by the monkeypox virus which resides in african rodents and monkeys. It may be transmitted to humans from these animals (by direct contact with body fluids/lesions of an infected animal), as well as between humans (by respiratory secretions, skin lesions or contaminated objects).
+
+Signs and symptoms of Mpox typically resemble those of smallpox, albeit with reduced severity. Therefore, potential differential diagnoses for the rash include chickenpox, measles, bacterial skin infections, scabies, syphilis, and medication-associated allergies. The incubation period of Mpox is typically 6 to 13 days, though it can range from 5 to 21 days. The infection may be divided into invasion and skin eruption phases.
+
+Signs and symptoms of the invasion phase are:
+
+\begin{itemize}
+  \item Rash (80.7\%) --- includes systemic (47.3\%), oral, genital (44.1\%) or other locations.
+  \item Fever (59.1\%)
+  \item Headache (31\%)
+  \item Prodromal lymphadenopathy (29.1\%)\footnote{f lympadenopathy appears we can eliminate Differentials of chickenpox, measles andsmallpox (as these present with no lymphadenopathy).}
+  \item Myalgia (28.2\%)
+\end{itemize}
+
+In the eruptive phase (1 to 3 days after fever), firm, rubbery, well circumscribed and deep seated lesions (potentially with umbilication) appear. These lesions may be used in PCR for a diagnosis.
+
+Two strains of Mpox exist. Central African clade (Clade I) with a mortality rate of 10\% and West African clade (Clade II) with a mortality rate of 1\%. Mpox is endemic in Central and western Africa (Benin, Cameroon, Congo, Gabon). The treatment for Mpox is tecovirimat or brincidofovir.
+
+\subsection{Molluscum contagiosum}
+
+\textit{Molluscum contagiosum}\index{Molluscum contagiosum} is a viral infection of keratinocytes transmitted by direct contact (including sexual contact) and fomites. It has an incubation period between 2 weeks and 6 months, and is typically found in children and the immunocompromised. Following incubation, \textbf{Mollusca}\index{Mollusca} appear.\footnote{Mollusca are small, firm, dome-shaped, pearly or flesh-colored papules with central umbilication. They are painless and nonpruritic, typically presenting without inflammation.} Biopsy of these lesions may be considered in the presence of atypical lesions or uncertain diagnosis, and would show large intracytoplasmic inclusion bodies (Henderson-Patterson bodies, molluscum bodies) within keratinocytes.
+
+Treatment is oral cimetidine, though the infection is typically self resolving (typically within 6 to 12 months). Cryotherapy, laser therapy or curettage may also be considered for the removal of lesions.
 
 \section{Parvoviridae}
 
-The \textbf{Parvoviridae}\index{Parvoviridae} family are small ssDNA and non-enveloped viruses. They are the smallest virus by physical size.
+The \textbf{Parvoviridae}\index{Parvoviridae} family are small (18--26 nm) ssDNA and non-enveloped icosahedral viruses. They are the some of smallest viruses. Of the Parvovirus family, the most clinically significant genus is the \emph{Erythrovirus}\index{Erythrovirus}, also known as Parvovirus B19, erythema infectiosum, or fifth disease\footnote{As it is the 5\textsuperscript{th} most common exanthem}. It is common in children between 5 and 15 (with F>M prevalence), and major manifestations are also most common in children.
+
+Parvovirus B19\index{Parvovirus B19} only infects the nucleus of erythroid progenitors, causing `dog-ear' cytoplasmic projections.\footnote{These progenitors are located in the bone marrow for adults, and liver for children.} This is because viral protein 1 attaches to Globoside or Gb4, which is a blood group P-antigen (endocytosis is mediated by α5β1 integrins and Ku80 autoantigen). Transmission is primarily through the respiratory tract, but may also occur through blood transfusions.
+
+Following the febrile prodrome (low fever, fatigue), Erythema infectiosum typically presents clinically as an immune complex deposition disorder in addition to anemia (ranging from mild to severe). In children, this can result in a `slapped cheek' appearance in combination with arthralgia, while in adults, it typically manifests as a more severe prodrome and isolated arthropathy without rash (typically lasting 1--3 weeks).
+
+Treatment 
 
 \end{document}
