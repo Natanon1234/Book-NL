@@ -13,8 +13,133 @@
     \standaloneappendixchaptersetup{C}{5}
   \fi
 }{}
-\chapter{Immunology: Immune Responses to Bacterial Infection}
-\labch{appendix-c5-immunology-bacterial-infection}
+\chapter{Immunology: Immune Responses to Infection}
+\labch{appendix-c5-immunology-to-infection}
 \margintoc
+
+% Needs: \usetikzlibrary{arrows.meta, shadows}  (your preamble already loads both)
+\definecolor{hubcol}{HTML}{2C3E50}
+\definecolor{avcol}{HTML}{C0392B}
+\definecolor{arcol}{HTML}{2874A6}
+\definecolor{ihcol}{HTML}{7D3C98}
+\definecolor{ascol}{HTML}{1E8449}
+
+\par\medskip
+\noindent\begin{minipage}{\linewidth}
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[
+  font=\sffamily,
+  >={Stealth[length=2.5mm]},
+  hub/.style={rectangle, rounded corners=6pt, draw=hubcol, fill=hubcol,
+              text=white, text width=9.5cm, minimum height=1.5cm,
+              align=center, line width=1pt, drop shadow={opacity=0.25}},
+  mech/.style={rectangle, rounded corners=4pt, draw=#1!75!black, fill=#1,
+               text=white, font=\sffamily\bfseries\small, text width=3.4cm,
+               minimum height=1.5cm, align=center, line width=0.8pt,
+               drop shadow={opacity=0.25}},
+  desc/.style={rectangle, rounded corners=4pt, draw=#1, fill=#1!8,
+               text width=3.4cm, minimum height=3.0cm, align=left,
+               font=\sffamily\footnotesize, line width=0.6pt},
+  ex/.style={rectangle, rounded corners=9pt, draw=#1, fill=#1!22,
+             text width=3.4cm, minimum height=1.4cm, align=center,
+             font=\sffamily\small, line width=0.8pt},
+  badge/.style={circle, draw=#1, fill=white, text=#1, line width=0.8pt,
+                font=\sffamily\bfseries\footnotesize, inner sep=0pt,
+                minimum size=5.5mm},
+  outcome/.style={rectangle, rounded corners=5pt, draw=hubcol, fill=hubcol!10,
+                  text width=16cm, minimum height=1.0cm, align=center,
+                  font=\sffamily\small, line width=0.8pt}
+]
+
+% ---------- Central concept ----------
+\node[hub] (hub) at (0,0)
+  {{\large\bfseries Immune Evasion by Parasites}\\[2pt]
+   {\small Strategies for resisting or suppressing host immunity}};
+
+% ---------- Branches ----------
+\draw[hubcol, line width=1.2pt] (hub.south) -- (0,-1.4);
+\draw[hubcol, line width=1.2pt] (-6.3,-1.4) -- (6.3,-1.4);
+\foreach \x in {-6.3,-2.1,2.1,6.3}
+  \draw[->, hubcol, line width=1.2pt] (\x,-1.4) -- (\x,-2.0);
+
+% ---------- Mechanisms ----------
+\node[mech=avcol, anchor=north] (m1) at (-6.3,-2.0)
+  {Antigenic\\variation};
+
+\node[mech=arcol, anchor=north] (m2) at (-2.1,-2.0)
+  {Acquired resistance to\\immune effector mechanisms};
+
+\node[mech=ihcol, anchor=north] (m3) at ( 2.1,-2.0)
+  {Inhibition of host\\immune responses};
+
+\node[mech=ascol, anchor=north] (m4) at ( 6.3,-2.0)
+  {Immune concealment\\and antigen shedding};
+
+\node[badge=avcol] at (m1.north west) {1};
+\node[badge=arcol] at (m2.north west) {2};
+\node[badge=ihcol] at (m3.north west) {3};
+\node[badge=ascol] at (m4.north west) {4};
+
+% ---------- How it works ----------
+\node[desc=avcol, anchor=north] (d1) at (-6.3,-4.0)
+  {Stage-specific variation: different life-cycle stages express distinct antigens.\\[4pt]
+   Continuous variation: successive surface-antigen changes generate antigenically distinct parasite populations, escaping existing antibodies.};
+
+\node[desc=arcol, anchor=north] (d2) at (-2.1,-4.0)
+  {Parasites acquire resistance to complement-mediated lysis and CTL-mediated damage.\\[4pt]
+   Schistosome larvae develop a protective tegument during migration through the host, although the biochemical basis is unknown.};
+
+\node[desc=ihcol, anchor=north] (d3) at ( 2.1,-4.0)
+  {Mechanisms include T-cell anergy, lymph-node architectural disruption and regulatory T-cell induction.\\[4pt]
+   Generalized immunosuppression involves inhibitory cytokines and defective T-cell activation.};
+
+\node[desc=ascol, anchor=north] (d4) at ( 6.3,-4.0)
+  {Concealment: intracellular survival, resistant cyst formation or residence in intestinal lumens limits immune access.\\[4pt]
+   Antigen shedding, spontaneously or after antibody binding, removes antibody-bound surface targets.};
+
+\draw[->, avcol, thick] (m1.south) -- (d1.north);
+\draw[->, arcol, thick] (m2.south) -- (d2.north);
+\draw[->, ihcol, thick] (m3.south) -- (d3.north);
+\draw[->, ascol, thick] (m4.south) -- (d4.north);
+
+% ---------- Examples ----------
+\node[ex=avcol, anchor=north] (e1) at (-6.3,-7.7)
+  {Trypanosomes\\\textit{Plasmodium}};
+
+\node[ex=arcol, anchor=north] (e2) at (-2.1,-7.7)
+  {Schistosomes};
+
+\node[ex=ihcol, anchor=north] (e3) at ( 2.1,-7.7)
+  {Filaria\\\textit{Leishmania}\\Malaria};
+
+\node[ex=ascol, anchor=north] (e4) at ( 6.3,-7.7)
+  {\textit{Entamoeba histolytica}};
+
+\draw[->, avcol, thick] (d1.south) -- (e1.north);
+\draw[->, arcol, thick] (d2.south) -- (e2.north);
+\draw[->, ihcol, thick] (d3.south) -- (e3.north);
+\draw[->, ascol, thick] (d4.south) -- (e4.north);
+
+% ---------- Outcome ----------
+\node[outcome, anchor=north] (out) at (0,-9.8)
+  {\textbf{Outcome:} reduced immune recognition, resistance to immune elimination
+   and suppression of host defences $\rightarrow$ \textbf{parasite persistence and chronic infection}};
+
+\foreach \e/\col in {e1/avcol, e2/arcol, e3/ihcol, e4/ascol}
+  \draw[->, \col, thick] (\e.south) -- (\e.south |- out.north);
+
+% ---------- Footnote ----------
+\node[anchor=north west, font=\sffamily\scriptsize, text=black!70,
+      yshift=-2mm] at (out.south west)
+  {\textit{CTL}, cytotoxic T lymphocyte.};
+
+\end{tikzpicture}%
+}
+\captionof{figure}[Mechanisms of immune evasion by parasites]
+{Mechanisms of immune evasion by parasites. Four major strategies are illustrated: antigenic variation, acquired resistance to immune effector mechanisms, inhibition of host immune responses, and immune concealment or antigen shedding. Each strategy reduces the effectiveness of protective immunity and facilitates parasite persistence.}
+\label{fig:parasite-immune-evasion}
+\end{minipage}
+\par\medskip
 
 \end{document}

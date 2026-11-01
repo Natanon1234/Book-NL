@@ -134,17 +134,17 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 %  - \resizebox scales the drawing to the text width. The % signs after
 %    the opening brace and after \end{tikzpicture} are required.
 %
-\begin{figure}[htbp]
-  \centering
-  \definecolor{mycolour}{RGB}{33,102,172}
-  \resizebox{\textwidth}{!}{%
-  \begin{tikzpicture}[font=\sffamily]
-    \node[draw=mycolour, fill=mycolour!15, rounded corners=3pt] {Example node};
-  \end{tikzpicture}%
-  }
-  \caption[Short title for the list of figures]{Full caption. Explain the colour coding and any symbols.}
-  \labfig{c2-short-name}
-\end{figure}
+% \begin{figure}[htbp]
+%   \centering
+%   \definecolor{mycolour}{RGB}{33,102,172}
+%   \resizebox{\textwidth}{!}{%
+%   \begin{tikzpicture}[font=\sffamily]
+%     \node[draw=mycolour, fill=mycolour!15, rounded corners=3pt] {Example node};
+%   \end{tikzpicture}%
+%   }
+%   \caption[Short title for the list of figures]{Full caption. Explain the colour coding and any symbols.}
+%   \labfig{c2-short-name}
+% \end{figure}
 
 
 % ---------------------------------------------------------------------
@@ -183,22 +183,22 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 %  Use booktabs rules only (\toprule, \midrule, \bottomrule), no vertical
 %  lines and no \hline.
 %
-\begin{table}[htbp]
-  \centering
-  \caption[Short title for the list of tables]{Full caption. Source: Author (Year)~\cite{bibkey}.}
-  \labtab{c2-short-name}
-  \footnotesize
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.12}
-  \begin{tabular}{@{}lll@{}}
-    \toprule
-    \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
-    \midrule
-    Row 1 & Value & Value \\
-    Row 2 & Value & Value \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+% \begin{table}[htbp]
+%   \centering
+%   \caption[Short title for the list of tables]{Full caption. Source: Author (Year)~\cite{bibkey}.}
+%   \labtab{c2-short-name}
+%   \footnotesize
+%   \setlength{\tabcolsep}{4pt}
+%   \renewcommand{\arraystretch}{1.12}
+%   \begin{tabular}{@{}lll@{}}
+%     \toprule
+%     \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+%     \midrule
+%     Row 1 & Value & Value \\
+%     Row 2 & Value & Value \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
 
 
 % ---------------------------------------------------------------------
@@ -208,21 +208,21 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 %  up to about 0.95 to 0.97 of \textwidth (the rest is column padding).
 %  Needs array and ragged2e.
 %
-\begin{table}[htbp]
-  \centering
-  \caption[Short title for the list of tables]{Full caption.}
-  \labtab{c2-short-name}
-  \footnotesize
-  \setlength{\tabcolsep}{2pt}
-  \renewcommand{\arraystretch}{1.12}
-  \begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}>{\RaggedRight\arraybackslash}p{0.35\textwidth}>{\RaggedRight\arraybackslash}p{0.40\textwidth}@{}}
-    \toprule
-    \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
-    \midrule
-    Short entry & A longer entry that wraps onto several lines. & Another longer entry that wraps onto several lines. \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+% \begin{table}[htbp]
+%   \centering
+%   \caption[Short title for the list of tables]{Full caption.}
+%   \labtab{c2-short-name}
+%   \footnotesize
+%   \setlength{\tabcolsep}{2pt}
+%   \renewcommand{\arraystretch}{1.12}
+%   \begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{0.20\textwidth}>{\RaggedRight\arraybackslash}p{0.35\textwidth}>{\RaggedRight\arraybackslash}p{0.40\textwidth}@{}}
+%     \toprule
+%     \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\
+%     \midrule
+%     Short entry & A longer entry that wraps onto several lines. & Another longer entry that wraps onto several lines. \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
 
 
 % ---------------------------------------------------------------------
@@ -233,21 +233,21 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 %  Only use it when the table cannot fit on one page. Otherwise use
 %  template 5 or 6. Reference it with \reftab as usual.
 %
-\begin{longtable}{@{}p{0.30\textwidth}p{0.65\textwidth}@{}}
-  \caption[Short title for the list of tables]{Full caption.}\labtab{c2-short-name}\\
-  \toprule
-  \textbf{Column 1} & \textbf{Column 2} \\
-  \midrule
-  \endfirsthead
-  \toprule
-  \textbf{Column 1} & \textbf{Column 2} \\
-  \midrule
-  \endhead
-  \bottomrule
-  \endfoot
-  Row 1 & Entry \\
-  Row 2 & Entry \\
-\end{longtable}
+% \begin{longtable}{@{}p{0.30\textwidth}p{0.65\textwidth}@{}}
+%   \caption[Short title for the list of tables]{Full caption.}\labtab{c2-short-name}\\
+%   \toprule
+%   \textbf{Column 1} & \textbf{Column 2} \\
+%   \midrule
+%   \endfirsthead
+%   \toprule
+%   \textbf{Column 1} & \textbf{Column 2} \\
+%   \midrule
+%   \endhead
+%   \bottomrule
+%   \endfoot
+%   Row 1 & Entry \\
+%   Row 2 & Entry \\
+% \end{longtable}
 
 
 % ---------------------------------------------------------------------
