@@ -41,7 +41,10 @@
 \usepackage{microtype}
 
 % Give TeX a little extra flexibility in narrow text and margin columns.
-\setlength{\emergencystretch}{1em}
+% Give TeX more room to balance line spacing before declaring a line overfull.
+% This affects paragraph line breaking, not baseline/leading (vertical line spacing).
+\setlength{\emergencystretch}{2em}
+\tolerance=1000
 
 % Use visually matched Latin and Thai sans fonts; Sarabun is not installed here.
 \setmainfont{Noto Sans Condensed}[SlantedFont={Noto Sans Condensed Italic}]
