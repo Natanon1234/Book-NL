@@ -14,8 +14,17 @@
   \fi
 }{}
 \chapter{Immunology: Immune Responses to Infection}
+\label{immune_respond_chapter}
 \labch{appendix-c5-immunology-to-infection}
+\index{immunology!innate and adaptive immunity}
+\index{immunology!immune evasion}
+\index{immunology}
+\index{immune system}
+\index{immunity}
+\index{immune response}
 \margintoc{}
+\index{immune evasion}
+\index{immune evasion!parasites}
 
 % Needs: \usetikzlibrary{arrows.meta, shadows}  (your preamble already loads both)
 \definecolor{hubcol}{HTML}{2C3E50}
@@ -24,8 +33,8 @@
 \definecolor{ihcol}{HTML}{7D3C98}
 \definecolor{ascol}{HTML}{1E8449}
 
-\par\medskip
-\noindent\begin{minipage}{\linewidth}
+\begin{figure}[htbp]
+\centering
 \centering
 \resizebox{\linewidth}{!}{%
 \begin{tikzpicture}[
@@ -136,42 +145,78 @@
 
 \end{tikzpicture}%
 }
-\captionof{figure}[Mechanisms of immune evasion by parasites]
+\caption[Mechanisms of immune evasion by parasites]
 {Mechanisms of immune evasion by parasites. Four major strategies are illustrated: antigenic variation, acquired resistance to immune effector mechanisms, inhibition of host immune responses, and immune concealment or antigen shedding. Each strategy reduces the effectiveness of protective immunity and facilitates parasite persistence.}
 \label{fig:parasite-immune-evasion}
-\end{minipage}
-\par\medskip
+\end{figure}
+
+\section{Immunological Diagnostic Methods}
+\labsec{immuno_diag}
+\index{immunological diagnosis}
+\index{antigen detection}
+\index{antibody detection}
+
+Immunological tests detect either pathogen antigens or the antibodies produced by the host. Antigen-detection assays provide direct evidence of a pathogen component in the specimen. Common formats include enzyme-linked immunosorbent assay (ELISA), latex particle agglutination, immunochromatographic tests and immunostaining. Immunostaining includes methods such as immunofluorescence and immunoperoxidase staining, in which labelled antibodies are used to visualise a target antigen.
+
+Antibody-detection assays identify the host response to an infection. Common methods include enzyme immunoassays, radioimmunoassays, western blotting, latex particle agglutination, haemagglutination inhibition, viral neutralisation, plaque-reduction neutralisation, immunofluorescence, immunodiffusion and complement fixation.
+
+Antigen tests and antibody tests answer different questions. Antigen detection may support diagnosis while the pathogen or its components are present in the sampled site. Antibody detection is indirect: the result depends on the timing and strength of the host response. IgM may support recent infection, whereas IgG may reflect later infection, previous exposure, vaccination or passively acquired antibody. Interpret results alongside the clinical presentation, specimen type, test performance and timing of collection; a single antibody result does not always distinguish current from past infection.
 
 \chapter{Vaccines and Immunization}
+\index{vaccines!types}
+\index{vaccines!safety and contraindications}
+\index{vaccines!adverse events following immunization}
+\index{vaccines}
+\index{immunization}
+\index{immunization!active and passive}
 \margintoc{}
 
 Vaccination\index{vaccination} is a strategy of immunopotentiation against pathogens to allow for a stronger and more effective immune response. Immunization is a preventative intervention that allows for the development of herd immunity in a population. Immunization may be achieved through active immunization or passive immunization.
 
 \section{Passive Immunization}
+\index{immunization!passive}
 
-\textbf{Passive immunization}\index{passive immunization} refers to the administration of pre-formed antibodies or immune cells, which allows the body to respond immediately, but transiently,\footnote{Consequently, passive immunization develops no `memory' against the pathogen since no native immune response occurs. See:~\ref{Rh + babies in Rh- mothers chapter} for an example of passive immunization in practice.} against a given pathogen. As a medical intervention, it is often performed in the context of immunodeficiency or patients at risk of infection. This includes anti-venom agents such as those that have been prepared from horses. Alternatively, passive immunization is also performed naturally by mothers: maternal antibodies such as IgG cross the placental barrier into the fetus during development, and IgA presents in colostrum and milk.
+\textbf{Passive immunization}\index{passive immunization} refers to the administration of pre-formed antibodies or immune cells, which allows the body to respond immediately, but transiently,\footnote{Consequently, passive immunization develops no `memory' against the pathogen since no native immune response occurs. See:~\ref{Rh + babies in Rh- mothers chapter} for an example of passive immunization in practice.} against a given pathogen. As a medical intervention, it is often performed in the context of immunodeficiency or patients at risk of infection. This includes anti-venom agents such as those that have been prepared from horses. Alternatively, passive immunization is also performed naturally by mothers: maternal antibodies such as IgG cross the placental barrier into the fetus during development, and IgA is present in colostrum and milk.
 
-Formulations of antibody can be either polyclonal or monoclonal. Monoclonal antibodies are produced from hybridoma cells, while polyclonal antibodies are obtained from the purified serum of animals. Techniques include phage display, transgenic mice and B cell cloning. The antibodies in each nonhuman technique may be humanized to reduce the risk of host response (development of anti-murine antibodies).This is achieved by the replacement of murine CDR regions with human CDRs in grafting. Alternatively, recombinant antibody fragments produced from bacterial or yeast systems may be utilized. These fragments are smaller and able to bind to deeply embedded epitopes, as well as more rapidly cleared by the body.
+Antibody formulations can be either polyclonal or monoclonal. Monoclonal antibodies are produced from hybridoma cells, while polyclonal antibodies are obtained from the purified serum of animals. Techniques include phage display, transgenic mice and B cell cloning. The antibodies in each nonhuman technique may be humanized to reduce the risk of a host response (development of anti-murine antibodies). This is achieved by replacing murine CDR regions with human CDRs through grafting. Alternatively, recombinant antibody fragments produced from bacterial or yeast systems may be utilized. These fragments are smaller, can bind to deeply embedded epitopes, and are cleared more rapidly by the body.
 
-Applications of these technologies also extend to antibody based therapeutics for cancer treatments, as CAR-T cells, naked antibodies, antibody-drug conjugates, antibody-cytokine conjugates or immunoliposomes may be utilized to target specific mutations found in each cancer.
+Applications of these technologies also extend to antibody-based therapeutics for cancer treatments, as CAR-T cells, naked antibodies, antibody-drug conjugates, antibody-cytokine conjugates or immunoliposomes may be utilized to target specific mutations found in each cancer.
 
+\subsection{Rh Incompatibility: Rh-Negative Mothers and Rh-Positive Fetuses}
+\labsec{rh-incompatibility}
+\label{Rh + babies in Rh- mothers chapter}
+\index{Rh incompatibility}
+\index{haemolytic disease of the fetus and newborn}
+
+% Writing outline for this subsection:
+% 1. Define Rh(D) incompatibility and explain maternal sensitisation.
+% 2. Describe how maternal anti-D IgG can cross the placenta and affect fetal
+%    red blood cells in a subsequent or ongoing sensitised pregnancy.
+% 3. Summarise clinical consequences, screening and diagnostic investigations.
+% 4. Explain prevention with anti-D immunoglobulin, including timing and
+%    situations that require prophylaxis (confirm local/current guidance).
+% 5. Distinguish prophylaxis from treatment of an already affected fetus/newborn.
+% 6. Add a diagram or concise mother–fetus antibody-transfer sequence if useful.
 \section{Active Immunization}
+\index{immunization!active}
 
-Active immunization\index{active immunization} is the process of inducing protective immunity from the host using vaccines (though natural infection also achieves the same goal\footnote{Albeit more slowly, painfully and also with a higher level of risk of course. For instance, would you like to get the street strain of Rabes to develop immunity and die afterwords?}). This is achieved by preparing a formulation that resembles key features of a given illness for the immune system to attack, in addition to an  \textbf{adjuvant}\index{adjuvant} which stimulates an immune response to the antigen. The process of immunization drives both primary and secondary antibody responses to an antigen, allowing for memory B cells to be created for long-term immunity. Notably, some vaccinations must be administered multiple times to `boost' the host immune response and allow for a sufficient antibody titer to be established.
+Active immunization\index{active immunization} is the process of inducing protective immunity from the host using vaccines (though natural infection also achieves the same goal\footnote{Albeit more slowly, painfully and also with a higher level of risk of course. For instance, would you like to get the street strain of rabies to develop immunity and die afterwards?}). This is achieved by preparing a formulation that resembles key features of a given illness for the immune system to attack, in addition to an \textbf{adjuvant}\index{adjuvant} which stimulates an immune response to the antigen. The process of immunization drives both primary and secondary antibody responses to an antigen, allowing for memory B cells to be created for long-term immunity. Notably, some vaccinations must be administered multiple times to `boost' the host immune response and allow for a sufficient antibody titer to be established.
 
-Vaccines may be administered from many routes, including: nasal, oral, intradermal, subcutaneous and intramuscular. Each route has unique benefits and tradeoff(s). For instance, delivery of a vaccine to the mucosa primarily enables mucosal immunity, but may not effectively stimulate systematic immunity. Consequently, some vaccine regimens may be administered by more than one route.
+Vaccines may be administered via many routes, including: nasal, oral, intradermal, subcutaneous and intramuscular. Each route has unique benefits and trade-offs. For instance, delivery of a vaccine to the mucosa primarily enables mucosal immunity, but may not effectively stimulate systemic immunity. Consequently, some vaccine regimens may be administered by more than one route.
 
 There exist three major approaches to the design of a vaccine: (1) using the whole pathogen (virus or bacterium); (2) preparing a formulation of the components that actively trigger the immune system and (3) preparations including only the genetic material of a virus. These methods are discussed further in upcoming sections.
 
 Monitoring of vaccine safety is done through the adverse events following immunization (AEFI) system. Adverse effects include those caused by the vaccine, and other factors (including mismanagement, anxiety or coincident events). Contraindications include: an anaphylactic reaction to previous doses and moderate to severe illness. Immunosuppression or pregnancy contraindicates live vaccines.
 
 \subsection{Live Attenuated Vaccines}
+\index{vaccines!live attenuated!examples}
+\index{vaccines!live attenuated}
 
 \marginnote{
   Examples of live attenuated vaccines include the BCG vaccine for \emph{Mycobacterium tuberculosis} and the vaccine for cholera.
   Live viral vaccines include:
   \begin{itemize}
-    \item Measles, Mumps, Rubella vaccine (MMR).\footnotemark{}
+    \item Measles, mumps, and rubella vaccine (MMR), with or without the varicella vaccine.
     \item Varicella-zoster, Rotavirus, Japanese encephalitis (JE).
     \item Oral polio vaccine (OPV).
     \item Live attenuated influenza vaccine (intranasal, LAIV).
@@ -179,41 +224,49 @@ Monitoring of vaccine safety is done through the adverse events following immuni
     \item Smallpox vaccine.
   \end{itemize}
 }
-\footnotetext{With or without the varicella virus vaccine.}
 
-Live attenuated vaccines utilize a weakened version of the pathogen, which acts in a similar manner to natural infections. This results in strong humoral and cellular responses that usually leads to the development of memory cells within 1 or 2 doses. However, these vaccines require refrigeration to retain activity of the pathogen. Furthermore, these vaccines may lead to the development of infection, and only function effectively in immunocompetent individuals. Therefore, these vaccinations are not suitable for immunocompromised individuals, pregnant women, HIV patients or cancer.
+
+Live attenuated vaccines contain weakened organisms that retain the ability to replicate and generally produce humoral and cellular immune responses resembling those induced by natural infection. Many provide protection after one or two doses, although schedules vary by vaccine. Because these vaccines are fragile and may be damaged by heat or light, they require careful storage and handling according to product-specific guidance. Many live attenuated vaccines are contraindicated during pregnancy and in people with severe immunosuppression, but contraindications are vaccine-specific. For people with HIV, cancer, or immunosuppressive treatment, eligibility depends on immune status and the individual vaccine. Replication-deficient products such as MVA-BN have separate recommendations and should not automatically be treated as equivalent to replication-competent live vaccines~\parencite{CDC2024PinkBookVaccination,CDC2024PinkBookBestPractice}.
 
 The dengue virus vaccine is one type of live attenuated vaccine. There are 4 serotypes and 2 types of vaccine. The CYD-TDV vaccine (Dengvaxia) is a chimeric yellow fever tetravalent vaccine given over 3 doses for patients with a history of previous infection by the Dengue virus. Alternatively, TDV (Qdenga) is a tetravalent vaccine over 2 doses which is intended for patients without a history of prior Dengue infection.
 
-The Monkeypox vaccine is another commonly administered vaccine. There are three formuations:
+The Monkeypox vaccine is another commonly administered vaccine. There are three formulations:
 \begin{itemize}
-  \item Dryvax --- a live vaccina virus vaccine administered by bifuricated needle (no longer used).
-  \item ACAM2000 ---a purified Dryvax clone (not popular)
-  \item \textbf{JYNNEOS} --- a live attenuated orthropoxovirus containing modified Vaccinia Ankara.\footnote{A live virus which does not replicate well in humans.} This is the currently recommended formulation of vaccination for the at-risk population. It is given as 2 doses 28 days apart, either IM ID or subcutaneous.
+  \item Dryvax --- a live vaccinia virus vaccine administered by bifurcated needle (no longer used).
+  \item ACAM2000 --- a purified Dryvax clone (not popular)
+  \item \textbf{JYNNEOS} --- a live attenuated orthopoxvirus containing modified Vaccinia Ankara.\footnote{A live, replication-deficient modified vaccinia Ankara (MVA-BN) virus that does not replicate in human cells.} This is the currently recommended formulation of vaccination for the at-risk populations. It is given as 2 doses 28 days apart, either intramuscularly, intradermally, or subcutaneously.
 \end{itemize}
 
 \subsection{Inactivated Pathogen Vaccines}
+\index{vaccines!inactivated!examples}
+\index{vaccines!inactivated}
 
 \marginnote{
-  Examples of inactivated bacteria vaccines include: pertussis (wP), Cholera, Typhoid. Inactivated viral vaccines include: Polio (IPV), Influenza (Tri/quadrivalent), Hepatitis A, Rabes, COVID-19.
+  Examples of inactivated bacteria vaccines include: pertussis (wP), Cholera, Typhoid. Inactivated viral vaccines include: Polio (IPV), Influenza (Tri/quadrivalent), Hepatitis A, Rabies, COVID-19.
 }
 
-In this type of vaccine, pathogens are inactivated by heat or chemicals before the preparation. This allows for the vaccine to be stable at room temperature and safe. However, inactivated pathogens often result in shorter periods of immunity and require large amounts of antigen, in addition to an antigen delivery vehicle to increase immunogenicity.
+In this type of vaccine, the pathogen or its antigen is inactivated before preparation. Because an inactivated vaccine cannot replicate, it cannot cause the infection it was designed to prevent, including in immunodeficient recipients. Its immune response is generally less durable than that of a live attenuated vaccine, so multiple doses and periodic boosters may be needed. Storage requirements are product-specific; inactivated vaccines should not be assumed to be stable at room temperature~\parencite{CDC2024PinkBookVaccination}.
 
-The inactivated polio vaccine exhibits excellent efficacy without the ris of vaccine-associated paralysis. Therefore, pregnant or immunodeficient patients should take this formulation as opposed to the OPV. Another commonly used vaccine in this category is the Influenza vaccine, which is available in Trivalent and quadrivalent forms. However, antigenic drift in influenza strains leads to the need for cyclic modification of the vaccine on a yearly basis.
+The inactivated polio vaccine exhibits excellent efficacy without the risk of vaccine-associated paralysis. Therefore, pregnant or immunodeficient patients should receive this formulation rather than OPV. Another commonly used vaccine in this category is the influenza vaccine, which is available in trivalent and quadrivalent forms. However, antigenic drift in influenza strains leads to the need for cyclic modification of the vaccine on a yearly basis.
 
 \subsection{Subunit Vaccines}
+\index{vaccines!subunit!polysaccharide and protein}
+\index{vaccines!subunit}
+\index{vaccines!toxoid}
 
-\textbf{Polysaccharide vaccines}\index{polysaccharide vaccines} consist of antigens conjugated to a polysaccharide which is intended to activate the T-cell dependant immune response, resulting in the generation of memory T and B cells. Examples include the Haemophilus B, pneumococcal or meningococcal vaccines.
+\textbf{Pure polysaccharide vaccines}\index{polysaccharide vaccines!pure} contain purified capsular polysaccharide antigens. They usually induce a T-cell-independent B-cell response, so immune memory is limited and responses in children younger than 2 years are poor. In contrast, \textbf{conjugate vaccines}\index{vaccines!conjugate} link a polysaccharide antigen to a protein carrier. This recruits T-cell help and produces a more durable response with immune memory. Examples of conjugate vaccines include Haemophilus influenzae type b (Hib), pneumococcal conjugate vaccines (PCVs), and meningococcal conjugate vaccines; the 23-valent pneumococcal polysaccharide vaccine (PPSV23) is a pure polysaccharide vaccine~\parencite{CDC2024PinkBookVaccination}.
 
-The \textbf{surface protein subunit vaccine}\index{suf} utilizes purified proteins from a pathogen to initiate an immune response. However, some proteins may not be present in their native form, leading to lower efficiency in pathogen binding. Examples of this type include acellular pertussis (aP), pertussis toxin, filamentous haemagglutinin (FHA), pertactin and HepB HBs Ag.
+The \textbf{surface protein subunit vaccines}\index{surface protein subunit vaccine} use selected purified proteins or protein-based antigens from a pathogen. Examples include hepatitis B surface antigen (HBsAg), acellular pertussis antigens such as pertussis toxin, filamentous haemagglutinin (FHA), and pertactin, and human papillomavirus (HPV) vaccines. HPV vaccines are recombinant vaccines based on non-infectious virus-like particles made from the L1 capsid protein; they do not contain live virus~\parencite{CDC2024PinkBookVaccination}.
 
-\textbf{Toxoid vaccines} are vaccines generated from inactivated bacterial toxins adsorbed to adjuvants. Examples include: Tetanus toxoid, reduced diphtheria toxoid, and acellular Pertussis vaccine (TdaP), acellular Pertussis (aP) vaccines, Tetanus and diptheria (Td), Tetanus toxoid (TT). DTaP is typically administered in children under 7, and Tdap is given as booster doses. The HPV vaccine is one example with many vaccines targeting many variants available (including bivalent, quadravalent and 9-valent\footnote{Bivalent: Types 16, 18 \faArrowRight{} prevents cervical cancer, Quadravalent \faArrowRight{} Types 6,11,16,18 \faArrowRight{} prevents vaginal and cervical cancer, genital warts, 9-valent: prevent against cervical, vulvar, vaginal, anal, oropharyngeal cancer}).
+\textbf{Toxoid vaccines}\index{vaccines!toxoid} contain bacterial toxins that have been inactivated so that they can stimulate protective antitoxin antibodies without causing toxin-mediated disease. Examples include tetanus and diphtheria toxoids. Combination vaccines such as DTaP and Tdap contain diphtheria and tetanus toxoids together with pertussis antigens; DTaP formulations are used in young children, while Tdap formulations are used for older age groups according to the immunization schedule.
 
 \subsection{Other Vaccines}
+\index{vaccines!viral vector}
+\index{vaccines!mRNA}
+\index{vaccines!recombinant viral vector}
 
-\textbf{mRNA vaccines}\index{mRNA vaccines} are synthetic mRNA\footnote{That resembles endogenous mRNA.} that induce the production of antigens generating an immune response upon uptake into antigen presenting cells. They do not have a risk of infection, are easy to develop and highly effective (potentially targeting more than one microbe symultaneously). However, they are limited to protein antigens, have poor stability and may cause excessive immuno-stimulation or tolerance.
+\textbf{mRNA vaccines}\index{mRNA vaccines} are synthetic mRNA\footnote{That resembles endogenous mRNA.} that induce the production of antigens generating an immune response upon uptake into antigen-presenting cells. They do not carry a risk of infection, are easy to develop, and are highly effective (potentially targeting more than one microbe simultaneously). However, they are limited to protein antigens, have poor stability and may cause excessive immunostimulation or tolerance.
 
-\textbf{Recombinant viral vector vaccines}\index{recombinant viral vector vaccines} are a vaccine generated from a nonpathogenic virus or bacteria such as adenovirus which has been modified to express immune stimulating features in addition to the surface antigen of a pathogen.
+\textbf{Recombinant viral vector vaccines}\index{recombinant viral vector vaccines} are vaccines generated from a non-pathogenic virus or bacterium, such as an adenovirus, that has been modified to express immune stimulating features in addition to the surface antigen of a pathogen.
 
 \end{document}

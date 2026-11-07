@@ -273,7 +273,8 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 \marginclinicalcorrelation[.5cm][frametitle={Clinical takeaway},backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]{Connect a mechanism to bedside recognition, diagnosis, or management. For example, altered gene expression can explain why the same mutation may produce different clinical severity across patients.}
 
 % This self-contained TikZ drawing does not depend on external image assets.
-\begin{center}
+\begin{figure}[htbp]
+  \centering
   \begin{tikzpicture}[node distance=1.6cm,>=stealth]
     \node[draw,rounded corners,fill=RoyalBlue!15,minimum width=2.5cm,minimum height=0.8cm] (gene) {Gene};
     \node[draw,rounded corners,fill=Goldenrod!25,minimum width=2.5cm,minimum height=0.8cm,right of=gene] (rna) {RNA};
@@ -281,10 +282,14 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
     \draw[->,thick] (gene) -- node[above]{transcription} (rna);
     \draw[->,thick] (rna) -- node[above]{translation} (protein);
   \end{tikzpicture}
-  \captionof{figure}{A TikZ figure with nodes, fills, and arrows.}
+  \caption[Gene-to-protein process]{A TikZ figure with nodes, fills, and arrows.}
   \labfig{tikz-flow}
-\end{center}
-See \reffig{tikz-flow} for a numbered figure reference. Store external images in the \texttt{images/} folder for the relevant collection: \texttt{chapters/images/} for main-book chapters or the \texttt{images/} folder within the appropriate appendix. Start each filename with its chapter identifier, then describe the image in lowercase hyphenated words (for example, \texttt{a1-membrane-transport-electrochemical-gradient.png}). Include the path from the project root, such as \texttt{\string\includegraphics[width=\string\linewidth]\{\string\booknlroot chapters/images/chapter-0-example-diagram.png\}}.
+\end{figure}
+See \reffig{tikz-flow} for a numbered figure reference. Store external images in the \texttt{images/} folder for the relevant collection: \texttt{chapters/images/} for main-book chapters or the \texttt{images/} folder within the appropriate appendix. Start each filename with its chapter identifier, then describe the image in lowercase hyphenated words (for example, \path{a1-membrane-transport-electrochemical-gradient.png}). For an image in a source file, put the command on its own line:
+\begin{lstlisting}[breaklines=true]
+\includegraphics[width=\linewidth]
+  {\booknlroot chapters/images/chapter-0-example-diagram.png}
+\end{lstlisting}
 
 \begin{marginfigure}
   \centering
@@ -293,65 +298,67 @@ See \reffig{tikz-flow} for a numbered figure reference. Store external images in
     \draw[fill=Goldenrod!35] (1,0) circle (0.45cm);
     \draw[<->,thick] (0.48,0) -- (0.52,0);
   \end{tikzpicture}
-  \caption{A small margin illustration.}
+  \caption[Margin illustration]{A small margin illustration.}
   \labfig{margin-example}
 \end{marginfigure}
+See \reffig{margin-example} for the numbered margin illustration.
 
 \section{Text, lists, and margin notes}
 \labsec{cookbook-text}
 Use \texttt{\string\section[short title]\{full title\}} when a long heading needs a shorter table-of-contents entry. Place project labels immediately after the item being labeled, such as \texttt{\string\labsec\{unique-key\}} after a section heading.
 
 \subsection{Lists}
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
   \item Use an unordered list for related concepts.
   \item Nest items when the hierarchy is meaningful.
-  \begin{itemize}
+  \begin{itemize}[leftmargin=1.5em]
     \item Nested bullets use the project’s smaller bullet style.
   \end{itemize}
 \end{itemize}
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*.,leftmargin=*]
   \item Use numbered steps when order matters.
   \item Continue with the next action or consequence.
 \end{enumerate}
-\begin{description}
+\begin{description}[style=nextline,leftmargin=2.5em]
   \item[Term] Explain a defined term or a short item-label pair.
   \item[Second term] Keep descriptions concise and parallel.
 \end{description}
 
-An ordinary margin note can be placed with \texttt{\string\marginnote[.4cm]\{Brief note.\}}. A numbered sidenote uses \texttt{\string\sidenote\{Brief note.\}}; for example, \sidenote{A short note in the outer margin.} Use margin notes sparingly; longer explanations belong in the main text or a box.
+An ordinary margin note can be placed with \texttt{\string\marginnote}. Pass an optional vertical offset in square brackets and the note text in braces. A numbered sidenote uses \texttt{\string\sidenote}; for example, \sidenote{A short note in the outer margin.} Use margin notes sparingly; longer explanations belong in the main text or a box.
 
 \subsection{Project typography helpers}
 The preamble defines small typography helpers: \invitro experiments, \invivo observations, \cis and \trans configurations, \etal citations, \denovo mutations, \adhoc choices, \eg examples, \ie clarifications, and \etcetera. Commands such as \Command{section}, \Package{booktabs}, and \Path{assets/} print technical names consistently.
 
 \section{Boxes and reusable callouts}
 \labsec{cookbook-boxes}
-\begin{clinicalcorrelation}
+\begin{clinicalcorrelation}[nobreak=true]
   Default clinical-correlation title and colors.
 \end{clinicalcorrelation}
-\begin{clinicalcorrelation}[frametitle={Clinical takeaway}]
+\begin{clinicalcorrelation}[nobreak=true,frametitle={Clinical takeaway}]
   A custom title with the default colors.
 \end{clinicalcorrelation}
-\begin{clinicalcorrelation}[backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]
+\begin{clinicalcorrelation}[nobreak=true,backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]
   A custom color with the default title.
 \end{clinicalcorrelation}
-\begin{clinicalcorrelation}[frametitle={From mechanism to patient},backgroundcolor=BurntOrange!12!White,frametitlebackgroundcolor=BurntOrange!25!White]
+\begin{clinicalcorrelation}[nobreak=true,frametitle={From mechanism to patient},backgroundcolor=BurntOrange!12!White,frametitlebackgroundcolor=BurntOrange!25!White]
   A custom title and coordinated colors.
 \end{clinicalcorrelation}
-\begin{testcorrelation}
+\begin{testcorrelation}[nobreak=true]
   Use this box for high-yield exam clues and common diagnostic patterns.
 \end{testcorrelation}
-\begin{kaobox}[frametitle={General note}]
+\begin{kaobox}[nobreak=true,frametitle={General note}]
   Use \texttt{kaobox} for a general callout that is neither clinical nor exam-focused.
 \end{kaobox}
 \begin{kaocounter}
-  This comment box receives an automatic chapter-based number like the other callouts.
+  This comment box is numbered by chapter, like the other callouts.
 \end{kaocounter}
 \margintestcorrelation[.4cm]{A margin-sized test clue can be shown with the project helper.}
 
 \section{Tables and layout variants}
 \labsec{cookbook-tables}
-\begin{center}
-\captionof{table}{Example table with a caption and project label.}
+\begin{table}[htbp]
+\centering
+\caption[Example planning table]{Example table with a caption and project label.}
 \labtab{example_planning_table}
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
@@ -362,10 +369,12 @@ Core concept & Learning objective & Explain the mechanism. \\
 Clinical link & Applied objective & Connect mechanism and patient. \\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
+See \reftab{example_planning_table} for the numbered table example.
+
 For a compact table in the margin, use \texttt{margintable} and keep it narrow:
 \begin{margintable}
-  \caption{A margin-sized table.}
+  \caption[Margin-sized table]{A margin-sized table.}
   \labtab{margin-example}
   \small
   \begin{tabular}{@{}lr@{}}
@@ -375,8 +384,9 @@ For a compact table in the margin, use \texttt{margintable} and keep it narrow:
     \bottomrule
   \end{tabular}
 \end{margintable}
+See \reftab{margin-example} for the margin-sized example table.
 
-Use \texttt{\string\pagelayout\{wide\}} for a wide-layout section and restore \texttt{\string\pagelayout\{margin\}} afterward. The \texttt{landscape} environment rotates a page; \texttt{widepar} extends a paragraph into the outer margin; \texttt{fullwidthpar} uses the full page width; and \texttt{wideequation} gives a long equation extra room.
+Use \texttt{\string\pagelayout} with the option \texttt{wide} for a wide section, then restore \texttt{margin}. The \texttt{landscape} environment rotates a page; \texttt{widepar} extends a paragraph into the outer margin; \texttt{fullwidthpar} uses the full page width; and \texttt{wideequation} gives a long equation extra room.
 \pagelayout{wide}
 \begin{widepar}
 This paragraph demonstrates \texttt{widepar}: it uses the text block plus the outer margin. Avoid nesting it inside another width-changing environment.
@@ -395,7 +405,9 @@ For a numbered equation, add a project label inside the equation environment:
   C = \frac{n}{V}
   \labeq{concentration-example}
 \end{equation}
-The relationship is shown in \refeq{concentration-example}. A wide equation can use the \texttt{wideequation} wrapper:
+The relationship is shown in \refeq{concentration-example}.
+
+For a long equation, use the \texttt{wideequation} environment:
 \begin{wideequation}
   \Delta G = \Delta G^{\circ} + RT\ln Q
 \end{wideequation}
@@ -418,19 +430,22 @@ Use \texttt{lstlisting} for short code samples:
 concentration = amount / volume
 print(concentration)
 \end{lstlisting}
-The bibliography is stored in \texttt{main.bib} and processed with Biber. Standard examples are \texttt{\string\textcite\{Costanzo2014BRS\}} and \texttt{\string\parencite\{Costanzo2014BRS\}}; in prose, \textcite{Costanzo2014BRS} discusses physiology, while a parenthetical citation can be written \parencite[chap.~1]{Costanzo2014BRS}. The custom \texttt{\string\sidecite} also places a formatted citation in the margin: \sidecite{Costanzo2014BRS}.
+The bibliography is stored in \texttt{main.bib} and processed with Biber. The commands \texttt{\string\textcite} and \texttt{\string\parencite} take a bibliography key in braces. In prose, \textcite{Costanzo2014BRS} discusses physiology; a parenthetical citation can be written \parencite[chap.~1]{Costanzo2014BRS}. The custom \texttt{\string\sidecite} places a formatted citation in the margin: \sidecite{Costanzo2014BRS}.
 
-Project reference helpers use matching label and reference prefixes: \texttt{\string\labsec\{key\}} with \texttt{\string\refsec\{key\}}, \texttt{\string\labfig\{key\}} with \texttt{\string\reffig\{key\}}, and \texttt{\string\labtab\{key\}} with \texttt{\string\reftab\{key\}}. For example, see \refsec{cookbook-boxes}, \reftab{example_planning_table}, and \reffig{tikz-flow}. Chapter, subsection, equation, definition, theorem, proposition, lemma, remark, example, and exercise labels have corresponding helpers; see \texttt{template/kaorefs.sty} for the complete command list.
+Project reference helpers pair each label command with a matching reference command: \texttt{\string\labsec} with \texttt{\string\refsec}, \texttt{\string\labfig} with \texttt{\string\reffig}, and \texttt{\string\labtab} with \texttt{\string\reftab}. For example, see \refsec{cookbook-boxes}, \reftab{example_planning_table}, and \reffig{tikz-flow}. Other helpers cover chapters, subsections, equations, theorem-like environments, examples, and exercises; see \path{template/kaorefs.sty} for the complete list.
 
 \section{TikZ shapes and colors}
 \labsec{cookbook-tikz}
 TikZ is loaded by the project template. Define nodes with shape, fill, and line options, then connect them with paths:
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[>=stealth]
   \node[draw,circle,fill=ForestGreen!20,minimum size=1.2cm] (one) at (0,0) {1};
   \node[draw,rounded corners,fill=RoyalBlue!15,minimum width=2.2cm,minimum height=1cm] (two) at (3,0) {Process};
   \draw[->,very thick,Goldenrod] (one) -- (two);
 \end{tikzpicture}
-\end{center}
-Available colors include names from \texttt{xcolor} with the \texttt{dvipsnames} option; mix a color with white, such as \texttt{RoyalBlue!15!White}, for a pale fill. Reusable TikZ styles can be declared locally in picture options or globally in the preamble.
+\caption[Simple TikZ process diagram]{A simple TikZ process diagram.}
+\labfig{tikz-process-example}
+\end{figure}
+See \reffig{tikz-process-example} for the process diagram. Available colors include names from \texttt{xcolor} with the \texttt{dvipsnames} option; mix a color with white, such as \texttt{RoyalBlue!15!White}, for a pale fill. Reusable TikZ styles can be declared locally in picture options or globally in the preamble.
 \end{document}
