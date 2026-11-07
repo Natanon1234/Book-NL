@@ -273,7 +273,8 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 \marginclinicalcorrelation[.5cm][frametitle={Clinical takeaway},backgroundcolor=RoyalBlue!12!White,frametitlebackgroundcolor=RoyalBlue!25!White]{Connect a mechanism to bedside recognition, diagnosis, or management. For example, altered gene expression can explain why the same mutation may produce different clinical severity across patients.}
 
 % This self-contained TikZ drawing does not depend on external image assets.
-\begin{center}
+\begin{figure}[htbp]
+  \centering
   \begin{tikzpicture}[node distance=1.6cm,>=stealth]
     \node[draw,rounded corners,fill=RoyalBlue!15,minimum width=2.5cm,minimum height=0.8cm] (gene) {Gene};
     \node[draw,rounded corners,fill=Goldenrod!25,minimum width=2.5cm,minimum height=0.8cm,right of=gene] (rna) {RNA};
@@ -281,10 +282,14 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
     \draw[->,thick] (gene) -- node[above]{transcription} (rna);
     \draw[->,thick] (rna) -- node[above]{translation} (protein);
   \end{tikzpicture}
-  \captionof{figure}{A TikZ figure with nodes, fills, and arrows.}
+  \caption{A TikZ figure with nodes, fills, and arrows.}
   \labfig{tikz-flow}
-\end{center}
-See \reffig{tikz-flow} for a numbered figure reference. Store external images in the \texttt{images/} folder for the relevant collection: \texttt{chapters/images/} for main-book chapters or the \texttt{images/} folder within the appropriate appendix. Start each filename with its chapter identifier, then describe the image in lowercase hyphenated words (for example, \texttt{a1-membrane-transport-electrochemical-gradient.png}). Include the path from the project root, such as \texttt{\string\includegraphics[width=\string\linewidth]\{\string\booknlroot chapters/images/chapter-0-example-diagram.png\}}.
+\end{figure}
+See \reffig{tikz-flow} for a numbered figure reference. Store external images in the \texttt{images/} folder for the relevant collection: \texttt{chapters/images/} for main-book chapters or the \texttt{images/} folder within the appropriate appendix. Start each filename with its chapter identifier, then describe the image in lowercase hyphenated words (for example, \path{a1-membrane-transport-electrochemical-gradient.png}). For an image in a source file, put the command on its own line:
+\begin{lstlisting}[breaklines=true]
+\includegraphics[width=\linewidth]
+  {\booknlroot chapters/images/chapter-0-example-diagram.png}
+\end{lstlisting}
 
 \begin{marginfigure}
   \centering
@@ -318,14 +323,14 @@ Use \texttt{\string\section[short title]\{full title\}} when a long heading need
   \item[Second term] Keep descriptions concise and parallel.
 \end{description}
 
-An ordinary margin note can be placed with \texttt{\string\marginnote[.4cm]\{Brief note.\}}. A numbered sidenote uses \texttt{\string\sidenote\{Brief note.\}}; for example, \sidenote{A short note in the outer margin.} Use margin notes sparingly; longer explanations belong in the main text or a box.
+An ordinary margin note can be placed with \texttt{\string\marginnote}. Pass an optional vertical offset in square brackets and the note text in braces. A numbered sidenote uses \texttt{\string\sidenote}; for example, \sidenote{A short note in the outer margin.} Use margin notes sparingly; longer explanations belong in the main text or a box.
 
 \subsection{Project typography helpers}
 The preamble defines small typography helpers: \invitro experiments, \invivo observations, \cis and \trans configurations, \etal citations, \denovo mutations, \adhoc choices, \eg examples, \ie clarifications, and \etcetera. Commands such as \Command{section}, \Package{booktabs}, and \Path{assets/} print technical names consistently.
 
 \section{Boxes and reusable callouts}
 \labsec{cookbook-boxes}
-\begin{clinicalcorrelation}
+\begin{clinicalcorrelation}[nobreak=true]
   Default clinical-correlation title and colors.
 \end{clinicalcorrelation}
 \begin{clinicalcorrelation}[frametitle={Clinical takeaway}]
@@ -344,14 +349,15 @@ The preamble defines small typography helpers: \invitro experiments, \invivo obs
   Use \texttt{kaobox} for a general callout that is neither clinical nor exam-focused.
 \end{kaobox}
 \begin{kaocounter}
-  This comment box receives an automatic chapter-based number like the other callouts.
+  This comment box is numbered by chapter, like the other callouts.
 \end{kaocounter}
 \margintestcorrelation[.4cm]{A margin-sized test clue can be shown with the project helper.}
 
 \section{Tables and layout variants}
 \labsec{cookbook-tables}
-\begin{center}
-\captionof{table}{Example table with a caption and project label.}
+\begin{table}[htbp]
+\centering
+\caption{Example table with a caption and project label.}
 \labtab{example_planning_table}
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
@@ -362,7 +368,7 @@ Core concept & Learning objective & Explain the mechanism. \\
 Clinical link & Applied objective & Connect mechanism and patient. \\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
 For a compact table in the margin, use \texttt{margintable} and keep it narrow:
 \begin{margintable}
   \caption{A margin-sized table.}
@@ -376,7 +382,7 @@ For a compact table in the margin, use \texttt{margintable} and keep it narrow:
   \end{tabular}
 \end{margintable}
 
-Use \texttt{\string\pagelayout\{wide\}} for a wide-layout section and restore \texttt{\string\pagelayout\{margin\}} afterward. The \texttt{landscape} environment rotates a page; \texttt{widepar} extends a paragraph into the outer margin; \texttt{fullwidthpar} uses the full page width; and \texttt{wideequation} gives a long equation extra room.
+Use \texttt{\string\pagelayout} with the option \texttt{wide} for a wide section, then restore \texttt{margin}. The \texttt{landscape} environment rotates a page; \texttt{widepar} extends a paragraph into the outer margin; \texttt{fullwidthpar} uses the full page width; and \texttt{wideequation} gives a long equation extra room.
 \pagelayout{wide}
 \begin{widepar}
 This paragraph demonstrates \texttt{widepar}: it uses the text block plus the outer margin. Avoid nesting it inside another width-changing environment.
@@ -395,7 +401,9 @@ For a numbered equation, add a project label inside the equation environment:
   C = \frac{n}{V}
   \labeq{concentration-example}
 \end{equation}
-The relationship is shown in \refeq{concentration-example}. A wide equation can use the \texttt{wideequation} wrapper:
+The relationship is shown in \refeq{concentration-example}.
+
+For a long equation, use the \texttt{wideequation} environment:
 \begin{wideequation}
   \Delta G = \Delta G^{\circ} + RT\ln Q
 \end{wideequation}
@@ -418,9 +426,9 @@ Use \texttt{lstlisting} for short code samples:
 concentration = amount / volume
 print(concentration)
 \end{lstlisting}
-The bibliography is stored in \texttt{main.bib} and processed with Biber. Standard examples are \texttt{\string\textcite\{Costanzo2014BRS\}} and \texttt{\string\parencite\{Costanzo2014BRS\}}; in prose, \textcite{Costanzo2014BRS} discusses physiology, while a parenthetical citation can be written \parencite[chap.~1]{Costanzo2014BRS}. The custom \texttt{\string\sidecite} also places a formatted citation in the margin: \sidecite{Costanzo2014BRS}.
+The bibliography is stored in \texttt{main.bib} and processed with Biber. The commands \texttt{\string\textcite} and \texttt{\string\parencite} take a bibliography key in braces. In prose, \textcite{Costanzo2014BRS} discusses physiology; a parenthetical citation can be written \parencite[chap.~1]{Costanzo2014BRS}. The custom \texttt{\string\sidecite} places a formatted citation in the margin: \sidecite{Costanzo2014BRS}.
 
-Project reference helpers use matching label and reference prefixes: \texttt{\string\labsec\{key\}} with \texttt{\string\refsec\{key\}}, \texttt{\string\labfig\{key\}} with \texttt{\string\reffig\{key\}}, and \texttt{\string\labtab\{key\}} with \texttt{\string\reftab\{key\}}. For example, see \refsec{cookbook-boxes}, \reftab{example_planning_table}, and \reffig{tikz-flow}. Chapter, subsection, equation, definition, theorem, proposition, lemma, remark, example, and exercise labels have corresponding helpers; see \texttt{template/kaorefs.sty} for the complete command list.
+Project reference helpers pair each label command with a matching reference command: \texttt{\string\labsec} with \texttt{\string\refsec}, \texttt{\string\labfig} with \texttt{\string\reffig}, and \texttt{\string\labtab} with \texttt{\string\reftab}. For example, see \refsec{cookbook-boxes}, \reftab{example_planning_table}, and \reffig{tikz-flow}. Other helpers cover chapters, subsections, equations, theorem-like environments, examples, and exercises; see \path{template/kaorefs.sty} for the complete list.
 
 \section{TikZ shapes and colors}
 \labsec{cookbook-tikz}
