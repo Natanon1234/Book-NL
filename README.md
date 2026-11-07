@@ -70,7 +70,7 @@ Set-Location "C:\path\to\Book NL"
 latexmk -xelatex main.tex
 ```
 
-The `latexmk` command above compiles the complete book, rerunning XeLaTeX as needed and invoking Biber and MakeIndex for the bibliography and index. To compile only the appendix collection or a single chapter, use the commands below from the same folder.
+The `latexmk` command above compiles the complete book, rerunning XeLaTeX as needed and invoking Biber and MakeIndex for the bibliography and index. To compile only the appendix collection or a single chapter, use the commands below from the same folder. The subject index is printed after the bibliography in `main.pdf`; because the template loads `imakeidx` with `noautomatic`, do not use a single `xelatex main.tex` pass when building the final book. For a manual build, run `makeindex main.idx` after the first XeLaTeX pass, then rerun XeLaTeX so the generated `.ind` file is included.
 
 The build writes `main.pdf` and temporary LaTeX files beside `main.tex`. The cover is unnumbered; the notice and Creative Commons page includes the build date and is page `i`, followed by the dedication page as `ii`. Front matter continues with lowercase Roman numerals, and the main text restarts at Arabic page `1`.
 
