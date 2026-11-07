@@ -282,7 +282,7 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
     \draw[->,thick] (gene) -- node[above]{transcription} (rna);
     \draw[->,thick] (rna) -- node[above]{translation} (protein);
   \end{tikzpicture}
-  \caption{A TikZ figure with nodes, fills, and arrows.}
+  \caption[Gene-to-protein process]{A TikZ figure with nodes, fills, and arrows.}
   \labfig{tikz-flow}
 \end{figure}
 See \reffig{tikz-flow} for a numbered figure reference. Store external images in the \texttt{images/} folder for the relevant collection: \texttt{chapters/images/} for main-book chapters or the \texttt{images/} folder within the appropriate appendix. Start each filename with its chapter identifier, then describe the image in lowercase hyphenated words (for example, \path{a1-membrane-transport-electrochemical-gradient.png}). For an image in a source file, put the command on its own line:
@@ -298,27 +298,28 @@ See \reffig{tikz-flow} for a numbered figure reference. Store external images in
     \draw[fill=Goldenrod!35] (1,0) circle (0.45cm);
     \draw[<->,thick] (0.48,0) -- (0.52,0);
   \end{tikzpicture}
-  \caption{A small margin illustration.}
+  \caption[Margin illustration]{A small margin illustration.}
   \labfig{margin-example}
 \end{marginfigure}
+See \reffig{margin-example} for the numbered margin illustration.
 
 \section{Text, lists, and margin notes}
 \labsec{cookbook-text}
 Use \texttt{\string\section[short title]\{full title\}} when a long heading needs a shorter table-of-contents entry. Place project labels immediately after the item being labeled, such as \texttt{\string\labsec\{unique-key\}} after a section heading.
 
 \subsection{Lists}
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
   \item Use an unordered list for related concepts.
   \item Nest items when the hierarchy is meaningful.
-  \begin{itemize}
+  \begin{itemize}[leftmargin=1.5em]
     \item Nested bullets use the project’s smaller bullet style.
   \end{itemize}
 \end{itemize}
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*.,leftmargin=*]
   \item Use numbered steps when order matters.
   \item Continue with the next action or consequence.
 \end{enumerate}
-\begin{description}
+\begin{description}[style=nextline,leftmargin=2.5em]
   \item[Term] Explain a defined term or a short item-label pair.
   \item[Second term] Keep descriptions concise and parallel.
 \end{description}
@@ -357,7 +358,7 @@ The preamble defines small typography helpers: \invitro experiments, \invivo obs
 \labsec{cookbook-tables}
 \begin{table}[htbp]
 \centering
-\caption{Example table with a caption and project label.}
+\caption[Example planning table]{Example table with a caption and project label.}
 \labtab{example_planning_table}
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}@{}}
@@ -369,9 +370,11 @@ Clinical link & Applied objective & Connect mechanism and patient. \\
 \bottomrule
 \end{tabular}
 \end{table}
+See \reftab{example_planning_table} for the numbered table example.
+
 For a compact table in the margin, use \texttt{margintable} and keep it narrow:
 \begin{margintable}
-  \caption{A margin-sized table.}
+  \caption[Margin-sized table]{A margin-sized table.}
   \labtab{margin-example}
   \small
   \begin{tabular}{@{}lr@{}}
@@ -381,6 +384,7 @@ For a compact table in the margin, use \texttt{margintable} and keep it narrow:
     \bottomrule
   \end{tabular}
 \end{margintable}
+See \reftab{margin-example} for the margin-sized example table.
 
 Use \texttt{\string\pagelayout} with the option \texttt{wide} for a wide section, then restore \texttt{margin}. The \texttt{landscape} environment rotates a page; \texttt{widepar} extends a paragraph into the outer margin; \texttt{fullwidthpar} uses the full page width; and \texttt{wideequation} gives a long equation extra room.
 \pagelayout{wide}
@@ -433,12 +437,15 @@ Project reference helpers pair each label command with a matching reference comm
 \section{TikZ shapes and colors}
 \labsec{cookbook-tikz}
 TikZ is loaded by the project template. Define nodes with shape, fill, and line options, then connect them with paths:
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[>=stealth]
   \node[draw,circle,fill=ForestGreen!20,minimum size=1.2cm] (one) at (0,0) {1};
   \node[draw,rounded corners,fill=RoyalBlue!15,minimum width=2.2cm,minimum height=1cm] (two) at (3,0) {Process};
   \draw[->,very thick,Goldenrod] (one) -- (two);
 \end{tikzpicture}
-\end{center}
-Available colors include names from \texttt{xcolor} with the \texttt{dvipsnames} option; mix a color with white, such as \texttt{RoyalBlue!15!White}, for a pale fill. Reusable TikZ styles can be declared locally in picture options or globally in the preamble.
+\caption[Simple TikZ process diagram]{A simple TikZ process diagram.}
+\labfig{tikz-process-example}
+\end{figure}
+See \reffig{tikz-process-example} for the process diagram. Available colors include names from \texttt{xcolor} with the \texttt{dvipsnames} option; mix a color with white, such as \texttt{RoyalBlue!15!White}, for a pale fill. Reusable TikZ styles can be declared locally in picture options or globally in the preamble.
 \end{document}
