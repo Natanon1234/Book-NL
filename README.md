@@ -54,34 +54,57 @@ Appendix and chapter files detect the master preamble when compiled from the Pri
 
 ### Compile
 
-Run commands from this folder (`Book NL`). Use XeLaTeX rather than pdfLaTeX, since the preamble uses system fonts and Unicode text.
+Run commands from the project root: the `Book NL` folder containing `main.tex`, `main.bib`, `template/`, `chapters/`, and `appendices/`. Use XeLaTeX rather than pdfLaTeX because the project uses system fonts and Unicode text.
 
-On macOS or Linux, open Terminal and run:
+#### Build the complete book (recommended)
+
+On macOS or Linux, open Terminal:
 
 ```sh
 cd "/path/to/Book NL"
 latexmk -xelatex main.tex
 ```
 
-On Windows, open PowerShell and run:
+On Windows, open PowerShell:
 
 ```powershell
 Set-Location "C:\path\to\Book NL"
 latexmk -xelatex main.tex
 ```
 
-The `latexmk` command above compiles the complete book, rerunning XeLaTeX as needed and invoking Biber and MakeIndex for the bibliography and index. To compile only the appendix collection or a single chapter, use the commands below from the same folder. The subject index is printed after the bibliography in `main.pdf`; because the template loads `imakeidx` with `noautomatic`, do not use a single `xelatex main.tex` pass when building the final book. For a manual build, run `makeindex main.idx` after the first XeLaTeX pass, then rerun XeLaTeX so the generated `.ind` file is included.
+`latexmk` is the recommended command for the final book. It reruns XeLaTeX until references settle and runs Biber and MakeIndex when the bibliography and index need updating. The finished PDF is `main.pdf` beside `main.tex`.
 
-The build writes `main.pdf` and temporary LaTeX files beside `main.tex`. The cover is unnumbered; the notice and Creative Commons page includes the build date and is page `i`, followed by the dedication page as `ii`. Front matter continues with lowercase Roman numerals, and the main text restarts at Arabic page `1`.
+#### Manual full-book build
 
-Compile all appendices together, or each appendix as its own volume:
+Use this only when you cannot use `latexmk`. Run these commands in order from the project root:
+
+```sh
+xelatex main.tex
+biber main
+makeindex main.idx
+xelatex main.tex
+xelatex main.tex
+```
+
+The first XeLaTeX pass creates the files used by Biber and MakeIndex. Biber generates the bibliography, MakeIndex generates the subject index, and the final XeLaTeX passes include those outputs and resolve cross-references. The template loads `imakeidx` with `noautomatic`, so a single `xelatex main.tex` pass will not generate the index. Ensure XeLaTeX, Biber, and MakeIndex are available on your `PATH`.
+
+The build writes `main.pdf` and temporary LaTeX files beside `main.tex`. The cover is unnumbered; the copyright page displays the build date and is page `i`, followed by the dedication page as `ii`. Front matter continues with lowercase Roman numerals, and the main text restarts at Arabic page `1`.
+
+#### Build appendix volumes
+
+Run these commands from the project root to compile the combined appendix collection or an individual volume:
 
 - `latexmk -xelatex -outdir=build/appendices appendices/appendix-volume.tex`
 - `latexmk -xelatex -outdir=build/physiology "appendices/appendix 1-Physiology/physiology-volume.tex"`
 - `latexmk -xelatex -outdir=build/pharmacology "appendices/appendix 2-Pharmacology/pharmacology-volume.tex"`
 - `latexmk -xelatex -outdir=build/medical-microbiology "appendices/appendix 3-Medical Microbiology and Immunology/medical-microbiology-volume.tex"`
+- `latexmk -xelatex -outdir=build/review-notes "appendices/appendix 4-Review Notes/review-notes-volume.tex"`
 
-For rapid previews, compile individual chapters directly:
+The review-notes volume is Appendix D and contains chapters D1–D6.
+
+#### Preview individual chapters
+
+For rapid previews, compile an individual chapter from the project root:
 
 - `latexmk -xelatex -outdir=build chapters/chapter0.tex`
 - `latexmk -xelatex -outdir=build "appendices/appendix 1-Physiology/01-physiology-foundations.tex"`
@@ -98,7 +121,7 @@ For rapid previews, compile individual chapters directly:
 
 The cookbook chapter uses self-contained TikZ examples, so it can be compiled to the build folder like other standalone chapters.
 
-Appendix chapters use hierarchical labels A1–A2, B1–B2, and C1–C5, and each chapter starts on a new page with its own margin table of contents. Pharmacokinetics and pharmacodynamics are separate topic files assembled into pharmacology chapter B1; each topic file can also be compiled alone with its wrapper chapter. Thai text can be entered directly; the configured Unicode script switching selects the Thai font automatically.
+Appendix chapters use hierarchical labels A1–A2, B1–B2, C1–C5, and D1–D6. Each chapter starts on a new page with its own margin table of contents. Pharmacokinetics and pharmacodynamics are separate topic files assembled into pharmacology chapter B1; each topic file can also be compiled alone with its wrapper chapter. Thai text can be entered directly; the configured Unicode script switching selects the Thai font automatically.
 
 ## Part 1A content-planning table
 
