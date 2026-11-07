@@ -40,10 +40,17 @@
 % Typographic setting package
 \usepackage{microtype}
 
+% Give TeX a little extra flexibility in narrow text and margin columns.
+\setlength{\emergencystretch}{1em}
+
 % Use visually matched Latin and Thai sans fonts; Sarabun is not installed here.
 \setmainfont{Noto Sans Condensed}[SlantedFont={Noto Sans Condensed Italic}]
 \setsansfont{Noto Sans Condensed}
-\setmonofont{lmmono10-regular.otf}
+\setmonofont{lmmono10-regular.otf}[
+  ItalicFont={lmmono10-italic.otf},
+  BoldFont={lmmonolt10-bold.otf},
+  BoldItalicFont={lmmonolt10-boldoblique.otf}
+]
 \setmathfont{latinmodern-math.otf}
 \newfontfamily\thaifont{Noto Sans Thai UI}[Script=Thai, Scale=MatchLowercase]
 \usepackage[BasicLatin,Thai]{ucharclasses}
