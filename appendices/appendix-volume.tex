@@ -8,7 +8,11 @@
 }
 \begin{document}
 \ifSubfilesClassLoaded{\mainmatter\setchapterstyle{kao}}{}
+\clearpage
 \appendix
+% Give the appendix collection an explicit visible/ToC entry. The individual
+% volume files then provide Appendix A--D and their numbered chapters.
+\addpart{Appendices}
 \def\appendixcollectionparent{true}
 \ifSubfilesClassLoaded{
   \subfile{\booknlroot appendices/appendix 1-Physiology/physiology-volume.tex}
