@@ -1,13 +1,13 @@
 % !TEX program = xelatex
 \makeatletter
-\IfFileExists{Book\space NL/main.tex}
-  {\def\booknlroot{Book\space NL/}}
+\IfFileExists{Book\space{}NL/main.tex}
+  {\def\booknlroot{Book\space{}NL/}}
   {\IfFileExists{../../main.tex}
     {\def\booknlroot{../../}}
     {\IfFileExists{../main.tex}
       {\def\booknlroot{../}}
       {\def\booknlroot{}}}}
-\edef\input@path{{\booknlroot}{\booknlroot template/}}
+\edef\input@path{{\booknlroot}{\booknlroot{}template/}}
 \makeatother
 \PassOptionsToPackage{c ompatibility=false}{caption}
 \documentclass[
@@ -57,7 +57,7 @@
 \newfontfamily\thaifont{Noto Sans Thai UI}[Script=Thai, Scale=MatchLowercase]
 \usepackage[BasicLatin,Thai]{ucharclasses}
 \setTransitionsFor{Thai}{\thaifont}{\normalfont}
-\XeTeXlinebreaklocale "th"
+\XeTeXlinebreaklocale"th" % chktex 18: quotation marks are required by this XeTeX primitive
 \XeTeXlinebreakskip=0pt plus 1pt
 
 % Load packages for testing
@@ -66,23 +66,23 @@
 % Load the bibliography package
 \usepackage{template/kaobiblio}
 \usepackage{xurl}
-\edef\booknlbibresource{\booknlroot main.bib}
+\edef\booknlbibresource{\booknlroot{}main.bib}
 \addbibresource{\booknlbibresource} % Bibliography file
 
 % Load mathematical packages for theorems and related environments
 \usepackage{template/kaotheorems}
 
-% Load the package for hyperreferences
+% Load the package for hyperlinks
 \usepackage{template/kaorefs}
 \hypersetup{hypertexnames=false}
 \usepackage{subfiles}
 \AtBeginDocument{\ifSubfilesClassLoaded{\nocite{Venter2001c}}{}}
 \usepackage{pdflscape}
 
-\graphicspath{{\booknlroot assets/}{\booknlroot chapters/images/}{\booknlroot appendices/appendix 1-Physiology/images/}{\booknlroot appendices/appendix 2-Pharmacology/images/}{\booknlroot appendices/appendix 3-Medical Microbiology and Immunology/images/}{\booknlroot appendices/appendix 4-Review Notes/images/}{\booknlroot ./}} % Paths where images are looked for
+\graphicspath{{\booknlroot{}assets/}{\booknlroot{}chapters/images/}{\booknlroot{}appendices/appendix 1-Physiology/images/}{\booknlroot{}appendices/appendix 2-Pharmacology/images/}{\booknlroot{}appendices/appendix 3-Medical Microbiology and Immunology/images/}{\booknlroot{}appendices/appendix 4-Review Notes/images/}{\booknlroot{}./}} % Paths where images are looked for
 \newcommand{\bookrunningtitle}{NL1 Guide --- Natanon Kittimongkulsuk}
-\renewcommand{\chaptermark}[1]{\markboth{\bookrunningtitle}{\thechapter\enspace #1}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace #1}}
+\renewcommand{\chaptermark}[1]{\markboth{\bookrunningtitle}{\thechapter\enspace#1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace#1}}
 \renewcommand{\subsectionmark}[1]{}
 \newcommand{\standalonechaptersetup}[1]{\mainmatter\setchapterstyle{kao}\setcounter{chapter}{#1}}
 \newcommand{\standaloneappendixsetup}[1]{\mainmatter\setchapterstyle{kao}\appendix\setcounter{chapter}{#1}}
@@ -96,7 +96,7 @@
 
 
 \begin{document}
-\raggedbottom
+\raggedbottom%
 \renewcaptionname{english}{\contentsname}{Table of Contents}
 
 
@@ -130,14 +130,14 @@
     \medskip
     
     \textbf{Creative Commons} \\
-    \ccbysa \space{}This book is released under the CC BY-SA license.
+    \ccbysa\space{}This book is released under the CC BY-SA license.
     
     To obtain a copy of the CC BY-SA license, visit: \\\url{https://creativecommons.org/licenses/by-sa/4.0/}
     
     \medskip
 
     \textbf{Build Version} \\
-    V0.2a --- \@date
+    V0.2a --- \@date%
 
     \medskip
     
@@ -147,7 +147,7 @@
     \medskip
     
     \textbf{Publisher} \\
-    First printed in July 2026 by \@publishers
+    First printed in July 2026 by \@publishers%
 }
 \makeatother
 
@@ -157,7 +157,7 @@
 
 \dedication{
     ความสำเร็จที่แท้จริง ไม่ใช่แค่การเรียนรู้ แต่อยู่ที่การนำไปประยุกต์ใช้ให้เกิดประโยชน์ต่อมวลมนุษยชาติ\\
-    \flushright --- สมเด็จพระมหิตลาธิเบศร อดุลยเดชวิกรม พระบรมราชชนก
+    \flushright--- สมเด็จพระมหิตลาธิเบศร อดุลยเดชวิกรม พระบรมราชชนก
 }
 
 %----------------------------------------------------------------------------------------
@@ -165,12 +165,12 @@
 %----------------------------------------------------------------------------------------
 
 \pagenumbering{roman}
-\makecoverpage
+\makecoverpage%
 \makeatletter
-\@mainmatterfalse
+\@mainmatterfalse%
 \makeatother
-\makecopyrightpage
-\makededicationpage
+\makecopyrightpage%
+\makededicationpage%
 
 %----------------------------------------------------------------------------------------
 %   PREFACE
@@ -203,32 +203,32 @@ Chief Editor
 %   MAIN BODY
 %----------------------------------------------------------------------------------------
 
-\mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
+\mainmatter% Denotes the start of the main document content, resets page numbering and uses arabic numbers
 \setchapterstyle{kao} % Choose the default chapter heading style
 
-\subfile{\booknlroot chapters/chapter0.tex} % Draft/debug chapter for notes and planning
-\subfile{\booknlroot chapters/chapter1.tex}
-\subfile{\booknlroot chapters/chapter2.tex}
-\subfile{\booknlroot chapters/chapter3.tex}
-\subfile{\booknlroot chapters/chapter4.tex}
-\subfile{\booknlroot chapters/chapter5.tex}
-\subfile{\booknlroot chapters/chapter6.tex}
-\subfile{\booknlroot chapters/chapter7.tex}
-\subfile{\booknlroot chapters/chapter8.tex}
-\subfile{\booknlroot chapters/chapter9.tex}
-\subfile{\booknlroot chapters/chapter10.tex}
-\subfile{\booknlroot chapters/chapter11.tex}
+\subfile{\booknlroot{}chapters/chapter0.tex} % Draft/debug chapter for notes and planning
+\subfile{\booknlroot{}chapters/chapter1.tex}
+\subfile{\booknlroot{}chapters/chapter2.tex}
+\subfile{\booknlroot{}chapters/chapter3.tex}
+\subfile{\booknlroot{}chapters/chapter4.tex}
+\subfile{\booknlroot{}chapters/chapter5.tex}
+\subfile{\booknlroot{}chapters/chapter6.tex}
+\subfile{\booknlroot{}chapters/chapter7.tex}
+\subfile{\booknlroot{}chapters/chapter8.tex}
+\subfile{\booknlroot{}chapters/chapter9.tex}
+\subfile{\booknlroot{}chapters/chapter10.tex}
+\subfile{\booknlroot{}chapters/chapter11.tex}
 
 %----------------------------------------------------------------------------------------
 %   APPENDICES
 %----------------------------------------------------------------------------------------
 
-\subfile{\booknlroot appendices/appendix-volume.tex}
+\subfile{\booknlroot{}appendices/appendix-volume.tex}
 
 %----------------------------------------------------------------------------------------
 
-\backmatter % Denotes the end of the main document content
-\setchapterstyle{plain} % Output plain chapters from this point onwards
+\backmatter% Denotes the end of the main document content
+\setchapterstyle{plain}% Output plain chapters from this point onwards
 
 %----------------------------------------------------------------------------------------
 %   BIBLIOGRAPHY
