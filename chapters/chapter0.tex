@@ -86,12 +86,12 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 %      (\labfig / \labtab add fig: / tab: themselves.)
 %      Naming convention: <chapter>-<kebab-case-name>, e.g. c2-dissemination.
 %   5. Refer to every float in the text with \reffig{name} / \reftab{name}.
-%      They print "Figure N" / "Table N", so never type "Figure~\ref{...}".
+%      They print the complete figure/table reference; do not add the label manually.
 %      Place the float right after the paragraph that first refers to it.
 %   6. Non-float references stay as they are:
-%        Section~\ref{...}   Chapter~\ref{...}   Box~\ref{box:...}
-%   7. Credit the source in the caption ("Reproduced from ...",
-%      "Adapted from ...") and add the entry to the .bib file so that
+%        \refsec{key}   \refch{key}   \refbox{key}
+%   7. Credit the source in the caption (``Reproduced from ...'',
+%      ``Adapted from ...'') and add the entry to the .bib file so that
 %      \cite{bibkey} works. Leave the credit out for original figures.
 %
 %  ASSUMED MACRO DEFINITIONS  (compare with your preamble; do not
@@ -266,7 +266,7 @@ This table organizes the Part 1A (Basic Medical Sciences) competencies in Medica
 %   - center + \captionof         -> not a float; use figure / table
 %   - \labfig before \caption     -> reference shows the section number
 %   - \labfig{fig:name}           -> becomes fig:fig:name; use \labfig{name}
-%   - typing Figure~\ref{fig:..}  -> use \reffig{name}
+%   - use \reffig{name} whenever the text refers to a figure
 %   - \cite / \footnote in [short caption] -> breaks the list of figures
 %   - float with no \reffig/\reftab anywhere in the text
 
