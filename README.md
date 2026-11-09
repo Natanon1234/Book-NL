@@ -17,7 +17,7 @@
 
 ## Local setup
 
-Extract the complete ZIP archive and keep its directory structure intact. Compile from the project root (the folder containing `main.tex`); its local folder name may be `Book-NL`, `Book NL`, or another name; the project relies on the adjacent `template/`, `chapters/`, `appendices/`, `assets/`, image folders, and bibliography files. The `archive/` folder holds unused cover designs and is not required for compilation.
+Extract the complete ZIP archive and keep its directory structure intact. Compile from the project root (the folder containing `main.tex`). Its local folder name may be `Book-NL`, `Book NL`, or another name. The project relies on the adjacent `template/`, `chapters/`, `appendices/`, `assets/`, image folders, and bibliography files. The `archive/` folder holds unused cover designs and is not required for compilation.
 
 The full book requires XeLaTeX, `latexmk`, Biber, MakeIndex, the LaTeX packages used by the kaobook template, and these fonts:
 
@@ -54,7 +54,7 @@ Appendix and chapter files detect the master preamble when compiled from the Pri
 
 ### Compile
 
-Run commands from the project root (the folder containing `main.tex`, `main.bib`, `template/`, `chapters/`, and `appendices/`. Use XeLaTeX rather than pdfLaTeX because the project uses system fonts and Unicode text.
+Run commands from the project root (the folder containing `main.tex`, `main.bib`, `template/`, `chapters/`, and `appendices/`). Use XeLaTeX rather than pdfLaTeX because the project uses system fonts and Unicode text.
 
 #### Build the complete book (recommended)
 
