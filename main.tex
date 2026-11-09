@@ -1,12 +1,18 @@
 % !TEX program = xelatex
 \makeatletter
-\IfFileExists{Book\space{}NL/main.tex}
-  {\def\booknlroot{Book\space{}NL/}}
-  {\IfFileExists{../../main.tex}
-    {\def\booknlroot{../../}}
-    {\IfFileExists{../main.tex}
-      {\def\booknlroot{../}}
-      {\def\booknlroot{}}}}
+% Resolve paths from the current project root first. This is important because
+% graphicspath entries are relative to the TeX working directory.
+\IfFileExists{main.tex}
+  {\def\booknlroot{}}
+  {\IfFileExists{Book-NL/main.tex}
+    {\def\booknlroot{Book-NL/}}
+    {\IfFileExists{Book\space{}NL/main.tex}
+      {\def\booknlroot{Book\space{}NL/}}
+      {\IfFileExists{../main.tex}
+        {\def\booknlroot{../}}
+        {\IfFileExists{../../main.tex}
+          {\def\booknlroot{../../}}
+          {\def\booknlroot{}}}}}}
 \edef\input@path{{\booknlroot}{\booknlroot{}template/}}
 \makeatother
 \PassOptionsToPackage{c ompatibility=false}{caption}
