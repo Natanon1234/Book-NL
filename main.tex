@@ -10,7 +10,8 @@
     {\IfFileExists{../../assets/book-cover-minimal-blue-medical-design.png}
       {\def\booknlroot{../../}}
       {\def\booknlroot{}}}}
-\edef\input@path{{\booknlroot}{\booknlroot{}template/}}
+\def\booknlpath#1{\booknlroot#1}
+\edef\input@path{{\booknlroot}{\booknlpath{template/}}}
 \makeatother
 \PassOptionsToPackage{c ompatibility=false}{caption}
 \documentclass[
@@ -69,7 +70,7 @@
 % Load the bibliography package
 \usepackage{template/kaobiblio}
 \usepackage{xurl}
-\edef\booknlbibresource{\booknlroot{}main.bib}
+\edef\booknlbibresource{\booknlpath{main.bib}}
 \addbibresource{\booknlbibresource} % Bibliography file
 
 % Load mathematical packages for theorems and related environments
@@ -82,7 +83,7 @@
 \AtBeginDocument{\ifSubfilesClassLoaded{\nocite{Venter2001c}}{}}
 \usepackage{pdflscape}
 
-\graphicspath{{\booknlroot{}assets/}{\booknlroot{}chapters/images/}{\booknlroot{}appendices/appendix 1-Physiology/images/}{\booknlroot{}appendices/appendix 2-Pharmacology/images/}{\booknlroot{}appendices/appendix 3-Medical Microbiology and Immunology/images/}{\booknlroot{}appendices/appendix 4-Review Notes/images/}{\booknlroot{}./}} % Paths where images are looked for
+\graphicspath{{\booknlpath{assets/}}{\booknlpath{chapters/images/}}{\booknlpath{appendices/appendix 1-Physiology/images/}}{\booknlpath{appendices/appendix 2-Pharmacology/images/}}{\booknlpath{appendices/appendix 3-Medical Microbiology and Immunology/images/}}{\booknlpath{appendices/appendix 4-Review Notes/images/}}{\booknlpath{./}}} % Paths where images are looked for
 \newcommand{\bookrunningtitle}{NL1 Guide --- Natanon Kittimongkulsuk}
 \renewcommand{\chaptermark}[1]{\markboth{\bookrunningtitle}{\thechapter\enspace#1}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace#1}}
@@ -113,7 +114,7 @@
 \date{\today}
 \publishers{None}
 
-\input{template/cover.tex}
+\input{\booknlpath{template/cover.tex}}
 
 %----------------------------------------------------------------------------------------
 
@@ -209,24 +210,24 @@ Chief Editor
 \mainmatter% Denotes the start of the main document content, resets page numbering and uses Arabic numerals
 \setchapterstyle{kao} % Choose the default chapter heading style
 
-\subfile{\booknlroot{}chapters/chapter0.tex} % Draft/debug chapter for notes and planning
-\subfile{\booknlroot{}chapters/chapter1.tex}
-\subfile{\booknlroot{}chapters/chapter2.tex}
-\subfile{\booknlroot{}chapters/chapter3.tex}
-\subfile{\booknlroot{}chapters/chapter4.tex}
-\subfile{\booknlroot{}chapters/chapter5.tex}
-\subfile{\booknlroot{}chapters/chapter6.tex}
-\subfile{\booknlroot{}chapters/chapter7.tex}
-\subfile{\booknlroot{}chapters/chapter8.tex}
-\subfile{\booknlroot{}chapters/chapter9.tex}
-\subfile{\booknlroot{}chapters/chapter10.tex}
-\subfile{\booknlroot{}chapters/chapter11.tex}
+\subfile{\booknlpath{chapters/chapter0.tex}} % Draft/debug chapter for notes and planning
+\subfile{\booknlpath{chapters/chapter1.tex}}
+\subfile{\booknlpath{chapters/chapter2.tex}}
+\subfile{\booknlpath{chapters/chapter3.tex}}
+\subfile{\booknlpath{chapters/chapter4.tex}}
+\subfile{\booknlpath{chapters/chapter5.tex}}
+\subfile{\booknlpath{chapters/chapter6.tex}}
+\subfile{\booknlpath{chapters/chapter7.tex}}
+\subfile{\booknlpath{chapters/chapter8.tex}}
+\subfile{\booknlpath{chapters/chapter9.tex}}
+\subfile{\booknlpath{chapters/chapter10.tex}}
+\subfile{\booknlpath{chapters/chapter11.tex}}
 
 %----------------------------------------------------------------------------------------
 %   APPENDICES
 %----------------------------------------------------------------------------------------
 
-\subfile{\booknlroot{}appendices/appendix-volume.tex}
+\subfile{\booknlpath{appendices/appendix-volume.tex}}
 
 %----------------------------------------------------------------------------------------
 
