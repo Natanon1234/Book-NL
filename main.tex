@@ -1,18 +1,15 @@
 % !TEX program = xelatex
 \makeatletter
-% Resolve paths from the current project root first. This is important because
-% graphicspath entries are relative to the TeX working directory.
-\IfFileExists{main.tex}
+% Resolve the project root from a file that is unique to this repository.
+% This avoids depending on the shell's current directory or on another
+% main.tex that may be visible through TeX's file-search path.
+\IfFileExists{assets/book-cover-minimal-blue-medical-design.png}
   {\def\booknlroot{}}
-  {\IfFileExists{Book-NL/main.tex}
-    {\def\booknlroot{Book-NL/}}
-    {\IfFileExists{Book\space{}NL/main.tex}
-      {\def\booknlroot{Book\space{}NL/}}
-      {\IfFileExists{../main.tex}
-        {\def\booknlroot{../}}
-        {\IfFileExists{../../main.tex}
-          {\def\booknlroot{../../}}
-          {\def\booknlroot{}}}}}}
+  {\IfFileExists{../assets/book-cover-minimal-blue-medical-design.png}
+    {\def\booknlroot{../}}
+    {\IfFileExists{../../assets/book-cover-minimal-blue-medical-design.png}
+      {\def\booknlroot{../../}}
+      {\def\booknlroot{}}}}
 \edef\input@path{{\booknlroot}{\booknlroot{}template/}}
 \makeatother
 \PassOptionsToPackage{c ompatibility=false}{caption}
