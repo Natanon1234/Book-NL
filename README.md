@@ -17,7 +17,7 @@
 
 ## Local setup
 
-Extract the complete ZIP archive and keep its directory structure intact. Compile from the `Book NL` folder; the project relies on the adjacent `template/`, `chapters/`, `appendices/`, `assets/`, image folders, and bibliography files. The `archive/` folder holds unused cover designs and is not required for compilation.
+Extract the complete ZIP archive and keep its directory structure intact. Compile from the project root (the folder containing `main.tex`); its local folder name may be `Book-NL`, `Book NL`, or another name; the project relies on the adjacent `template/`, `chapters/`, `appendices/`, `assets/`, image folders, and bibliography files. The `archive/` folder holds unused cover designs and is not required for compilation.
 
 The full book requires XeLaTeX, `latexmk`, Biber, MakeIndex, the LaTeX packages used by the kaobook template, and these fonts:
 
@@ -50,26 +50,26 @@ command -v xelatex latexmk biber makeindex kpsewhich
 
 In Windows PowerShell, use `Get-Command xelatex, latexmk, biber, makeindex, kpsewhich`. Latin Modern fonts are provided by the TeX distribution, not the OS font manager. Check their availability with `kpsewhich lmmono10-regular.otf` and `kpsewhich latinmodern-math.otf`; each command should print a file path. If either returns no path, install the `lm` and `lm-math` packages using the TeX package manager for your distribution. On a standard MacTeX installation, prefix the `tlmgr` command with `sudo`.
 
-Appendix and chapter files detect the master preamble when compiled from the Prism workspace root, the `Book NL` folder, or their own source folder. You can compile the open chapter directly; no editor compiler-path setting is required for standalone previews.
+Appendix and chapter files detect the master preamble when compiled from the Prism workspace root, the project root, or their own source folder. You can compile the open chapter directly; no editor compiler-path setting is required for standalone previews.
 
 ### Compile
 
-Run commands from the project root: the `Book NL` folder containing `main.tex`, `main.bib`, `template/`, `chapters/`, and `appendices/`. Use XeLaTeX rather than pdfLaTeX because the project uses system fonts and Unicode text.
+Run commands from the project root (the folder containing `main.tex`, `main.bib`, `template/`, `chapters/`, and `appendices/`. Use XeLaTeX rather than pdfLaTeX because the project uses system fonts and Unicode text.
 
 #### Build the complete book (recommended)
 
 On macOS or Linux, open Terminal:
 
 ```sh
-cd "/path/to/Book NL"
-latexmk -xelatex main.tex
+cd "/path/to/your/project-root"
+latexmk -cd -xelatex main.tex
 ```
 
 On Windows, open PowerShell:
 
 ```powershell
-Set-Location "C:\path\to\Book NL"
-latexmk -xelatex main.tex
+Set-Location "C:\path\to\your\project-root"
+latexmk -cd -xelatex main.tex
 ```
 
 `latexmk` is the recommended command for the final book. It reruns XeLaTeX until references settle and runs Biber and MakeIndex when the bibliography and index need updating. The finished PDF is `main.pdf` beside `main.tex`.
@@ -218,7 +218,7 @@ The preamble defines `\invitro`, `\invivo`, `\cis`, `\trans`, `\etal`, `\denovo`
 
 For concrete, compilable examples of lists, TikZ shapes, tables, figures, margin content, boxes, equations, theorem environments, listings, citations, and cross-references, see `chapters/chapter0.tex`.
 
-To compile the empty templates directly from `Book NL`, use the same standalone XeLaTeX workflow as other chapter files:
+To compile the empty templates directly from the project root, use the same standalone XeLaTeX workflow as other chapter files:
 
 ```sh
 latexmk -xelatex -outdir=build chapters/chapter-template.tex
