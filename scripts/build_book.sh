@@ -7,26 +7,10 @@ cd "$ROOT_DIR"
 BUILD_DIR="${BUILD_DIR:-$ROOT_DIR/build}"
 DIST_DIR="${DIST_DIR:-$ROOT_DIR/dist}"
 PACKAGE_DIR="$BUILD_DIR/package"
+LOG_DIR="$BUILD_DIR/logs"
 
 rm -rf "$BUILD_DIR" "$DIST_DIR"
-mkdir -p "$BUILD_DIR" "$DIST_DIR" "$PACKAGE_DIR/chapters"
-
-compile_tex() {
-  local source="$1"
-  local output_dir="$2"
-
-  mkdir -p "$output_dir"
-  echo "::group::XeLaTeX: $source"
-  latexmk \
-    -cd \
-    -xelatex \
-    -interaction=nonstopmode \
-    -halt-on-error \
-    -file-line-error \
-    -outdir="$output_dir" \
-    "$source"
-  echo "::endgroup::"
-}
+mkdir -p "$BUILD_DIR" "$DIST_DIR" "$PACKAGE_DIR/chapters" "$LOG_DIR"
 
 assert_pdf() {
   local pdf="$1"
@@ -40,11 +24,67 @@ assert_pdf() {
   fi
 }
 
+compile_tex() {
+  local source="$1"
+  local destination="$2"
+  local source_dir
+  local filename
+  local stem
+  local pdf_path
+  local log_path
+  local log_destination
+
+  source_dir="$(dirname "$source")"
+  filename="$(basename "$source")"
+  stem="${filename%.tex}"
+  pdf_path="$source_dir/$stem.pdf"
+  log_path="$source_dir/$stem.log"
+  log_destination="$LOG_DIR/$source_dir/$stem.log"
+
+  mkdir -p "$(dirname "$destination")" "$(dirname "$log_destination")"
+
+  echo "::group::XeLaTeX: $source"
+  (
+    cd "$ROOT_DIR/$source_dir"
+    # Compile in the source directory. The book's standalone wrappers calculate
+    # relative paths from here; an external output directory can shadow those
+    # checks and point image lookups at the wrong location.
+    latexmk \
+      -cd \
+      -xelatex \
+      -interaction=nonstopmode \
+      -halt-on-error \
+      -file-line-error \
+      "$filename"
+  )
+  echo "::endgroup::"
+
+  assert_pdf "$ROOT_DIR/$pdf_path"
+  if [[ ! -s "$ROOT_DIR/$log_path" ]]; then
+    echo "Expected a XeLaTeX log at: $ROOT_DIR/$log_path" >&2
+    exit 1
+  fi
+
+  cp "$ROOT_DIR/$pdf_path" "$destination"
+  cp "$ROOT_DIR/$log_path" "$log_destination"
+
+  # Remove auxiliary files without deleting the PDF that has just been copied.
+  (
+    cd "$ROOT_DIR/$source_dir"
+    latexmk -c "$filename" >/dev/null
+  )
+
+  # Some legacy source PDFs are tracked placeholders. Restore tracked files;
+  # remove only PDFs created by this build from untracked source directories.
+  if git ls-files --error-unmatch -- "$pdf_path" >/dev/null 2>&1; then
+    git restore --worktree -- "$pdf_path"
+  else
+    rm -f "$ROOT_DIR/$pdf_path"
+  fi
+}
+
 echo "Building the complete book..."
-compile_tex "main.tex" "$BUILD_DIR/full-book"
-MAIN_PDF="$BUILD_DIR/full-book/main.pdf"
-assert_pdf "$MAIN_PDF"
-cp "$MAIN_PDF" "$DIST_DIR/Book-NL.pdf"
+compile_tex "main.tex" "$DIST_DIR/Book-NL.pdf"
 
 echo "Building every numbered main-book chapter..."
 mapfile -t MAIN_CHAPTERS < <(
@@ -57,11 +97,7 @@ fi
 
 for source in "${MAIN_CHAPTERS[@]}"; do
   chapter_name="$(basename "${source%.tex}")"
-  output_dir="$BUILD_DIR/main-chapters/$chapter_name"
-  compile_tex "$source" "$output_dir"
-  pdf="$output_dir/$chapter_name.pdf"
-  assert_pdf "$pdf"
-  cp "$pdf" "$PACKAGE_DIR/chapters/$chapter_name.pdf"
+  compile_tex "$source" "$PACKAGE_DIR/chapters/$chapter_name.pdf"
 done
 
 echo "Building each standalone appendix chapter/topic..."
@@ -79,16 +115,7 @@ for source in "${APPENDIX_SOURCES[@]}"; do
 
   relative_path="${source#appendices/}"
   relative_stem="${relative_path%.tex}"
-  chapter_name="$(basename "$relative_stem")"
-  output_dir="$BUILD_DIR/appendix-chapters/$relative_stem"
-
-  compile_tex "$source" "$output_dir"
-  pdf="$output_dir/$chapter_name.pdf"
-  assert_pdf "$pdf"
-
-  destination="$PACKAGE_DIR/appendices/chapters/$relative_stem.pdf"
-  mkdir -p "$(dirname "$destination")"
-  cp "$pdf" "$destination"
+  compile_tex "$source" "$PACKAGE_DIR/appendices/chapters/$relative_stem.pdf"
   APPENDIX_COUNT=$((APPENDIX_COUNT + 1))
 done
 
@@ -107,21 +134,14 @@ APPENDIX_VOLUMES=(
 )
 for source in "${APPENDIX_VOLUMES[@]}"; do
   volume_name="$(basename "${source%.tex}")"
-  output_dir="$BUILD_DIR/appendix-volumes/$volume_name"
-  compile_tex "$source" "$output_dir"
-  pdf="$output_dir/$volume_name.pdf"
-  assert_pdf "$pdf"
-  mkdir -p "$PACKAGE_DIR/appendices/volumes"
-  cp "$pdf" "$PACKAGE_DIR/appendices/volumes/$volume_name.pdf"
+  compile_tex "$source" "$PACKAGE_DIR/appendices/volumes/$volume_name.pdf"
 done
 
-# Fail on unresolved citations/references or duplicate labels, even when TeX
-# exits successfully. Ordinary overfull/underfull box warnings are retained
-# in the logs for review because legacy content may need layout adjustments
-# without making a technically valid build unusable.
+# Fail on unresolved citations/references or duplicate labels, even if TeX exits
+# successfully. Layout warnings remain in the stored logs for review.
 if grep -R -n -E \
   'There were undefined references|(Citation|Reference) .*undefined|Label .* multiply defined' \
-  "$BUILD_DIR" --include='*.log'; then
+  "$LOG_DIR" --include='*.log'; then
   echo "The build contains unresolved references/citations or duplicate labels." >&2
   exit 1
 fi
@@ -143,9 +163,7 @@ The complete book, including front matter, main chapters, appendices,
 bibliography, and index, is distributed separately as Book-NL.pdf.
 PACKAGE_README
 
-EXPECTED_PDFS=$((
-  ${#MAIN_CHAPTERS[@]} + APPENDIX_COUNT + ${#APPENDIX_VOLUMES[@]}
-))
+EXPECTED_PDFS=$((${#MAIN_CHAPTERS[@]} + APPENDIX_COUNT + ${#APPENDIX_VOLUMES[@]}))
 ACTUAL_PDFS="$(find "$PACKAGE_DIR" -type f -name '*.pdf' | wc -l | tr -d ' ')"
 if [[ "$ACTUAL_PDFS" -ne "$EXPECTED_PDFS" ]]; then
   echo "Package PDF count mismatch: expected $EXPECTED_PDFS, found $ACTUAL_PDFS." >&2
