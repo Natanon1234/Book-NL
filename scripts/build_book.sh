@@ -18,6 +18,7 @@ compile_tex() {
   mkdir -p "$output_dir"
   echo "::group::XeLaTeX: $source"
   latexmk \
+    -cd \
     -xelatex \
     -interaction=nonstopmode \
     -halt-on-error \
