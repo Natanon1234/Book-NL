@@ -58,6 +58,7 @@ jobs:
             texlive-fonts-recommended \
             texlive-lang-other \
             texlive-latex-extra \
+            texlive-plain-generic \
             texlive-pictures \
             texlive-science \
             texlive-xetex \
@@ -71,6 +72,7 @@ jobs:
           fc-match -f '%{family}\n' "Noto Sans Thai UI" | grep -qi "Noto Sans Thai UI"
           kpsewhich lmmono10-regular.otf
           kpsewhich latinmodern-math.otf
+          kpsewhich tracklang.sty
 
       - name: Compile and package every book unit
         run: bash scripts/build_book.sh
