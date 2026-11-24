@@ -331,3 +331,7 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 *.DS_Store
+
+# Generated local and CI build outputs
+/build/
+/dist/
