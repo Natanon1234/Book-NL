@@ -50,6 +50,7 @@ jobs:
           sudo apt-get install --no-install-recommends --yes \
             biber \
             fonts-noto-core \
+            fonts-noto-extra \
             fonts-noto-ui-core \
             latexmk \
             texlive-bibtex-extra \
