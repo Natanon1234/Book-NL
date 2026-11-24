@@ -139,10 +139,14 @@ done
 
 # Fail on unresolved citations/references or duplicate labels, even if TeX exits
 # successfully. Layout warnings remain in the stored logs for review.
-if grep -R -n -E \
+# Validate cross-references and citations in the complete book, where all
+# chapters and appendices are present. Standalone chapter PDFs are also built
+# intentionally; their logs can contain references to sibling chapters that
+# are not part of an isolated chapter build.
+if grep -n -E \
   'There were undefined references|(Citation|Reference) .*undefined|Label .* multiply defined' \
-  "$LOG_DIR" --include='*.log'; then
-  echo "The build contains unresolved references/citations or duplicate labels." >&2
+  "$LOG_DIR/main.log"; then
+  echo "The complete book contains unresolved references/citations or duplicate labels." >&2
   exit 1
 fi
 
